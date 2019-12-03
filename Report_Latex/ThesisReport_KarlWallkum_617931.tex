@@ -1,0 +1,94 @@
+% !TeX spellcheck = <none>
+
+\documentclass[10pt,a4paper]{report}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage[arabic, english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{ {./images/} {../GeneratedPlots/} }
+\usepackage{gensymb}
+\usepackage{siunitx}
+%\usepackage{matlab-prettifier}
+\usepackage{float}
+\usepackage[usenames,dvipsnames]{color} % color text
+\usepackage{listings}
+\usepackage{alphalph}
+\usepackage[backend=bibtex]{biblatex} 
+\addbibresource{References.bib}    
+\usepackage[ddmmyyyy]{datetime}
+\usepackage{caption}
+\usepackage[toc,page]{appendix}
+
+\usepackage{enumitem}
+\usepackage{multicol}%try it out!
+
+
+
+
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+
+\newcommand*\wildcard[2][6cm]{\vspace*{2cm}\parbox{#1}{\hrulefill\par#2}} %Wildcard for Signature line
+
+\usepackage{lipsum} %random text
+
+
+
+
+%Remove word "chapter" but leave numbering
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+	\vspace*{50 pt}%
+	{\setlength{\parindent}{0pt} \raggedright \normalfont
+		\bfseries\Huge\thechapter.\ #1
+		\par\nobreak\vspace{40 pt}}}
+\makeatother
+
+\usepackage[]{titlesec}
+\titleformat{\chapter}[hang]{\huge\sffamily\bfseries}{}{0pt}{}[\hrule\vspace*{-23pt}] 
+
+\newcommand{\HANSupervisor}{Wesselingh Ellen}
+\newcommand{\CompanySupervisor}{Nguyen Trung}
+
+
+
+\author{Karl Wallkum}
+
+
+\begin{document}
+	
+		
+	\input{Frontpage/titlepage}
+		
+	\tableofcontents
+	
+	\thispagestyle{empty}
+	\clearpage
+	\pagenumbering{arabic}
+	
+	\input{Assignment/Assignmentname}
+	
+	\input{Intro/Preface}
+	\input{Intro/Summary}
+
+
+	\renewcommand{\bibname}{References}
+	\printbibliography
+	\newpage
+	
+
+	
+	\begin{appendices}
+		\input{Appendices/Appendix1}
+		\input{Appendices/Appendix2}
+	\end{appendices}
+	
+	
+	
+\end{document}

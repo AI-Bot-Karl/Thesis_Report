@@ -1,0 +1,195 @@
+\section{Override Controller}
+
+The goal of this assignment is to deliver an override controller for a given Simulink Model based on the article 'Dynamic Modelling of a Steam Condenser'.
+This override controller should keep the condensate temperature at 80\degree C but at the same time the outlet temperature should not be more than 55\degree C to prevent fouling of the condenser. \\
+\\
+To achieve this goal, two PID-controllers are designed, one for each controlled variable. The PID-controllers will be tuned according to the C-H-R-Method that can be found in the article 'Comparison of PID Controller Tuning Methods'. 
+These PID-controllers will then be coupled with an override controller, based on Paragraph 5.3 in 'Automated Continuous Process Control' by Carlos A. Smith.\\
+\\
+The given Model is missing several parameters.\\
+\begin{table}[h]
+\centering
+\begin{tabular}{|l c l|}
+	\hline
+	$\rightthreetimes$ = 	&2265.65    &kJ/kg\\
+	R=			&0.461526   &kJ/kg/K\\
+	V=			&3          &m\textsuperscript{3}\\
+	M\textsubscript{cw}=		&6500       &kg\\
+	C\textsubscript{p}=			&4.2        &kJ/kg/K\\
+	\hline
+\end{tabular}
+\caption{Parameters for the model}
+\end{table}\\
+These parameters can be found in the paper.\\
+\\
+Additionally the parameter F\textsubscript{cw} has to be set. This parameter acts like an offset on the input. To allow for easier tuning, this parameter is set to 100. The input range of the model is limited from 0 to 200. \\
+With an input of zero, the system is unstable, the condensate temperature and pressure increase infinitely and the simulation terminates after 49 seconds, as the derivative in an integrator is not finite. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=0.8\linewidth,
+	height=\paperheight,
+	keepaspectratio,
+	]{zeroInput}
+	\caption{Output of the model at an input of zero}
+	\label{fig:zeorInput}
+\end{figure}
+
+\newpage
+
+
+
+According to the C-H-R-Method for determining the parameters for the PID-controllers, the delay time, the time constant as well as the steady state value for the step response have to be determined.
+For that it is necessary that the system is stable before the step input is applied.
+Because of that, the working point for the PID-controllers is at an offset of 100.
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=\linewidth ,
+	height=10cm,
+	keepaspectratio,
+	]{Input100}
+	\caption{Output of the model at an input of 100}
+	\label{fig:Input100}
+\end{figure}
+
+In the following figure, the whole structure consisting of the condenser model, the override controller and the inputs for tuning are presented.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=\linewidth ,
+	height=10cm,
+	keepaspectratio,
+	]{WholeStructure_1_cut}
+	\caption{Simulink model with inputs}
+	\label{fig:WholeStructure}
+\end{figure}
+
+The step input as well as the zero input are for testing and to determine the values for tuning the PID controllers. Tc\_set is 80\degree C and T\_set is 55\degree C.
+The Override controller consists of two PID controllers, one for each input variable
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=\linewidth ,
+	height=10cm,
+	keepaspectratio,
+	]{OverrideController_1}
+	\caption{Simulink model of the Override Controller}
+	\label{fig:OverrideController}
+\end{figure}
+
+The two controllers are fed together with a switch block. The decision which controller to use is determined by a relational operator block. This structure chooses the bigger output. As the System has an inverse response (higher input = lower output)  for both input variables, a high-selector structure is used.
+This High selector is followed by a multiport switch that allows manual selection of the controller via the Controller\_Selector variable for testing purpose.\\
+\\
+The Controllers are each realized with a PID-block.
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=0.5\linewidth ,
+	height=10cm,
+	keepaspectratio,
+	]{PID_1_cut}
+	\caption{PID controller implementation}
+	\label{fig:PID}
+\end{figure}
+
+In the block parameters of the PID-blocks, tracking mode is activated under the Initialization tab. This allows to feed back the output of the override controller to the PID as can be seen in figure \ref{fig:OverrideController}.  
+In tracking mode, the PID block can adjust its internal state by changing its integrator output so that the block output tracks a prescribed signal feeding this extra input port.
+This allows for bumpless control transfer and makes sure, that the integrator doesn't accumulate an increasing error while not selected.\\
+Additionally, output saturation  with an upper limit of 100 and a lower limit of -100 is activated together with clamping for the anti-windup method to account for the limited input range to the condenser from 0 to 200.\\
+\\
+Finally, the values for the PID-controllers have to be determined. For calculating the values, the delay time, the time constant and the steady state value for a step input have to be determined.
+A step is fed into the system at t=1000 after the system has settled down and reached an equilibrium. The step size is chosen as 100, as it allows to find the values easier.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=0.8\linewidth ,
+	height=10cm,
+	keepaspectratio,
+	]{TandTcvsCoolingWaterFlow_Step100at1000_offset100}
+	\caption{T and Tc vs Cooling Water Flow with a Step of 100 at t=1000 with an offset of 100}
+	\label{fig:StepResponse}
+\end{figure}
+
+First the Steady state value is determined by taking the last value at t=2000.\\
+For Tc it is $39.0273 $ and for T it is $25.7888 $.\\
+\\
+The starting point is determined by taking the last value before t=1000.\\
+For Tc it is $53.7923 $ and for T it is $36.5776 $.\\
+\\
+After that, the 63\% value is determined by subtracting the starting value from the steady state value, multiplying by 0.63 and adding back the starting value.\\
+For Tc it is $44.4903 $ and for T it is $29.7806 $.\\
+\\
+Then the index of the value closest to the 63\% value and the timestamp of that value is determined.\\
+For Tc the timestamp is $1009.2286 $ and for T it is $1033.7911 $.\\
+\\
+The end of the delay time is determined by finding the steepest point on the step response. According to 'APPENDIX A Estimate a model from a step response' from assignment 3, a tangent through this point delivers the point between delay time and time constant where it crosses the y-value of the starting point (intersection point). The plant is a second order process for T and Tc as the calculation of both values relies on 2 integrators in series.\\
+For Tc the delay time ends at $1000.1596$ and for T it ends at $1001.0087$.\\
+\\
+Finally the delay time (td), the time constant(tau) and the K-Value can be determined. 
+td can be calculated by subtracting the step time from the intersection point.\\
+For Tc the delay time is $0.1596$ and for T it is $1.0087$.\\
+tau can be calculated by subtracting the intercept point from the timestamp of the 63\% value.\\
+For Tc the time constant is $1.0087$ and for T it is $32.7823$.\\
+The K-value can be calculated by subtracting the starting value from the steady state value and dividing this by the step size. The step size chosen here was 100.
+For Tc the K-value is $-0.1476$ and for T it is $-0.1078$.\\
+\\
+
+With these values both PID controllers can be tuned according to the C-H-R-Method.\\
+For the PID controlling the Tc value, the tuning rule for good tracking with 20\%OS is selected. For Tc a good tracking is favoured as it is expected, that the desired Tc value could change regularly depending on the overall process. A 20\%OS is allowed for a faster response. The values can be found in table \ref{tab:TcPIDvalues}\\
+\begin{center}
+	
+	\begin{tabular}{|l c}
+		Kp=	&-365.4350	\\
+		Ki=	&-1634.7200	\\
+		Kd=	&-27.4250	\\		
+	\end{tabular}
+	\captionof{table}{Parameters for the PID controlling Tc}
+	\label{tab:TcPIDvalues}
+\end{center}
+For the PID controlling the T value, the tuning rule for load rejection with 0\%OS is selected. For T a good load rejection and 0\%OS is favoured as the T value should never exceed the desired setpoint of 50\degree C. The values can be found in table \ref{tab:TPIDvalues}\\
+\begin{center}
+	
+	\begin{tabular}{|l c}
+		Kp=	&-286.1455	\\
+		Ki=	&-3.6369	\\
+		Kd=	&-121.2383	\\		
+	\end{tabular}
+	\captionof{table}{Parameters for the PID controlling Tc}
+	\label{tab:TPIDvalues}
+\end{center}
+
+
+To reproduce the results shown in figure 2 of the assignment, the model is run together with the override controller. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=0.8\linewidth ,
+	height=10cm,
+	keepaspectratio,
+	]{TandTcwithDesiredInputs_OverrideController}
+	\caption{T and Tc with Override Controller vs cooling water flow}
+	\label{fig:OverrideControllerResponse}
+\end{figure}
+
+As can be seen from figure \ref{fig:OverrideControllerResponse}, Tc goes straight to 80\degree C. When T gets close to 50\degree C, the other controller is chosen which leads to a spike in the cooling water flow. With the higher cooling water flow, Tc can't be maintained at 80\degree C. This change of controller can also be seen in figure \ref{fig:controllerChoice}.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[
+	width=0.8\linewidth ,
+	height=10cm,
+	keepaspectratio,
+	]{ControllerChoice}
+	\caption{Controller chosen by override Controller (1=Tc controller, 0=T controller)}
+	\label{fig:controllerChoice}
+\end{figure}
+
+Overall, it can be seen, that the desired results from figure 2 are met and even improved on, as Tc reaches 80\degree C at the beginning, and T never overshoots 50\degree C.
