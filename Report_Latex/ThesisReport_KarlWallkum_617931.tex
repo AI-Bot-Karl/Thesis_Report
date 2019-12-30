@@ -25,6 +25,8 @@
 \usepackage{enumitem}
 \usepackage{multicol}%try it out!
 
+\usepackage{acronym}
+
 
 
 
@@ -53,8 +55,11 @@
 \usepackage[]{titlesec}
 \titleformat{\chapter}[hang]{\huge\sffamily\bfseries}{}{0pt}{}[\hrule\vspace*{-23pt}] 
 
+\usepackage{hyperref} %Load last as it can cause trouble with other packages. For Hyperlink https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_hyperref
+
 \newcommand{\HANSupervisor}{Wesselingh Ellen}
 \newcommand{\CompanySupervisor}{Nguyen Trung}
+
 
 
 
@@ -65,6 +70,7 @@
 	
 		
 	\input{Frontpage/titlepage}
+	\input{Intro/Intorpicture}
 		
 	\tableofcontents
 	
@@ -72,17 +78,40 @@
 	\clearpage
 	\pagenumbering{arabic}
 	
-	\input{Assignment/Assignmentname}
+	%\input{Assignment/Assignmentname}
+	
+	\input{Intro/Abstract}
 	
 	\input{Intro/Preface}
+	\input{Intro/Acknowledgements}
 	\input{Intro/Summary}
-
+	
+	\input{Intro/Abkuerzungsverzeichnis}
+	
+	\input{Background/Context}
+	\input{Background/IndustryRelevance}
+	\input{Background/OriginOfProject}
+	\input{Background/Fieldlab}
+	
+	\input{ProblemDefinition/ProblemDefinition}
+	
+	\input{Objectives/Objectives}
+	
+	\input{Approach/Approach}
+	
+	\input{Outline/Outline}
+	
+	
+	\input{ThesisWork/Introduction}
+	
+%	\input{ThesisWork/}
+	
+	\input{LiteratureSurvey/LiteratureSurvey}
 
 	\renewcommand{\bibname}{References}
 	\printbibliography
 	\newpage
 	
-
 	
 	\begin{appendices}
 		\input{Appendices/Appendix1}
@@ -92,3 +121,5 @@
 	
 	
 \end{document}
+
+%Questions for Report writing:Ton.ammerlaan@han.nl
