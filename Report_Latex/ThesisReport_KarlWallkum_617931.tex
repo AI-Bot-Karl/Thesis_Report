@@ -1,70 +1,6 @@
 % !TeX spellcheck = <none>
 
-\documentclass[10pt,a4paper]{report}
-\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
-\usepackage[latin1]{inputenc}
-\usepackage[arabic, english]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\graphicspath{ {./images/} {../GeneratedPlots/} }
-\usepackage{gensymb}
-\usepackage{siunitx}
-%\usepackage{matlab-prettifier}
-\usepackage{float}
-\usepackage[usenames,dvipsnames]{color} % color text
-\usepackage{listings}
-\usepackage{alphalph}
-\usepackage[backend=bibtex]{biblatex} 
-\addbibresource{References.bib}    
-\usepackage[ddmmyyyy]{datetime}
-\usepackage{caption}
-\usepackage[toc,page]{appendix}
-
-\usepackage{enumitem}
-\usepackage{multicol}%try it out!
-
-\usepackage{acronym}
-
-
-
-
-\usepackage{etoolbox}
-\makeatletter
-\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
-\makeatother
-
-
-\newcommand*\wildcard[2][6cm]{\vspace*{2cm}\parbox{#1}{\hrulefill\par#2}} %Wildcard for Signature line
-
-\usepackage{lipsum} %random text
-
-
-
-
-%Remove word "chapter" but leave numbering
-\makeatletter
-\renewcommand{\@makechapterhead}[1]{%
-	\vspace*{50 pt}%
-	{\setlength{\parindent}{0pt} \raggedright \normalfont
-		\bfseries\Huge\thechapter.\ #1
-		\par\nobreak\vspace{40 pt}}}
-\makeatother
-
-\usepackage[]{titlesec}
-\titleformat{\chapter}[hang]{\huge\sffamily\bfseries}{}{0pt}{}[\hrule\vspace*{-23pt}] 
-
-\usepackage{hyperref} %Load last as it can cause trouble with other packages. For Hyperlink https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_hyperref
-
-\newcommand{\HANSupervisor}{Wesselingh Ellen}
-\newcommand{\CompanySupervisor}{Nguyen Trung}
-
-
-
-
-\author{Karl Wallkum}
-
+\input{config/header}
 
 \begin{document}
 	
@@ -104,6 +40,10 @@
 	
 	\input{ThesisWork/Introduction}
 	
+	\input{Thesiswork/ResearchPlan}
+	
+	\input{ThesisWork/DenavitHartenbergConvention}
+	
 %	\input{ThesisWork/}
 	
 	\input{LiteratureSurvey/LiteratureSurvey}
@@ -116,6 +56,9 @@
 	\begin{appendices}
 		\input{Appendices/Appendix1}
 		\input{Appendices/Appendix2}
+		%\input{Appendices/IPspace}
+		\input{Manual/Manual}
+		\input{IOTProjects/ProjectProposals}
 	\end{appendices}
 	
 	

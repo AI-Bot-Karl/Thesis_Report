@@ -1,0 +1,99 @@
+%contains all the imports and configurations 
+
+\documentclass[10pt,a4paper]{report}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage[arabic, english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}	%for importing images
+\graphicspath{ {./images/} {../GeneratedPlots/} }
+\usepackage{gensymb}
+\usepackage{siunitx}
+%\usepackage{matlab-prettifier}
+\usepackage{float}
+\usepackage[usenames,dvipsnames]{color} % color text
+\usepackage{listings}
+\usepackage{alphalph}
+\usepackage[backend=bibtex]{biblatex} 
+\addbibresource{References.bib}    
+\usepackage[ddmmyyyy]{datetime}
+
+%Give captions to items that normally don't have any
+\usepackage{caption} 
+%use as:
+%\DeclareCaptionType{exam}[Example][List of Examples]
+%\listofexams
+%\begin{enumerate}
+%	\item First item.
+%	\item Second item.
+%	\item Third item.
+%	\captionof{exam}{This is a very important list.}
+%\end{enumerate}
+
+%For making an appendix
+\usepackage[toc,page]{appendix}
+
+\usepackage{enumitem}
+\usepackage{multicol}%try it out!
+
+%acronym package (needs an acronym chapter)
+\usepackage{acronym}
+
+%import PDF pages
+\usepackage{pdfpages}
+%To include all the pages in the PDF file:
+%\includepdf[pages=-]{myfile.pdf}
+%To include just the first page of a PDF:
+%\includepdf[pages={1}]{myfile.pdf}
+
+%Start new chapter on same page to avaoid big spaces
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+
+
+\newcommand*\wildcard[2][6cm]{\vspace*{2cm}\parbox{#1}{\hrulefill\par#2}} %Wildcard for Signature line
+
+\usepackage{lipsum} %random text
+
+%If custom headers are needed
+%\usepackage{fancyhdr}
+%
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{Overleaf}
+%\lhead{Guides and tutorials}
+%\rfoot{Page \thepage}
+
+
+%Remove word "chapter" but leave numbering
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+	\vspace*{50 pt}%
+	{\setlength{\parindent}{0pt} \raggedright \normalfont
+		\bfseries\Huge\thechapter.\ #1
+		\par\nobreak\vspace{40 pt}}}
+\makeatother
+
+%Add line below chapter title and minimze space when text starts
+\usepackage[]{titlesec}
+\titleformat{\chapter}[hang]{\huge\sffamily\bfseries}{}{0pt}{}[\hrule\vspace*{-23pt}] 
+
+\usepackage{hyperref} %Load last as it can cause trouble with other packages. For Hyperlink https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_hyperref
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
+\urlstyle{same} %The default is equivalent to \urlstyle{tt}; with \urlstyle{rm} and \urlstyle{sf} the font will be the roman or sans serif upright font. With \urlstyle{same} the current font will be used.
+
+%Set some things clear 
+\newcommand{\HANSupervisor}{Wesselingh Ellen}
+\newcommand{\CompanySupervisor}{Nguyen Trung}
+\author{Karl Wallkum}
+
+
