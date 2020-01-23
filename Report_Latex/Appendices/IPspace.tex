@@ -1,0 +1,10 @@
+\chapter{Choice of IP address space}
+
+%\url{https://en.wikipedia.org/wiki/Private_network}
+ 
+It is in the class B of private IPv4 address space. Usually for home networks class c networks $ (192.168.0.0 – 192.168.255.255) $ are used. These allow to address$  256 $ adresses per subnet. without the gateway$  (.0) $ the broadcast address $ (.255) $ and an address for the router, we're left with 253 addresses. 
+For the beginning, it might be an address space that is big enough, but if we include a lot of sensors, and other things, a space of 253 addresses might get small. 
+ 
+Also this address space is usually used with a subnet mask of 255.255.0.0 which allows a mapping of  255 main addresses (172.x.0.x - 172.x.255.x) with 255 subpoints (172.x.x.0 - 172.x.x.255). Like this, each domain can get their own subnet (172.16.x.x-172.31.x.x), each device can get a main address space and then the different ports on the machines can be given numbers.
+ 
+Also the  B block is not that commonly used, so this works also as a first line of defence against attachs from outside. Port knocking e.g. becomes harder, as the address space is way bigger.
