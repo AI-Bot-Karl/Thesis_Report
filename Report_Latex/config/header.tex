@@ -2,7 +2,7 @@
 
 \documentclass[10pt,a4paper]{report}
 \usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}		%utf8 allows also for umlauts
 \usepackage[arabic, english]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -16,8 +16,12 @@
 \usepackage[usenames,dvipsnames]{color} % color text
 \usepackage{listings}
 \usepackage{alphalph}
-\usepackage[backend=bibtex]{biblatex} 
+
+%Bibliography settings
+\usepackage[citestyle = numeric, bibstyle = numeric]{biblatex} 
 \addbibresource{References.bib}    
+
+% for including current date into document
 \usepackage[ddmmyyyy]{datetime}
 
 %Give captions to items that normally don't have any
@@ -68,6 +72,9 @@
 %\lhead{Guides and tutorials}
 %\rfoot{Page \thepage}
 
+%for left, center or right aligning figures
+\usepackage[export]{adjustbox}
+%https://tex.stackexchange.com/questions/91566/syntax-similar-to-centering-for-right-and-left
 
 %Remove word "chapter" but leave numbering
 \makeatletter
@@ -79,8 +86,11 @@
 \makeatother
 
 %Add line below chapter title and minimze space when text starts
-\usepackage[]{titlesec}
-\titleformat{\chapter}[hang]{\huge\sffamily\bfseries}{}{0pt}{}[\hrule\vspace*{-23pt}] 
+%\usepackage[]{titlesec}
+%\titleformat{\chapter}[hang]{\huge\sffamily\bfseries}{}{0pt}{}[\hrule\vspace*{-23pt}] 
+
+%no indentation for paragraphs
+\setlength{\parindent}{0cm}
 
 \usepackage{hyperref} %Load last as it can cause trouble with other packages. For Hyperlink https://de.wikibooks.org/wiki/LaTeX-W%C3%B6rterbuch:_hyperref
 \hypersetup{

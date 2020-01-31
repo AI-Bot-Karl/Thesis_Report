@@ -1,3 +1,11 @@
+%https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
+
+%Multiple authors separate by keyword and 
+%https://tex.stackexchange.com/questions/343163/error-in-bib-entry-too-many-commas
+
+%Biblatex cheat sheet
+%http://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf
+
 @book{park2011interface,
   title={Interface Science and Composites},
   author={Park, S.J. and Seo, M.K.},
@@ -81,14 +89,20 @@ month = {06},
 year = {2018},
 }
 
-@Misc{DenavitHartenbergLesson,
-	author = {Peter Corke},
-	title = {Lesson on Denavit-Hartenberg notation},
-	howpublished = {Website},
-	month = {04},
-	year = {2017},
-	link = {https://robotacademy.net.au/lesson/denavit-hartenberg-notation/},
+
+
+@online{DenavitHartenbergLesson,
+	ALTauthor = {Peter Corke},
+	ALTeditor = {editor},
+	title = {LESSON Denavit-Hartenberg notation},
+	date = {2017-04-09},
+	url = {https://robotacademy.net.au/lesson/denavit-hartenberg-notation/},
+	language = {EN},
+	note = {Format: Video lecture},
+	organization = {Queesland University of Technology},
+	urldate = {2020-01-14},
 }
+
 
 @Unpublished{ProjectPlan,
 	author = {Karl Wallkum},
@@ -99,9 +113,10 @@ year = {2018},
 	year = {2019},
 }
 
-@Misc{FHEM,
-	howpublished = {Internet Wiki},
-	note = {https://fhem.de/},
+@online{FHEM,
+	title = {FHEM Homepage},
+	url = {https://fhem.de/},
+	urldate = {2020-01-20},
 }
 
 @Misc{SPC,
@@ -122,20 +137,31 @@ year = {2018},
 	note = {https://blog.st.com/smart-industry-the-future-of-manufacturing/},
 }
 
-@Misc{RoomTemp,
-	howpublished = {website},
-	note = {http://knxtoday.com/2019/11/14539/knx-thermostats-intelligence-in-heating-control.html},
+
+@online{RoomTemp,
+	ALTauthor = {Mark Warburton},
+	ALTeditor = {Ivory Egg},
+	title = {KNX Thermostats: intelligence in heating control},
+	date = {2019-11-18},
+	url = {http://knxtoday.com/2019/11/14539/knx-thermostats-intelligence-in-heating-control.html},
+	OPTlanguage = {EN},
+	OPTorganization = {KNXtoday},
+	OPTurldate = {2020-01-15},
 }
+
 
 
 @InCollection{NFC,
 	author = {Cameron Faulkner },
 	title = {What is NFC? Everything you need to know},
 	publisher = {Future US Inc},
-	year = {2017},
+	date = {2017-05-09},
 	editor = {rechradar},
-	note = {LINK: https://www.techradar.com/news/what-is-nfc},
+	url = {https://www.techradar.com/news/what-is-nfc},
+	urldate ={2020-01-15},
+	note={NFC-image}
 }
+
 
 @Misc{Trung,
 	author = {Trung Nguyen},
@@ -164,34 +190,59 @@ year = {2018},
 	DOI = {https://doi.org/10.1016/C2012-0-00795-8},
 }
 
-@Misc{InvKinDef,
+
+
+@online{InvKinDef,
 	title = {Inverse kinematics},
-	howpublished = {online encyclopedia},
-	link = {https://en.wikipedia.org/wiki/Inverse_kinematics},
+	url = {https://en.wikipedia.org/wiki/Inverse_kinematics},
+	OPTsubtitle = {subtitle},
+	OPTtitleaddon = {titleaddon},
+	language = {EN},
+	OPTversion = {version},
+	OPTnote = {note},
+	organization = {Wikipedia},
+	OPTdate = {date},
+	OPTmonth = {month},
+	OPTyear = {year},
+	OPTaddendum = {addendum},
+	OPTpubstate = {pubstate},
+	urldate = {2020-01-16},
 }
 
-@Misc{CorkeRoboticsToolbox,
-	author = {Peter Corke},
-	title = {
-	Robotics Toolbox
-	},
-	howpublished = {Homepage of Peter Corke},
-	link = {https://petercorke.com/wordpress/toolboxes/robotics-toolbox},
+
+
+@online{CorkeRoboticsToolbox,
+	ALTauthor = {Peter Corke},
+	title = {Robotics Toolbox},
+	url = {https://petercorke.com/wordpress/toolboxes/robotics-toolbox},
+	subtitle = {Introduction},
+	language = {EN},
+	note = {Homepage of Peter Corke},
+	urldate = {2020-01-18},
 }
 
-@Misc{MotionPlanning,
-	howpublished = {Article in online encyclopedia},
-	link = {https://en.wikipedia.org/wiki/Motion_planning},
+
+
+@online{MotionPlanning,
+	title = {Motion planning},
+	url = {https://en.wikipedia.org/wiki/Motion_planning},
+	language = {english},
+	organization = {Wikipedia},
+	urldate = {2020-01-22},
 }
 
-@Misc{RobotDynamics,
+
+@online{RobotDynamics,
 	author = {Roy Featherstone},
 	title = {Robot dynamics},
+	date = {2011-10-21},
 	howpublished = {Online Encyclopedia},
-	month = {10},
-	year = {2011},
+	language = {english},
+	version = {revision Nr. 91723},
+	organization = {Brain Corporation},
 	DOI = {doi:10.4249/scholarpedia.3829},
-	link = {http://www.scholarpedia.org/article/Robot_dynamics},
+	url = {http://www.scholarpedia.org/article/Robot_dynamics},
+	urldate = {2020-01-25},
 }
 
 @Misc{ROS,
@@ -199,3 +250,201 @@ year = {2018},
 	howpublished = {Website of ROS project},
 	link = {https://www.ros.org/},
 }
+
+
+@online{forwardVsInverseKinematics,
+	ALTauthor = {author},
+	ALTeditor = {editor},
+	title = {Roboterkinematik},
+	date = {2005-05-28},
+	url = {https://upload.wikimedia.org/wikipedia/de/a/ae/Roboterkinematik.png},
+	language = {DE},
+	version = {1},
+	organization = {Wikipedia},
+	urldate = {2020-01-15},
+}
+
+
+@Misc{MathWorksInverseKinematics,
+	title = {Program inverse kinematics algorithms with MATLAB},
+	howpublished = {Mathworks online tutorial},
+	link = {https://de.mathworks.com/discovery/inverse-kinematics.html},
+	publisher = {The MathWorks, Inc.},
+}
+
+@MastersThesis{allgInvKin,
+	author = {Wolfgang Smidt},
+	title = {Verallgemeinerte inverse Kinematik für Anwendungen in der Robotersimulation und der virtuellen Realität},
+	school = {Institut für Roboterforschung Universität Dortmund},
+	year = {1998},
+}
+
+
+
+@online{inverseKinematikWiki,
+	title = {Inverse Kinematik},
+	url = {https://de.wikipedia.org/wiki/Inverse_Kinematik},
+	language = {DE},
+	note = {note},
+	organization = {Wikipedia},
+	urldate = {2020-01-16},
+}
+
+
+@Misc{RobConventionsWiki,
+	title = {Robotics conventions},
+	howpublished = {Online Encyclopedia},
+	link = {https://en.wikipedia.org/wiki/Robotics_conventions},
+}
+
+@Book{MathIntroRobManip,
+	author = {Richard M. Murray, S. Shankar Sastry, Li Ze-xiang},
+	title = {A Mathematical Introduction to Robotic Manipulation},
+	publisher = {CRC Press},
+	year = {1994},
+	link = {http://www.cds.caltech.edu/∼murray/mlswiki.},
+}
+
+@Article{FwdInvAnalysRobManip,
+	author = {Tarun Pratap Singh, Dr. P. Suresh, Dr. Swet Chandan  },
+	title = {Forward and Inverse Kinematic Analysis of Robotic Manipulators  },
+	journal = {International Research Journal of Engineering and Technology (IRJET)},
+	year = {2017},
+	volume = {4},
+	number = {2},
+	month = {02},
+	e-ISSN = {2395 -0056 },
+}
+
+@online{invKinSeriallinkMani,
+	author = {Dr.-Ing. John Nassou},
+	title = {Inverse Kinematics  Serial link manipulators},
+	note = {presentation slides},
+	titleaddon = {Humanoide Roboter (ehem. Robotik)},
+	date = {2016-11-22},
+	organization = {Technische Universität Chemnitz - Fakultät für Informatik},
+	url = {https://www.tu-chemnitz.de/informatik/KI/edu/robotik/ws2016/lecture-ik%201.pdf},
+	urldate ={2020-01-18}
+}
+
+
+
+@Misc{OneRobFanucConfigurations,
+	author = {Jay Strybis - One Robotics Company},
+	howpublished = {website},
+	year = {2013},
+	link = {https://www.onerobotics.com/posts/2013/the-perils-of-six-axis-robots/},
+}
+
+@MastersThesis{KongWei,
+	author = {Kong Wei},
+	title = {Control and Safety Mechanisms
+	for a 3 DOF Manipulator
+	with Human Interaction},
+	school = {HAN},
+	year = {2014},
+	month = {10},
+	note = {Supervisor: Prof.dr.ir. Aart-Jan de Graaf},
+}
+
+@Article{evalNonlinFeedForBackControl,
+	author = {Pradeep K. Khosla and Takeo Kanade},
+	title = {Experimental
+	Evaluation of
+	Nonlinear Feedback
+	and Feedforward
+	Control Schemes for
+	Manipulators},
+	journal = {The international Journal of Robotics Research},
+	year = {1988},
+	month = {02},
+	DOI = {10.1177/027836498800700102},
+}
+
+@Manual{FANUCcontrolMatlab,
+	title = {CONTROL OF A FANUC ROBOTIC ARM USING MATLAB 
+	
+	MANUAL },
+	author = {Ashwin Kumar Venkatesan 
+	Keyvan Noury 
+	Tiezheng Zhao 
+	Fady Tourdas },
+	organization = {USC Viterbi / Aerospace and Mechnaical Engineering department},
+}
+
+@Article{invKinSolYanWu,
+	author = {Yan Wu1 Lihui Cheng Guofeng Fan Caidong Wang},
+	title = {Inverse Kinematics Solution and Optimization of 6DOF Handling Robot },
+	journal = {Applied Mechanics and Materials},
+	year = {2014},
+	volume = {635-637},
+	doi = {10.4028/www.scientific.net/AMM.635-637.1355 },
+}
+
+
+
+@article{invKinANNKSHITISH,
+	author = {Almusawi, Ahmed R. J. and Dülger, Lale and Kapucu, Sadettin},
+	year = {2016},
+	month = {08},
+	pages = {10},
+	title = {A New Artificial Neural Network Approach in Solving Inverse Kinematics of Robotic Arm (Denso VP6242)},
+	volume = {2016},
+	journal = {Computational Intelligence and Neuroscience},
+	doi = {10.1155/2016/5720163}
+}
+
+
+@inproceedings{geomModelingKamel,
+	title = "Workspace Analysis and Geometric Modeling of 6 DOF Fanuc 200IC Robot",
+	journal = "Procedia - Social and Behavioral Sciences",
+	volume = "182",
+	pages = "703 - 709",
+	year = "2015",
+	note = "4th WORLD CONFERENCE on EDUCATIONAL TECHNOLOGY RESEARCHES (WCETR-2014)",
+	issn = "1877-0428",
+	doi = "https://doi.org/10.1016/j.sbspro.2015.04.817",
+	url = "http://www.sciencedirect.com/science/article/pii/S187704281503092X",
+	author = "Kamel Bouzgou and Zoubir Ahmed-Foitih",
+	OPTkeywords = "Forward geometric model, Inverse kinematic model, Singularity, Jacobian matrix, 6 DOF manipulator arms, Workspace, VRML, Matlab",
+	OPTabstract = "In this paper, we propose a study of criteria for choosing the best solution among the solutions of the inverse geometric model of the 6 DOF robot arm, FANUC 200iC Lr Mate. Knowledge of these parameters can help us the control and the generation of motions without that the task will be redundant with a minimization of the execution time, the effort and energy consumed by actuators. For this, the solving of the inverse kinematics by an analytical method is necessary, and the Jacobian matrix give us the nonlinear equation for find the singular configurations. We validate our work by conducting a simulation software platform that allows us to verify the results of manipulation in a virtual reality environment based on VRML and Matlab software, integration with the CAD model."
+}
+
+
+
+@manual{QingFanucAcademy,
+	ALTauthor = {Fanuc BENELUX},
+	ALTeditor = {editor},
+	title = {Fanuc Academy Manual},
+	language = {dutch},
+	type = {Robot hands on manual},
+	organization = {FANUC},
+}
+
+
+@Article{Dyn6DOFBinLi,
+	author = {Bin LI and Xifan YAO and Chunbao WANG and Huidong LOU},
+	title = {Dynamic Multibody Simulation of a 6-DOF Robotic Arm },
+	journal = {Advanced Materials Research},
+	year = {2010},
+	volume = {139-141 },
+	pages = {1001-1004},
+	DOI = {10.4028/www.scientific.net/AMR.139-141.1001},
+}
+
+@Article{RobotModelAnalContrexampleJamshed,
+	author = {Iqbal, Jamshed and Ul Islam, Muhammad and Khan, Hamza },
+	title = {Modeling and analysis of a 6 DOF robotic arm manipulator },
+	journal = {Canadian Journal on Electrical and Electronics Engineering},
+	year = {2012},
+	pages = {300-306},
+	volume = {3},
+	number = {6},
+	month = {01},
+	url = {https://www.researchgate.net/publication/280643085},
+}
+
+
+
+
+
