@@ -53,9 +53,9 @@ Each link $(i)$ is described relative to the pose of the preceding link.
 
 With the DH-notation, the $z_i$ axes are assigned to link $(i)$.
 Two cases need to be considered: %regarding joint $(i+1)$:
-\begin{itemize}
-	\item[revolute:] $z_i$ is the axis of revolution of joint $(i+1)$
-	\item[prismatic:] $z_i$ is the axis of translation of joint $(i+1)$
+\begin{itemize}[wide=\parindent]
+	\item[\textbf{revolute:}] $z_i$ is the axis of revolution of joint $(i+1)$
+	\item[\textbf{prismatic:}] $z_i$ is the axis of translation of joint $(i+1)$
 \end{itemize}
 %of joint $(i+1)$
 This means, that joint $z_i$ turns around axis $z_i$.
@@ -72,11 +72,51 @@ As described above, the $z_i$ axes can be attached to the Fanuc 210F (see figure
 	center,
 	keepaspectratio,
 	]{coordinateFrames/z_axes}
-	\caption{$z_i$ axes on the Fanuc 210F}
+	\caption{$z_i$ axes on the Fanuc 210F with the direction of positive rotation (orange)}
 	\label{fig:zi_Axes}
 \end{figure}
 
 \paragraph{Base frame}
 
-The base frame $(0)$ can be chosen nearly arbitrarily. Usually, the x-axis of the base frame is chosen, so that it points in the direction of the \ac{EOAT} in default position.
+The base frame $(0)$ can be chosen nearly arbitrarily. The origin of the base frame can be any point on $z_0$. For simplicity, the origin of frame$(0)$ can be put into joint$(1)$.  Usually, the x-axis of the base frame is chosen, so that it points in the direction of the \ac{EOAT} in default position according to its base, \cite{DenavitHartenbergKonventionen} but can be chosen in any convenient manner \cite{SpongDynContr}.
 
+\paragraph{Assignation of frames $(i)$}
+
+Starting from frame $(0)$ in an iterative process, frame $(i)$ can be set up using frame $(i-1)$.
+
+Three cases regarding the relationship of axes $z_{i-1}$ and $z_i$  need to be considered when setting up frames:
+\begin{itemize}[wide=\parindent] %option solves alignment problem for item label %https://tex.stackexchange.com/questions/246394/alignment-of-labels-in-itemize-with-text-of-document 
+	\item[\textbf{Non coplanar:}] Axes don't intersect and are not parallel. Line containing the common normal $z_{i-1}$ to $z_i$ defines $x_i$-axis and the point of intersection with $z_i$ is the origin of frame $(i)$
+	\begin{enumerate}[label=\emph{\alph*)}]
+		\item find common normal of the joint axes
+		\item put origin in intersection of normal with joint axis
+		\item put $z_i$ axis in the joint axis
+		\item $x_i$ points in direction of the common normal, facing away from frame $(0)$
+		\item add $y_i$ according to right hand rule
+	\end{enumerate}
+	\item[\textbf{Parallel:}] Axes are parallel. Line containing the normal through origin of frame $(i-1)$ and the $z_i$-axis defines the $x_i$-axis which is directed from origin of frame $(i)$ toward $z_{i-1}$ axis. The point of intersection of common normal with $z_i$-axis gives the origin of frame $(i)$. 
+		\begin{enumerate}[label=\emph{\alph*)}]
+		\item look for normal originating from distal joint
+		\item put origin in the intersection of the normal with the joint axis
+		\item put the $z_i$ axis in the joint axis of the link $(i+1)$ 
+		\item $x_i$ points follows the common normal with the distal joint, pointing towards the distal joint
+		\item add $y_i$ according to right hand rule
+	\end{enumerate}
+	\item[\textbf{Intersecting:}] Axes are intersecting. Line containing the normal to the plane formed by axes $z_{i-1}$ and  $z_i$ gives the $x_i$-axis with positive direction chosen arbitrarily. Point of intersection of  axes $z_{i-1}$  and  $z_i$ is the origin of frame $(i)$.
+		\begin{enumerate}[label=\emph{\alph*)}]
+		\item put origin in intersection point of the axes
+		\item put the $z_i$ axis in the joint axis of the link $(i+1)$
+		\item $x_i$ is perpendicular to both joint axes
+		\item add $y_i$ according to right hand rule
+	\end{enumerate}
+\end{itemize}
+
+\paragraph{Assignation of \ac{EOAT} frame}
+As there is no distal joint for the \ac{EOAT} frame, the steps for this frame are different:
+
+\begin{enumerate}[label=\emph{\alph*)}]
+	\item put origin on axis of proximal joint 
+	\item axis $z_i$ follows direction of $z_{i-1}$
+	\item $x_i$ can be chosen arbitrarily, but is usually determined by screw holes
+	\item add $y_i$ according to right hand rule
+\end{enumerate}
