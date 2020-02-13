@@ -1,0 +1,25 @@
+\chapter{Inverse Kinematics}
+
+With the forward kinematic equations, the position of the end effector can be determined relative to the base frame for given values of the joint variables.
+In the context of robotics, it is also necessary to determine these joint variables for a given end effector position.
+This is referred to as the inverse kinematic problem.
+Solving the inverse kinematic problem for a given serial link actuator allows to transform a motion plan of the \ac{EOAT} into joint actuator trajectories for the robot.\\
+\\
+\section{Existance of solutions}
+A 6\ac{DOF} robot has multiple sets of inverse solutions. As stated by YanWu et al. there are 8 groups of inverse solution for most \ac{EOAT}-positions within the manipulator's workspace \cite{invKinSolYanWu}. 
+Not all positions are equally reachable though.
+There are two types of workspace:
+\begin{itemize}
+	\item[Dextrous workspace] volume of space that the robot end-effector can reach with all orientations
+	\item[reachable workspace] volume of space, that the robot can reach in at least one orientation
+\end{itemize}
+\cite{craig1986introduction}
+A manipulator with less than 6\ac{DOF} cannot reach all positions and orientations in 3D-space. 
+
+%https://robotics.stackexchange.com/questions/10322/is-it-possible-to-get-all-possible-solutions-of-inverse-kinematics-of-a-6-dof-ar
+%In general, if the wrist is spherical (i.e., all three axes intersect), you can enumerate all of the various closed-form solutions through a method known as wrist partitioning. This method uses the three arm joints to solve for the position of the wrist center. It then uses the wrist joints to determine the joint angles which orient the end effector properly. Multiple solutions are possible from "wrist up" and "wrist down" options, "elbow up" and "elbow down" options (for an articulated arm), and "over the shoulder" options also. For other robot geometries the options would differ.
+
+%If the wrist is not spherical, it becomes quite challenging to find a closed-form inverse solution. But you still have the various geometric options for inverse kinematics solutions.
+%
+%One way to make sure you are identifying all of the solutions is to recall the fundamentals of trigonometry. Recall that sin(θ)=−sin(−θ)
+%and cos(θ)=cos(−θ). So when you are solving for θ you have to consider the other angles which produce the same result using these and other trigonometric identities. 

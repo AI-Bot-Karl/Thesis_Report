@@ -1,0 +1,1411 @@
+where pdflatex: C:\Program Files\MiKTeX 2.9\miktex\bin\x64\pdflatex.exe
+
+PDFLATEX: pdflatex.exe -version
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit)entering extended mode
+(ThesisReport_KarlWallkum_617931.texLaTeX2e <2019-10-01> patch level 3
+(config/header.tex("C:\Program Files\MiKTeX 2.9\tex/latex/base\report.cls"Document Class: report 2019/10/25 v1.4k Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size10.clo"))("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty")("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\iftex.sty"))("C:\Program Files\MiKTeX 2.9\tex/xelatex/xetexconfig\geometry.cfg"))("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+)("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def")*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg")("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\arabic.ldf"("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"("C:\Program Files\MiKTeX 2.9\tex/generic/babel\xebabel.def"("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")))Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language `Arabic' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for english instead on input line 35.
+
+Loading the definitions for the LaTeX{} Arabic encoding("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\laeenc.def")
+Loading the Common definitions for Arabic and Farsi("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\arabicore.sty"
+  Arabi Core switching commands v1.0  2006/01/01   (may still change))Loading the Arabi fonts definitions for Arabic("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\arabicfnt.sty"
+  Arabic font switching commands v1.0  2006/01/01   (may still change))Loading the Common definitions for Arabic and Farsi("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\arabnovowel.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\laecmr.fd")LaTeX Font Warning: Font shape `LAE/lmr/m/n' undefined
+(Font)              using `LAE/cmr/m/n' instead on input line 133.
+
+)*************************************
+* Local config file arabic.cfg used
+*
+("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\arabic.cfg"))("C:\Program Files\MiKTeX 2.9\tex/latex/babel-english\english.ldf"))("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg")("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\xetex.def")))
+("C:\Program Files\MiKTeX 2.9\tex/latex/was\gensymb.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\expl3-code.tex"("C:\Program Files\MiKTeX 2.9\tex/latex/l3kernel\l3deprecation.def"))("C:\Program Files\MiKTeX 2.9\tex/latex/l3backend\l3backend-xdvipdfmx.def"))("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/xparse\xparse.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/tools\array.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/l3packages/l3keys2e\l3keys2e.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/float\float.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg")("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\dvipsnam.def"))("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstmisc.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.cfg"))("C:\Program Files\MiKTeX 2.9\tex/generic/alphalph\alphalph.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty")("C:\Program Files\MiKTeX 2.9\tex/generic/intcalc\intcalc.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/breqn\breqn.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/breqn\flexisym.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/breqn\cmbase.sym")("C:\Program Files\MiKTeX 2.9\tex/latex/breqn\mathstyle.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"Package etoolbox Warning: Patching '\end' failed!
+(etoolbox)                '\AfterEndEnvironment' will not work.
+
+)("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.def"))("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-dm.def")("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-unicode.def")("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\blx-compat.def")("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.def")("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\numeric.bbx"("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"))("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/cbx\numeric.cbx")("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"))("C:\Program Files\MiKTeX 2.9\tex/latex/datetime\datetime.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fmtcount.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex")))("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fcprefix.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fcnumparser.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/fmtcount\fc-english.def"))("C:\Program Files\MiKTeX 2.9\tex/latex/datetime\datetime-defaults.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/caption\caption3.sty")Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+)("C:\Program Files\MiKTeX 2.9\tex/latex/appendix\appendix.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/tools\multicol.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/acronym\acronym.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/bigfoot\suffix.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/xstring\xstring.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/xstring\xstring.tex")))("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\pdfpages.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/atbegshi\atbegshi.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\ppxetex.def"))("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/lipsum\lipsum.ltd.tex"))("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjustbox.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\adjcalc.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\trimclip.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/collectbox\collectbox.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/adjustbox\tc-xetex.def"))("C:\Program Files\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpage.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/varwidth\varwidth.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty")("C:\Program Files\MiKTeX 2.9\tex/generic/pdfescape\pdfescape.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/hycolor\hycolor.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/letltxmacro\letltxmacro.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/auxhook\auxhook.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def")("C:\Program Files\MiKTeX 2.9\tex/generic/etexcmds\etexcmds.sty")("C:\Program Files\MiKTeX 2.9\tex/generic/bitset\bitset.sty"("C:\Program Files\MiKTeX 2.9\tex/generic/bigintcalc\bigintcalc.sty")))("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hxetex.def"("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\puenc.def")("C:\Program Files\MiKTeX 2.9\tex/generic/stringenc\stringenc.sty")("C:\Program Files\MiKTeX 2.9\tex/latex/rerunfilecheck\rerunfilecheck.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/atveryend\atveryend.sty")("C:\Program Files\MiKTeX 2.9\tex/generic/uniquecounter\uniquecounter.sty"))))Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+(ThesisReport_KarlWallkum_617931.aux)*geometry* detected driver: pdftex
+
+Package gensymb Warning: Not defining \perthousand.
+
+
+Package gensymb Warning: Not defining \micro.
+
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-
+English.dict")("C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg")("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/lbx\english.lbx")(ThesisReport_KarlWallkum_617931.bbl)("C:\Program Files\MiKTeX 2.9\tex/latex/pdflscape\pdflscape.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"))("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"("C:\Program Files\MiKTeX 2.9\tex/latex/refcount\refcount.sty")("C:\Program Files\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"))(ThesisReport_KarlWallkum_617931.out)(ThesisReport_KarlWallkum_617931.out)("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd")("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd")(Frontpage/titlepage.tex("C:\Program Files\MiKTeX 2.9\tex/generic/stringenc\se-ascii-print.def")
+[1])(Intro/Intorpicture.tex("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd")[1])(ThesisReport_KarlWallkum_617931.toc)[2](Intro/Abstract.texChapter 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--13
+
+)(Intro/Preface.texChapter 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--12
+
+)(Intro/Acknowledgements.tex) (Intro/Summary.texChapter 3.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 3.
+
+)(Intro/Abkuerzungsverzeichnis.texChapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 4.
+
+[1])(Background/Context.tex)(Background/IndustryRelevance.tex)(Background/OriginOfProject.tex) (Background/Fieldlab.tex)(ProblemDefinition/ProblemDefinition.texChapter 5.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+)(Objectives/Objectives.tex) (Approach/Approach.tex)(Outline/Outline.tex)(ThesisWork/Introduction.tex)(LiteratureSurvey/LiteratureSurvey.texChapter 6.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--9
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 9.
+
+[2]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 10.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 10.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 10.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 10.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 40.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 44.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 44.
+
+[3]Overfull \hbox (6.79999pt too wide) in paragraph at lines 69--74
+[]
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 79.
+
+[4]Underfull \hbox (badness 10000) in paragraph at lines 109--109
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 135.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 135.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--166
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--166
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--166
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--166
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 166.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 166.
+
+[5])(Thesiswork/ResearchPlan.tex)(ThesisWork/ForwardKinematics.texChapter 7.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 5.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 12.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 42.
+
+[6]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 80.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 80.
+
+[7]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 114.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 114.
+
+[8]LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 163.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 163.
+
+[9]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ac' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 192.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 201.
+
+[10]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 249.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 249.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 249.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ac' on input line 249.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 249.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 253.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 253.
+
+[11]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 287.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 292.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 292.
+
+[12]Underfull \hbox (badness 10000) in paragraph at lines 313--318
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 336.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 357.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 357.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 357.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 357.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 360.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 360.
+
+[13]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 391.
+
+(ThesisWork/ForwardKinematics/TransformationMatrix1.tex)(ThesisWork/ForwardKinematics/TransformationMatrix_numVal.texPackage hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 46.
+
+[14])(ThesisWork/ForwardKinematics/TransformationMatrix_numVal_simplified.texPackage hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 46.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 46.
+
+[15])(ThesisWork/ForwardKinematics/ForwKinEqu.tex
+Overfull \hbox (58.73236pt too wide) detected at line 4
+[]\OML/cmm/m/it/10 n[] \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 ^^R[]\OT1/cmr/m/n/
+10 ([](\OML/cmm/m/it/10 ^^R[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^R[]\OT1/cmr/
+m/n/10 )([] \OML/cmm/m/it/10 ^^R[] [] ^^R[] [] ^^R[] \OMS/cmsy/m/n/10 ^^@ [] \O
+ML/cmm/m/it/10 ^^R[] [] ^^R[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/
+m/n/10 (\OML/cmm/m/it/10 ^^R[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 ^^R[]\OT1/cmr
+/m/n/10 ) [] \OML/cmm/m/it/10 ^^R[] [] ^^R[]\OT1/cmr/m/n/10 ) + [] \OML/cmm/m/i
+t/10 ^^R[]\OT1/cmr/m/n/10 ([] \OML/cmm/m/it/10 ^^R[] [] ^^R[] [] ^^R[] \OMS/cms
+y/m/n/10 ^^@ [] \OML/cmm/m/it/10 ^^R[] [] ^^R[]\OT1/cmr/m/n/10 )[] \OML/cmm/m/i
+t/10 n[] \OT1/cmr/m/n/10 = [] 
+))(ThesisWork/DenavitHartenbergConvention.texChapter 8.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+)(Explanations/RobotConfigurations.texPackage hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 11.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 11.
+
+[16])Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 56.
+
+[17]Overfull \hbox (7.50853pt too wide) in paragraph at lines 57--57
+[]\TU/lmr/m/it/10 Motion planning\TU/lmr/m/n/10 . Wikipedia. \TU/lmr/m/sc/10 ur
+l\TU/lmr/m/n/10 : [][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][]
+ [] [][][][] [] [][][][][][] [] [][][][][][][][]$[][] (visited on 01/22/2020). 
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 56.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 56.
+
+[18]Overfull \hbox (7.06955pt too wide) in paragraph at lines 57--57
+[]\TU/lmr/m/n/10 Mark W. Spong. \TU/lmr/m/it/10 Robot Dynamics and Control\TU/l
+mr/m/n/10 . 1st. USA: John Wiley and Sons, Inc., 1989. \TU/lmr/m/sc/10 isbn\TU/
+lmr/m/n/10 : 047161243X. 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 57.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 57.
+
+[19]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 60.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 60.
+
+[20] (Appendices/Appendix1.texAppendix A.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+) (Appendices/Appendix2.texAppendix B.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+)(Manual/Manual.texAppendix C.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 1.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 16.
+
+[21]Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 20.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 45.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 45.
+
+[22])Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\beginL' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\encodingdefault' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endL' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\beginL' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\<def>-command' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\encodingdefault' on input line 70.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\endL' on input line 70.
+
+[23](ThesisReport_KarlWallkum_617931.aux)LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information)
+Output written on ThesisReport_KarlWallkum_617931.pdf (26 pages).
+SyncTeX written on ThesisReport_KarlWallkum_617931.synctex.gz.
+Transcript written on ThesisReport_KarlWallkum_617931.log.MiKTeX-pdfTeX 2.9.7029 (1.40.20) (MiKTeX 2.9.7250 64-bit)
+Copyright (C) 1982 D. E. Knuth, (C) 1996-2018 Han The Thanh
+TeX is a trademark of the American Mathematical Society.using bzip2 version 1.0.6, 6-Sept-2010
+compiled with curl version 7.61.1; using libcurl/7.61.1 WinSSL
+compiled with expat version 2.2.6; using expat_2.2.6
+compiled with jpeg version 9.3
+compiled with liblzma version 50020042; using 50020042
+compiled with libpng version 1.6.35; using 1.6.35
+compiled with libressl version LibreSSL 2.8.2; using LibreSSL 2.8.2
+compiled with MiKTeX Application Framework version 4.6961; using 4.6961
+compiled with MiKTeX Core version 15.7252; using 15.7263
+compiled with MiKTeX Archive Extractor version 1.6882; using 1.6882
+compiled with MiKTeX Package Manager version 7.7209; using 7.7209
+compiled with poppler version 0.60.1
+compiled with uriparser version 0.9.2
+compiled with zlib version 1.2.11; using 1.2.11
+
+Environment variables:
+=::=::\
+ADSK_3DSMAX_x64_2020=C:\Program Files\Autodesk\3ds Max 2020\
+ADSK_CLM_WPAD_PROXY_CHECK=FALSE
+ALLUSERSPROFILE=C:\ProgramData
+APPDATA=C:\Users\Karl\AppData\Roaming
+BESIEGE_GAME_ASSEMBLIES=C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\Managed/
+BESIEGE_UNITY_ASSEMBLIES=C:/Program Files (x86)/Steam/steamapps/common/Besiege/Besiege_Data\Managed/
+ChocolateyInstall=C:\ProgramData\chocolatey
+ChocolateyLastPathUpdate=132150045714166408
+CommonProgramFiles=C:\Program Files (x86)\Common Files
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+CommonProgramW6432=C:\Program Files\Common Files
+COMPUTERNAME=DESKTOP-U4POTKN
+ComSpec=C:\WINDOWS\system32\cmd.exe
+DriverData=C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING=Default
+HOMEDRIVE=C:
+HOMEPATH=\Users\Karl
+LOCALAPPDATA=C:\Users\Karl\AppData\Local
+LOGONSERVER=\\DESKTOP-U4POTKN
+NIDAQmxSwitchDir=C:\Program Files (x86)\National Instruments\NI-DAQ\Switch\
+NIEXTCCOMPILERSUPP=C:\Program Files (x86)\National Instruments\Shared\ExternalCompilerSupport\C\
+NUMBER_OF_PROCESSORS=8
+OMP_NUM_THREADS=8
+OneDrive=C:\Users\Karl\OneDrive - HAN
+OneDriveCommercial=C:\Users\Karl\OneDrive - HAN
+OneDriveConsumer=C:\Users\Karl\OneDrive
+OS=Windows_NT
+Path=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\ImageMagick-7.0.8-Q16;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\MATLAB\R2019b\bin;C:\Program Files\MATLAB\MATLAB Runtime\v95\runtime\win64;C:\Program Files (x86)\Wolfram Research\WolframScript\;C:\Program Files\Git\cmd;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\PROGRA~2\FANUC\Shared\UTILIT~1;C:\PROGRA~2\FANUC\WinOLPC\bin;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Boxcryptor\bin\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\MiKTeX 2.9\miktex\bin\x64\;C:\Program Files (x86)\GNU Tools ARM Embedded\8 2018-q4-major\bin;C:\ProgramData\MATLAB\SupportPackages\R2018b\3P.instrset\ev3sourcerylite.instrset\CodeSourcery\bin;C:\Program Files (x86)\GNU Tools Arm Embedded\7 2018-q2-update\bin;C:\Users\Karl\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+PROCESSOR_ARCHITECTURE=x86
+PROCESSOR_ARCHITEW6432=AMD64
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+PROCESSOR_LEVEL=6
+PROCESSOR_REVISION=8e0a
+PROG52DD9244052=1
+ProgramData=C:\ProgramData
+ProgramFiles=C:\Program Files (x86)
+ProgramFiles(x86)=C:\Program Files (x86)
+ProgramW6432=C:\Program Files
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+ROSE_DB=C:\PROGRA~2\FANUC\Shared\Schemas
+SESSIONNAME=Console
+SystemDrive=C:
+SystemRoot=C:\WINDOWS
+TEMP=C:\Users\Karl\AppData\Local\Temp
+TMP=C:\Users\Karl\AppData\Local\Temp
+USERDOMAIN=DESKTOP-U4POTKN
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-U4POTKN
+USERNAME=Karl
+USERPROFILE=C:\Users\Karl
+VBOX_MSI_INSTALL_PATH=C:\Program Files\Oracle\VirtualBox\
+windir=C:\WINDOWS
+
+TeXstudio:
+Path        : C:\Program Files (x86)\texstudio\texstudio.exe
+Program call: C:\Program Files (x86)\texstudio\texstudio.exe
+Setting file: C:\Users\Karl\AppData\Roaming\texstudio\texstudio.ini
+
+Command configuration in TeXstudio:
+    DVI->PDF Chain (dvi-pdf-chain): txs:///latex | txs:///dvipdf | txs:///view-pdf
+    PDF Chain (pdf-chain): txs:///xelatex | txs:///view-pdf
+    Metapost (metapost): mpost.exe -interaction=nonstopmode ?me)
+    External PDF Viewer (view-pdf-external): "C:\Program Files\Tracker Software\PDF Editor\PDFXEdit.exe" "?am.pdf"
+    Asymptote DVI Chain (asy-dvi-chain): txs:///latex | txs:///asy | txs:///latex | txs:///view-dvi
+    DVI Chain (dvi-chain): txs:///latex | txs:///view-dvi
+    Texindy (texindy): texindy.exe %.idx
+    LuaLaTeX (lualatex) (r): lualatex.exe -synctex=1 -interaction=nonstopmode %.tex
+    BibTeX (bibtex): bibtex.exe %
+    BibTeX 8-Bit (bibtex8): bibtex8.exe %
+    DVI Viewer (view-dvi): "C:\Program Files\MiKTeX 2.9\miktex\bin\x64\yap.exe" -1 -s @?"c:ame "?am.dvi"
+    DVI->PS->PDF Chain (dvi-ps-pdf-chain): txs:///latex | txs:///dvips | txs:///ps2pdf | txs:///view-pdf
+    PDF Viewer (view-pdf): txs:///view-pdf-internal --embedded
+    Biber (biber): "C:/Program Files/MiKTeX 2.9/biber/bin/windows-x64/biber.exe" %
+    Default Viewer (view): txs:///view-pdf-internal
+    Asymptote PDF Chain (asy-pdf-chain): txs:///xelatex | txs:///asy | txs:///xelatex | txs:///view-pdf
+    Default Compiler (compile): txs:///xelatex
+    PS Chain (ps-chain): txs:///latex | txs:///dvips | txs:///view-ps
+    Precompile (pre-compile): txs:///xelatex
+    Makeindex (makeindex): makeindex.exe %.idx
+    SVNADMIN (svnadmin): 
+    LaTeX (latex) (r): latex.exe -src -interaction=nonstopmode %.tex
+    Ghostscript (gs): mgs.exe "?am.ps"
+    Default Glossary Tool (glossary): txs:///makeglossaries
+    PS Viewer (view-ps): C:\Windows\system32\OpenWith.exe "?am.ps"
+    Recompile Bibliography (recompile-bibliography): txs:///compile | txs:///bibliography | txs:///compile
+    PdfLaTeX (pdflatex) (r): pdflatex.exe -synctex=1 -interaction=nonstopmode %.tex
+    Default Bibliography Tool (bibliography): txs:///biber
+    Asymptote (asy): asy.exe ?m*.asy
+    Default Index Tool (index): txs:///makeindex
+    XeLaTeX (xelatex) (r): xelatex.exe -synctex=1 -interaction=nonstopmode %.tex
+    Internal Precompile (internal-pre-compile): txs:///pre-compile | txs:///conditionally-recompile-bibliography
+    DviPng (dvipng): dvipng.exe -T tight -D 120 %.dvi
+    SVN (svn): 
+    Latexmk (latexmk): latexmk.exe -pdf -silent -synctex=1 %
+    Makeglossaries (makeglossaries): makeglossaries.exe %
+    Ps2Pdf (ps2pdf): ps2pdf.exe %.ps
+    DviPs (dvips): dvips.exe -o %.ps %.dvi
+    Build & View (quick): txs:///compile | txs:///view
+    DviPdf (dvipdf): dvipdfmx.exe %.dvi
+
+Additional Search Paths:
+    Command: 
+    Log: 
+    Pdf: 
