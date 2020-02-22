@@ -356,11 +356,14 @@ and control: the computer control of robot manipulators" \cite{Paul1981RobotM}. 
 
 \section{Forward Kinematic Equations} \label{ForKinEq}
 In Forward kinematics, the kinematic equations of a robot are used to compute the position of the \ac{EOAT} from the given joint parameters.
+
+\paragraph{Sum of Transformations Matrix}
 With the transformation matrices from frame $(i)$ to $(i-1$), a $4×4$ matrix for all joints on n links can be established as in equation \ref{eq:SummofTranfMatr}
 
 \begin{equation} \label{eq:SummofTranfMatr}
 	^0T_n=\prod_{n}^{i=1} \phantom{.}^{i-1}T_i
 \end{equation}
+
 
 The resulting matrix has the form (see \cite{invKinSolYanWu}, eq 1):
 \begin{equation}\label{eq:matrixForm}
@@ -378,6 +381,7 @@ The resulting matrix has the form (see \cite{invKinSolYanWu}, eq 1):
 	\end{bmatrix}
 \end{equation}
 
+\paragraph{short notation}
 The short notations for orientation, rotation and position are defined as:
 
 \begin{itemize}
@@ -387,6 +391,40 @@ The short notations for orientation, rotation and position are defined as:
 	\item[p] position
 \end{itemize}
   
+
+\paragraph{Transformation to cartesian coordinates with euler angles }
+These vectors can be transformed into the $[x,y,z,\alpha,\beta,\gamma]$ notation.
+Vector $p = [p_x, p_y, p_z] $ gives [x, y,z].
+The rotational approach $[\alpha, \beta, \gamma]$ can be calculated with the rotation matrix R as seen in eq \ref{eq:rotMatrix_composition}.
+\begin{equation}\label{eq:rotMatrix_composition}
+	T = 
+	\begin{bmatrix}
+	R & p \\
+	0 & 1 \\
+	\end{bmatrix}
+\end{equation}
+
+The rotation matrix describes the relative orientation of two frames towards each other. As the columns $[n,o,a]$ are the unit vectors along the axes of one frame relative to the other reference frame, the relative orientation of a frame ${b}$ with respect to a frame ${a}$ is given by the rotation matrix as seen in eq \ref{eq:rotMatrix_a-b} \cite{ConstantinForwardKA}
+\begin{equation}
+	\phantom{}^b_aR =
+	\begin{bmatrix}
+	\phantom{}_ax^b) & \phantom{}_ay^b) & \phantom{}_az^b) \\
+	\end{bmatrix}
+	=
+	\begin{bmatrix}
+	x^b \cdot x^a & y^b \cdot x^a & z^b \cdot x^a \\
+	x^b \cdot y^a & y^b \cdot y^a & z^b \cdot y^a \\
+	x^b \cdot z^a & y^b \cdot z^a & z^b \cdot z^a \\
+	\end{bmatrix}
+\end{equation}
+
+As in equation \ref{eq:rotMatrixToAbsFrame} the coordinates relative to the reference frame ${a}$, of a point $p$, of which the coordinates are known with respect to a frame ${b}$ with the same origin can then be calculated ( see \cite{RobotKinemDyn}, "Description of Position and Orientation) .
+\begin{equation}\label{eq:rotMatrixToAbsFrame}
+	\phantom{}_a p = \phantom{}^b_aR\phantom{.}_b p 
+\end{equation}
+
+
+
 
 \section{Forward Kinematic Equations on the 210F}
 As shown in fig.\ref{fig:zi_Axes}, the Fanuc 210F is a 6-\ac{DOF} robotic arm with n=six revolute joints in series. 

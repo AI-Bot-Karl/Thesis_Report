@@ -1,0 +1,56 @@
+
+
+\begin{multline}\label{eq:prelinkmultip_right}
+	\phantom{}^2T_3\phantom{}^3T_4\phantom{}^4T_5 =\\
+	\NiceMatrixOptions{
+		code-for-first-row= \color{red},
+		code-for-first-col= \color{green},
+%		code-for-last-row= \color{blue},
+%		code-for-last-col= \color{magenta}
+	}
+	\begin{pNiceArray}{C:C:C:C}[first-row,first-col] %[first-row,last-row,first-col,last-col]
+%	\begin{bmatrix}
+& 1 & 2 & 3 & 4 \\
+1 & 	\parbox{0.2\linewidth}{$ c_3 c_4 c_5 - s_3 s_5 $} & \parbox{0.2\linewidth}{$  -c_3 c_4 s_5 - s_3 c_5 $} & \parbox{0.2\linewidth}{$  c_3 s_4 $} & \parbox{0.2\linewidth}{$  c_3 a_3 - s_3 d_4 + a_2 $} \\ \hdottedline
+2 & 	\parbox{0.2\linewidth}{$ s_3 c_4 c_5 + c_3 s_5 $} & \parbox{0.2\linewidth}{$  -s_3 c_4 s_5 + c_3 c_5 $} & \parbox{0.2\linewidth}{$  s_3 s_4 $} & \parbox{0.2\linewidth}{$ s_3 a_3 + c_3 d_4 $} \\ \hdottedline
+3 & 	\parbox{0.2\linewidth}{$ -s_4 c_5 $} & \parbox{0.2\linewidth}{$  s_4 s_5 $} & \parbox{0.2\linewidth}{$  c_4 $} & \parbox{0.2\linewidth}{$  0 $} \\ \hdottedline
+4 & 	\parbox{0.2\linewidth}{$ 0 $} & \parbox{0.2\linewidth}{$  0 $} & \parbox{0.2\linewidth}{$  0 $} & \parbox{0.2\linewidth}{$  1 $} \\
+%	\end{bmatrix}
+\end{pNiceArray}
+\end{multline}
+%& A & B & C & D\\
+%1 & 	c_3 c_4 c_5 - s_3 s_5 & -c_3 c_4 s_5 - s_3 c_5 & c_3 s_4 & c_3 a_3 - s_3 d_4 + a_2 \\
+%2 & 	s_3 c_4 c_5 + c_3 s_5 & -s_3 c_4 s_5 + c_3 c_5 & s_3 s_4 & s_3 a_3 + c_3 d_4 \\
+%3 & 	-s_4 c_5 & s_4 s_5 & c_4 & 0 \\
+%4 & 	0 & 0 & 0 & 1 \\
+\medskip
+\begin{multline}\label{eq:prelinkmultip_left}
+	\phantom{}^0T_6(\phantom{}^0T_1)^{-1}(\phantom{}^1T_2)^{-1}(\phantom{}^5T_6)^{-1} =\\
+	\begin{pNiceArray}{C:C:C:C}
+%\begin{bmatrix}
+	\parbox{0.25\linewidth}{$ (c_2 c_1 n_x + c_2 s_1 n_y - s_2 n_z)c_6 - (c_2 c_1 o_x + c_2 s_1 o_y -s_2 o_z) s_6 $} & 
+	\parbox{0.2\linewidth}{$ c_2 c_1 a_x + c_2 s_1 a_y - s_2 a_z $} &
+	\parbox{0.25\linewidth}{$ -(c_2 c_1 n_x + c_2 s_1 n_y - s_2 n_z) s_6 - (c_2 c_1 o_x + c_2 s_1 o_y - s_2 o_z) c_6 $} &
+	\parbox{0.25\linewidth}{$ -(c_2 c_1 a_x + c_2 s_1 a_y - s_2 a_z ) d_6 + c_2 c_1 p_x + c_2 s_1 p_y - s_2 p_z -c_2 a_1 $} 
+	\\\hdottedline
+	\parbox{0.25\linewidth}{$ -(s_2 c_1 n_x - s_2 s_1 n_y - c_2 n_z) c_6 - (-s_2 c_1 o_x - s_2 s_1 o_y - c_2 o_z) s_6 $} &
+	\parbox{0.2\linewidth}{$ -s_2 c_1 a_x - s_2 s_1 a_y -c_2 a_z $} & 
+	\parbox{0.25\linewidth}{$ -(-s_2 c_1 n_x -s_2 s_1 n_y -c_2 n_z) s_6 - (- s_2 c_1 o_x - s_2 s_1 o_y - c_2 o_z)c_6 $} &
+	\parbox{0.25\linewidth}{$ -(-s_2 c_1 a_x - s_2 s_1 a_y - c_2 a_z)d_6 - s_2 c_1 p_x - s_2 s_1 p_y - c_2 p_z +s_2 a_1 $}
+	\\ \hdottedline
+	\parbox{0.25\linewidth}{$ ( -s_1 n_x + c_1 n_y) c_6 - (-s_1 o_x + c_1 o_y) s_6 $} &
+	\parbox{0.2\linewidth}{$ - s_1 a_1 + c_1 a_2 $} &
+	\parbox{0.25\linewidth}{$ -(-s_1 n_x + c_1 n_y ) s_6 -(-s_1 o_x + c_1 o_y ) c_6 $} &
+	\parbox{0.25\linewidth}{$ -(-s_1 a_x + c_1 a_y) d_6 - s_1 p_x + c_1 p_y $} 
+	\\ \hdottedline
+	\parbox{0.25\linewidth}{$ 0 $} &
+	\parbox{0.2\linewidth}{$ 0 $} &
+	\parbox{0.25\linewidth}{$ 0 $} &
+	\parbox{0.25\linewidth}{$ 1 $}
+	\\
+%\end{bmatrix}
+	\end{pNiceArray}
+\end{multline}
+In equations \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} $sin(\theta_i) $ and $ \cos(\theta_i) $ have been replaced by $s_i$ and $c_i$ to allow for appropriate presentation of the matrix. This abbreviation will be used for following steps as well. \\
+\medskip
+%\s*(TODO|Check when to use which bracket type []() for matrices, bmatrix pmatrix)

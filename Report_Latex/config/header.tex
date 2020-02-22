@@ -5,6 +5,14 @@
 \usepackage[utf8]{inputenc}		%utf8 allows also for umlauts
 \usepackage[arabic, english]{babel}
 \usepackage{amsmath}
+
+%Declare new math operators with amsmath:
+
+%atan2 function
+\DeclareMathOperator{\atantwo}{atan2}
+\DeclareMathOperator{\arctantwo}{arctan2}
+
+
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}	%for importing images
@@ -14,6 +22,10 @@
 %\usepackage{matlab-prettifier}
 \usepackage{float}
 \usepackage[usenames,dvipsnames]{color} % color text
+
+%coloured text
+\usepackage{xcolor} %\textcolor{blue}{This is a sample text in blue.}
+
 \usepackage{listings}
 \usepackage{alphalph}
 
@@ -45,6 +57,13 @@
 
 % \usepackage[table,xcdraw]{xcolor}
 
+%line drawing in array or tabular
+%\usepackage{arydshln} %here used for mimicing matrices in array with dashed lines
+%Doesn't work as intended
+
+%Matrix options for dotted lines, etc. etc...
+\usepackage{nicematrix} % here used for makin g arrays with dashed separator lines
+%http://ctan.math.washington.edu/tex-archive/macros/latex/contrib/nicematrix/nicematrix.pdf
 
 \usepackage{enumitem}
 \usepackage{multicol}%try it out!
@@ -108,9 +127,14 @@
 }
 \urlstyle{same} %The default is equivalent to \urlstyle{tt}; with \urlstyle{rm} and \urlstyle{sf} the font will be the roman or sans serif upright font. With \urlstyle{same} the current font will be used.
 
+\usepackage{cleveref} %multi reference with \cref{x,y}
+% needs to be loaded after hyperref 
+
 %Set some things clear 
 \newcommand{\HANSupervisor}{Wesselingh Ellen}
 \newcommand{\CompanySupervisor}{Nguyen Trung}
 \author{Karl Wallkum}
 
+%% Preamble 
+%Deactivate before Distribution!!
 
