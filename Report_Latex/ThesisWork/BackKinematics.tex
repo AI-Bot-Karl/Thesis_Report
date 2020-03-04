@@ -1,11 +1,11 @@
-\chapter{Inverse Kinematics}
+\section{Inverse Kinematics}
 
 With the forward kinematic equations, the position of the end effector can be determined relative to the base frame for given values of the joint variables.
 In the context of robotics, it is also necessary to determine these joint variables for a given end effector position.
 This is referred to as the inverse kinematic problem.
 Solving the inverse kinematic problem for a given serial link actuator allows to transform a motion plan of the \ac{EOAT} into joint actuator trajectories for the robot.\\
 \\
-\section{Existence of solutions} \label{ExistSol}
+\subsection{Existence of solutions} \label{ExistSol}
 To determine the joint values for a \ac{EOAT}-position it needs to be determined, if there exists a solution.
 Not all positions are equally reachable.
 There are two types of workspace:
@@ -17,7 +17,7 @@ There are two types of workspace:
 
 A manipulator with less than 6\ac{DOF} cannot reach all positions and orientations in 3D-space. Further limitations can be imposed by the axis alignment. A planar manipulator for example cannot reach  out of the plane. \cite{craig1986introduction}
 
-\section{multiple solutions} \label{MultipSol}
+\subsection{multiple solutions} \label{MultipSol}
 A 6\ac{DOF} robot has multiple sets of inverse solutions. To understand why there are multiple solutions, it helps to have a look at fig. \ref{multipSol3Link}. The same end effector position and orientation can be reached in two ways. 
 
 \begin{figure}[H]
@@ -43,9 +43,9 @@ As stated by YanWu et al. there are 8 groups of inverse solution for most \ac{EO
 	\label{fig:invKinTree}
 \end{figure}
 
-\section{Inverse solution of 6 \ac{DOF} Robot}
+\subsection{Inverse solution of 6 \ac{DOF} Robot}
 
-As shown in chapter \ref{ForKinEq} the end effector position is defined by four vectors $ (n,o,a,p) $. With these known, the joint variables $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated.
+As shown in chapter \ref{ForKinEq} the end effector position is defined by four $3 \times 1$ vectors $ (n,o,a,p) $. With these known, the joint variables $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated.
 This problem  is solved by the method of using the inverse transformation of unknown link pre-multiplication as presented by Yan Wu et al. \cite{invKinSolYanWu}. 
 
 \paragraph{Forward kinematic equation}
@@ -63,13 +63,13 @@ n_z & o_z & a_z & p_z \\
 \phantom{}^0_1T(\theta_1)\phantom{}^1_2T(\theta_2)\phantom{}^2_3T(\theta_3)\phantom{}^3_4T(\theta_4)\phantom{}^4_5T(\theta_5)\phantom{}^5_6T(\theta_6)\\
 \end{equation}
 
-\section{The inverse Solution} \label{InverseSol}
+\subsection{The inverse Solution} \label{InverseSol}
 With $ (n,o,a,p) $ known, the angle values of the joint variables can be determined by separation of the joint variables. 
-In a first step \ac{eq} \ref{eq:ForwKinEquMatr} is reformed into \ac{eq} \ref{eq:ForwKinEquMatr_reformed}.
+In a first step eq. \ref{eq:ForwKinEquMatr} is reformed into eq. \ref{eq:ForwKinEquMatr_reformed}.
 \begin{equation}\label{eq:ForwKinEquMatr_reformed}
 	\phantom{}^2T_3\phantom{}^3T_4\phantom{}^4T_5 = \phantom{}^0T_6(\phantom{}^0T_1)^{-1}(\phantom{}^1T_2)^{-1}(\phantom{}^5T_6)^{-1}
 \end{equation}
-This gives 2 matrices, formed by the terms found in eq \ref{eq:TransformMatrices_0-6}. These matrices are the terms found in \ac{eq}\ref{eq:ForwKinEquMatr_reformed}.
+This gives 2 matrices, formed by the terms found in eq. \ref{eq:TransformMatrices_0-6}. These matrices are the terms found in eq. \ref{eq:ForwKinEquMatr_reformed}.
 With the help of MATLAB and the symbolic toolbox, the inverses and the overall product of each side can be calculated. %should be done for actual confirmation. Test it!
 
 	\input{ThesisWork/BackKinematics/Prelinkmultip}
@@ -174,7 +174,7 @@ To combine equations \cref{eq:equal_2-2,eq:equal_1-2}, eq \ref{eq:equal_2-2} is 
 \end{equation}
 Reforming equation \ref{eq:2-2+1-2} gives a solution for $\theta_5$ as seen in equation \ref{eq:sol_theta_5}.
 \begin{equation}\label{eq:sol_theta_5}
-	\theta_{5_{1/2}} = \pm \arccos [ ( -c_1 s_2 a_x - s_1 s_2 a_y - c_2 a_z) c_3 - (c_1 c_2 a_x + s_1 c_2 a_y - s_2 a_z) s_3]
+	\theta_{5_{1/2}} = \pm \acos [ ( -c_1 s_2 a_x - s_1 s_2 a_y - c_2 a_z) c_3 - (c_1 c_2 a_x + s_1 c_2 a_y - s_2 a_z) s_3]
 \end{equation}
 
 \paragraph{$\theta_4$:}
@@ -200,10 +200,10 @@ With equations \cref{eq:sol_theta_1,eq:sol_theta_2,eq:sol_theta_3,eq:sol_theta_4
 The $\atantwo(x,y)$-function used in this solution which returns an angle between the positive x axis and a line pointing to $(x,y) \neq (0,0)$. The function takes two arguments and returns a single value $\theta$ between $-\pi$ and $\pi$ equivalent to the phase angle of complex numbers. While $\arctan$ can only solve in quadrant 1 and 4, $\arctantwo$ allows for calculation in all four quadrants because it differentiates between pos/neg $x$  and  $y$ direction independently. It is mostly a question of implementation and solving method, so this new notation arose with programming languages.
 
 
-\section{Optimization of inverse kinematics solution}
+\subsection{Optimization of inverse kinematics solution}
 
 As stated in section \ref{MultipSol}, there exist eight sets of inverse solutions in the dextrous workspace (see \ref{ExistSol}).
-The optimal solution can be found through an optimization function. 
+The optimal set of solutions can be found through an optimization function. 
 This optimization function needs to find the set of solution that can reach the desired position fastest from the current position.\\
 \\
 \paragraph{cost function}

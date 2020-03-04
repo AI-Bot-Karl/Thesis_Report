@@ -1,15 +1,24 @@
-\chapter{Forward Kinematics}
+\section{Forward Kinematics}
 
-To model the movements of the end effector of a kinematic chain, a forward kinematic analysis is needed. This means, that the position of the endpoint in the operational space needs to be described by the kinematic equations with the joint space as input. The non-linear kinematic equations map the joint parameters to the configuration of the robot system.   This results in a pure geometrical description of motion  by means of position, orientation, and their time derivatives.
+To model the movements of the end effector of a kinematic chain, a forward kinematic analysis is needed. 
+%This means, that the position of the endpoint in the operational space needs to be described by the kinematic equations with the joint space as input. The non-linear kinematic equations map the joint parameters to the configuration of the robot system.   This results in a pure geometrical description of motion  by means of position, orientation, and their time derivatives. %Glossary
 
-\section{Approach}
+\subsection{Approach}
 A serial-link manipulator consists of links in a chain connected by joints. 
-A link is a rigid body, defining the spatial relationship between two following axes.
+%A link is a rigid body, defining the spatial relationship between two following axes. %Glossary
 For describing the serial-link mechanism geometry the Denavit Hartenberg notation is one possible approach.
 It gives a description of a manipulator for kinematic solutions, Jacobians, dynamics, motion planning and simulation. 
 This description can be obtained through a five step algorithm:\cite{ConstantinForwardKA}
 
-\section{Numbering the joints and links}
+\begin{enumerate}
+	\item Numbering of joints and links
+	\item Set up local coordinate reference frames
+	\item Establishing \ac{DH} parameters for each link
+	\item Calculate homogeneous transformation matrices
+	\item Compute Forward Kinematic Equations
+\end{enumerate}
+
+\subsubsection{Numbering of joints and links}
 A serial link robot with n joints has $n+1$ links. 
 
 \paragraph{numbering of links}
@@ -42,7 +51,7 @@ This numbering scheme can be applied to the Fanuc 210F (see \ref{fig:LinksANDJoi
 
 
 
-\section{local coordinate reference frames}
+\subsubsection{Set up local coordinate reference frames}
 With the Denavit-Hartenberg convention, local coordinate frames can be attached to the far end of the links $ (i) $ and their accompanying joints $ (i+1) $.
 Each link $(i)$ is described relative to the pose of the preceding link.
 
@@ -51,8 +60,8 @@ Each link $(i)$ is described relative to the pose of the preceding link.
 
 \paragraph{Assignation of $z_i$ axes}
 
-With the DH-notation, the $z_i$ axes are assigned to link $(i)$.
-Two cases need to be considered: %regarding joint $(i+1)$:
+With the DH-notation, the $z_i$ axes are assigned to link $(i)$. 
+By using the  DH convention, both prismatic and revolute joints can be treated similarly: %regarding joint $(i+1)$:
 \begin{itemize}[wide=\parindent]
 	\item[\textbf{revolute:}] $z_i$ is the axis of revolution of joint $(i+1)$
 	\item[\textbf{prismatic:}] $z_i$ is the axis of translation of joint $(i+1)$
@@ -86,7 +95,7 @@ The base frame $(0)$ can be chosen nearly arbitrarily. The origin of the base fr
 
 \paragraph{Assignation of frames $(i)$}
 
-Starting from frame $(0)$ in an iterative process, frame $(i)$ can be set up using frame $(i-1)$.
+Starting from frame $(1)$ in an iterative process, frame $(i)$ can be set up using frame $(i-1)$.
 
 Three cases regarding the relationship of axes $z_{i-1}$ and $z_i$  need to be considered when setting up frames:
 \begin{itemize}[wide=\parindent] %option solves alignment problem for item label %https://tex.stackexchange.com/questions/246394/alignment-of-labels-in-itemize-with-text-of-document 
@@ -189,7 +198,7 @@ as there are no distal joints, to reference $x_6$, it can be chosen arbitrarily.
 For simplicity, it is chosen to be similar as in frame 5. 
 $y_6$ is added according to the right hand rule.
 
-\section{Establishing \ac{DH} parameters for each link}
+\subsubsection{Establishing \ac{DH} parameters for each link}
 
 After assigning the local coordinate frames, the \ac{DH}-Transformations have to be determined. This leads to a kinematic chain with each frame determined by the previous one \cite{DenavitHartenbergKonventionen}.
 
@@ -246,7 +255,7 @@ $ROT(v,\alpha)$ is a simple rotation around vector $v$ with the angle $\alpha$ a
 This visual representation gives a guide to attach the \ac{DH}-parameters on serial-link mechanisms.
 
 
-\section{Establishing \ac{DH} parameters on the Fanuc 210F}
+\subsubsection{Establishing \ac{DH} parameters on the Fanuc 210F}
 
 As described above, the \ac{DH}-Parameters can also be determined for the Fanuc 210F.
 These parameters can be found with the help of the assigned coordinate frames as seen in figure \ref{fig:DH_Parameters_Fanuc210F}. For simplicity, only non-zero DH-parameters are shown in this figure.
@@ -303,11 +312,11 @@ A great help to determine these values is fig \ref{fig:StandardPose}. This techn
 With this drawing, following \ac{DH}-parametes can be obtained:
 
 \begin{itemize}\label{item:DH-LinparamValues}
-	\item[$a_1$=] 312mm
-	\item[$a_2$=] 1075mm
-	\item[$a_3$=] 225mm
-	\item[$d_4$=] 1280mm
-	\item[$d_6$=] 235mm
+	\item[$a_1$=] 312 [\textit{mm}]
+	\item[$a_2$=] 1075 [\textit{mm}]
+	\item[$a_3$=] 225 [\textit{mm}]
+	\item[$d_4$=] 1280 [\textit{mm}]
+	\item[$d_6$=] 235 [\textit{mm}]
 \end{itemize}
 
 The parameter $d_1$ cannot be determined from this drawing. It can either be measured on the actual robot, or defined as zero, as frame zero can be freely moved along the z-axis. A value of zero would put the origin of the base frame on the same height as frame 1, simplifying subsequent steps. 
@@ -333,7 +342,7 @@ This results in a table of numeric DH-parameters as seen in \ref{table:DH-Parame
 	\label{table:DH-Parameter_num}
 \end{table}
 
-\section{Homogeneous transformation matrices}
+\subsubsection{Calculate homogeneous transformation matrices}
 
 Locating reference frame $(i-1)$ relative to $(i)$ can be done by executing a series of transformations as given by equation \ref{eq:DH-Transform}. 
 For simplification, they can be done with a 4 × 4 homogenous transformation matrix:
@@ -354,7 +363,7 @@ Equation \ref{eq:fourTransformations} can be expanded into:
 For further details on how to set up $R_z(\theta_i), T_z(d_i), T_x(a_i) and R_x(\alpha_i)$ and form the transformation matrix in equation \ref{eq:TransformationMarix} see chapter one "HOMOGENEOUS TRANSFORMATIONS" in "Robot manipulators: mathematics, programming, 
 and control: the computer control of robot manipulators" \cite{Paul1981RobotM}. The basic techniques for setting up the translation and rotation matrices as well as how to combine them are described in that chapter .
 
-\section{Forward Kinematic Equations} \label{ForKinEq}
+\section{Compute Forward Kinematic Equations} \label{ForKinEq}
 In Forward kinematics, the kinematic equations of a robot are used to compute the position of the \ac{EOAT} from the given joint parameters.
 
 \paragraph{Sum of Transformations Matrix}

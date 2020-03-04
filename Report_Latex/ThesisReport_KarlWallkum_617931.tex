@@ -3,11 +3,14 @@
 \input{config/header}
 
 \begin{document}
-	
+	\pagenumbering{roman}
 		
 	\input{Frontpage/titlepage}
 	\input{Intro/Intorpicture}
-		
+	
+	\input{Intro/Summary}
+	
+	\newpage
 	\tableofcontents
 	
 	\thispagestyle{empty}
@@ -20,9 +23,13 @@
 	
 	\input{Intro/Preface}
 	\input{Intro/Acknowledgements}
-	\input{Intro/Summary}
+%	\input{Intro/Summary} %Move before Table of contents
 	
 	\input{Intro/Abkuerzungsverzeichnis}
+	%\glsaddall
+	%\printglossaries
+	%\printnoidxglossaries
+
 	
 	\input{Background/Context}
 	\input{Background/IndustryRelevance}
@@ -52,6 +59,7 @@
 	
 	
 	\input{Explanations/RobotConfigurations}
+	
 
 	\renewcommand{\bibname}{References}
 	\printbibliography

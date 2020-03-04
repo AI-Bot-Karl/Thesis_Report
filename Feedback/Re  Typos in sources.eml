@@ -1,0 +1,85 @@
+Received: from PR3PR01MB6796.eurprd01.prod.exchangelabs.com
+ (2603:10a6:800:d2::31) by VI1PR01MB4382.eurprd01.prod.exchangelabs.com with
+ HTTPS via VI1PR08CA0201.EURPRD08.PROD.OUTLOOK.COM; Wed, 12 Feb 2020 17:11:46
+ +0000
+Received: from PR3PR01MB6442.eurprd01.prod.exchangelabs.com (20.180.31.74) by
+ PR3PR01MB6796.eurprd01.prod.exchangelabs.com (20.181.36.146) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2707.21; Wed, 12 Feb 2020 17:11:45 +0000
+Received: from PR3PR01MB6442.eurprd01.prod.exchangelabs.com
+ ([fe80::a9cd:2743:a3cc:aa95]) by PR3PR01MB6442.eurprd01.prod.exchangelabs.com
+ ([fe80::a9cd:2743:a3cc:aa95%6]) with mapi id 15.20.2707.030; Wed, 12 Feb 2020
+ 17:11:45 +0000
+From: Wesselingh Ellen <Ellen.Wesselingh@han.nl>
+To: Wallkum Karl <KG.Wallkum@student.han.nl>
+Subject: Re: Typos in sources
+Thread-Topic: Typos in sources
+Thread-Index: AQHV4b7ZQhTpZd68mEaOT3yR2rbShKgXyvUC
+Date: Wed, 12 Feb 2020 18:11:45 +0100
+Message-ID:
+	<PR3PR01MB64423A82FAFD1C2253F92BE9E21B0@PR3PR01MB6442.eurprd01.prod.exchangelabs.com>
+References: <d3ca19a0-4480-f675-aadf-c82a6ba8e8ad@student.han.nl>
+In-Reply-To: <d3ca19a0-4480-f675-aadf-c82a6ba8e8ad@student.han.nl>
+Accept-Language: nl-NL, en-US
+Content-Language: nl-NL
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	PR3PR01MB6442.eurprd01.prod.exchangelabs.com
+X-MS-Has-Attach:
+X-MS-Exchange-Organization-Network-Message-Id:
+	5aacb34e-752c-4ea3-9802-08d7afdea39b
+X-MS-Exchange-Organization-SCL: -1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(750127)(520011016)(706158)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	93MSDIL+vRyk7yG8YsnVN95OlxZBpfUqcsBFkqmbLqU+or8VcYCtxXEFtKTP7mgsugVQcSNElWNXluUEGsha02KBpS9li2yKncmjVuYUREIyiu46wzXsVssMkFyqqGOG1W3wPvD+S5HUT65F9LN79mrKAGaea7PJqtURhn0YaPd6nH716FpdEYe9zR+kW3EqcJbFZhS0R5bIzkQ/NvLJKQLvLhlHkr0P/z7Wh+B5mPSFVnMG0pDvXDlkNxFa768iZJK591rWa4MxoW3ZMHG06hnetnigSHvj+DLM58RJq/13ZK+H4AuRPn0dsUTP4bX0rx+vhvEovJOBFh9Vzaj7LJYz/6c2D/ydlcF4KmI/s7WqtheVHz/eyxKn1jJWZ0lRxw+mWsIW3qeC6xLF6coNCLS8ICrbHG/wBCOEKzgL73hmOYL+yCw5+fmTT85HZdEE1GCsV9gQHmlFnemRPPclgg==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<style type="text/css" style="display:none;"> P {margin-top:0;margin-bottom:0;} </style>
+</head>
+<body dir="ltr">
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Good question.</div>
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Normally, you would quote the source including the typos.</div>
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+But when that renders the formula unusable, I would change it. However, make sure that it is typographically clear what you have changed.</div>
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style="font-family: Calibri, Arial, Helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);">
+Ellen<br>
+</div>
+<div id="appendonsend"></div>
+<hr style="display:inline-block;width:98%" tabindex="-1">
+<div id="divRplyFwdMsg" dir="ltr"><font face="Calibri, sans-serif" style="font-size:11pt" color="#000000"><b>Van:</b> Wallkum Karl &lt;KG.Wallkum@student.han.nl&gt;<br>
+<b>Verzonden:</b> woensdag 12 februari 2020 17:09<br>
+<b>Aan:</b> Wesselingh Ellen &lt;Ellen.Wesselingh@han.nl&gt;<br>
+<b>Onderwerp:</b> Typos in sources</font>
+<div>&nbsp;</div>
+</div>
+<div class="BodyFragment"><font size="2"><span style="font-size:11pt;">
+<div class="PlainText">Hello Ellen,<br>
+<br>
+I have a question:<br>
+I have found some typos in some formulas of my sources. Until now I have <br>
+only marked them for myself in TeX comments. Should I mention these <br>
+mistakes somewhere? Maybe as a footnote?<br>
+or an appendix chapter only dedicated to that?<br>
+<br>
+Best Regards<br>
+<br>
+Karl<br>
+<br>
+</div>
+</span></font></div>
+</body>
+</html>

@@ -1,0 +1,794 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@nameuse{bbl@beforestart}
+\abx@aux@refcontext{nty/global//global/global}
+\AC@reset@newl@bel
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax }
+\@writefile{lof}{\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax }
+\@writefile{lot}{\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax }
+\babel@aux{english}{}
+\HyPL@Entry{1<</S/D>>}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {1.0}\else \textLR {0.1}\fi }{\ignorespaces FANUC R-2000iC/210F 6-axis industrial robot arm\relax }}{1}{figure.caption.3}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:fanuc210}{{\if@rl \I {1.0}\else \textLR {0.1}\fi }{1}{FANUC R-2000iC/210F 6-axis industrial robot arm\relax }{figure.caption.3}{}}
+\newlabel{fig:fanuc210@cref}{{[figure][1][0]\if@rl \I {1.0}\else \textLR {0.1}\fi }{[1][1][]1}}
+\HyPL@Entry{2<</P(2)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}\bgroup \beginL \latintext  Summary\endL \egroup }{\if@rlmain \I {2}\else \textLR {2}\fi }{chapter.1}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\HyPL@Entry{3<</P(3)>>}
+\@writefile{toc}{\select@language{english}}
+\AC@undonewlabel{acro:DH}
+\newlabel{acro:DH}{{}{\if@rlmain \I {3}\else \textLR {3}\fi }{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}{section*.5}{}}
+\newlabel{acro:DH@cref}{{}{[\protect \bgroup \beginL \protect \edef OT1{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\OT1/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def OT1{OT1}1\endL \egroup ][3][]\if@rlmain \I {3}\else \textLR {3}\fi }}
+\acronymused{DH}
+\acronymused{DH}
+\AC@undonewlabel{acro:DOF}
+\newlabel{acro:DOF}{{}{\if@rlmain \I {3}\else \textLR {3}\fi }{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}{section*.6}{}}
+\newlabel{acro:DOF@cref}{{}{[\protect \bgroup \beginL \protect \edef OT1{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\OT1/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def OT1{OT1}1\endL \egroup ][3][]\if@rlmain \I {3}\else \textLR {3}\fi }}
+\acronymused{DOF}
+\abx@aux@cite{robotDef}
+\abx@aux@segm{0}{0}{robotDef}
+\abx@aux@cite{automatonDef}
+\abx@aux@segm{0}{0}{automatonDef}
+\abx@aux@cite{robotDef2}
+\abx@aux@segm{0}{0}{robotDef2}
+\abx@aux@cite{CorkeRoboticVisionControl}
+\abx@aux@segm{0}{0}{CorkeRoboticVisionControl}
+\abx@aux@cite{CorkeRoboticVisionControl}
+\abx@aux@segm{0}{0}{CorkeRoboticVisionControl}
+\HyPL@Entry{4<</P(1)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}\bgroup \beginL \latintext  Abstract\endL \egroup }{\if@rlmain \I {1}\else \textLR {1}\fi }{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\acronymused{DOF}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}\bgroup \beginL \latintext  Preface\endL \egroup }{\if@rlmain \I {1}\else \textLR {1}\fi }{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Definition of a Robot\endL \egroup }{\if@rlmain \I {1}\else \textLR {1}\fi }{section*.7}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Origin of Robots\endL \egroup }{\if@rlmain \I {1}\else \textLR {1}\fi }{section*.8}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Simple robots\endL \egroup }{\if@rlmain \I {1}\else \textLR {1}\fi }{section*.9}\protected@file@percent }
+\abx@aux@cite{SPCWebsite}
+\abx@aux@segm{0}{0}{SPCWebsite}
+\HyPL@Entry{5<</P(2)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Current Robots\endL \egroup }{\if@rlmain \I {2}\else \textLR {2}\fi }{section*.10}\protected@file@percent }
+\AC@undonewlabel{acro:DCS}
+\newlabel{acro:DCS}{{}{\if@rlmain \I {2}\else \textLR {2}\fi }{Current Robots}{section*.11}{}}
+\newlabel{acro:DCS@cref}{{}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][2][]\if@rlmain \I {2}\else \textLR {2}\fi }}
+\acronymused{DCS}
+\AC@undonewlabel{acro:PC}
+\newlabel{acro:PC}{{}{\if@rlmain \I {2}\else \textLR {2}\fi }{Current Robots}{section*.12}{}}
+\newlabel{acro:PC@cref}{{}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][2][]\if@rlmain \I {2}\else \textLR {2}\fi }}
+\acronymused{PC}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Future robots\endL \egroup }{\if@rlmain \I {2}\else \textLR {2}\fi }{section*.13}\protected@file@percent }
+\AC@undonewlabel{acro:DDS}
+\newlabel{acro:DDS}{{}{\if@rlmain \I {2}\else \textLR {2}\fi }{Future robots}{section*.14}{}}
+\newlabel{acro:DDS@cref}{{}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][2][]\if@rlmain \I {2}\else \textLR {2}\fi }}
+\acronymused{DDS}
+\AC@undonewlabel{acro:fig}
+\newlabel{acro:fig}{{}{\if@rlmain \I {2}\else \textLR {2}\fi }{Future robots}{section*.15}{}}
+\newlabel{acro:fig@cref}{{}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][2][]\if@rlmain \I {2}\else \textLR {2}\fi }}
+\acronymused{fig}
+\AC@undonewlabel{acro:ROS}
+\newlabel{acro:ROS}{{}{\if@rlmain \I {2}\else \textLR {2}\fi }{Future robots}{section*.16}{}}
+\newlabel{acro:ROS@cref}{{}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][2][]\if@rlmain \I {2}\else \textLR {2}\fi }}
+\acronymused{ROS}
+\acronymused{ROS}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces \ac {DDS} as central information exchange platform\relax }}{\if@rlmain \I {2}\else \textLR {2}\fi }{figure.caption.17}\protected@file@percent }
+\acronymused{DDS}
+\newlabel{fig:SmartCellDDS}{{\if@rl \I {1.3}\else \textLR {3.1}\fi }{\if@rlmain \I {2}\else \textLR {2}\fi }{\ac {DDS} as central information exchange platform\relax }{figure.caption.17}{}}
+\newlabel{fig:SmartCellDDS@cref}{{[figure][1][3]\if@rl \I {1.3}\else \textLR {3.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][2][]\if@rlmain \I {2}\else \textLR {2}\fi }}
+\abx@aux@cite{FHEM}
+\abx@aux@segm{0}{0}{FHEM}
+\abx@aux@cite{ProjectPlan}
+\abx@aux@segm{0}{0}{ProjectPlan}
+\HyPL@Entry{6<</P(3)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}\bgroup \beginL \latintext  Acronyms\endL \egroup }{\if@rlmain \I {3}\else \textLR {3}\fi }{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newacro{DCS}[\AC@hyperlink{DCS}{DCS}]{Dual Check Safety}
+\newacro{DDS}[\AC@hyperlink{DDS}{DDS}]{Data Distribution System}
+\newacro{DH}[\AC@hyperlink{DH}{DH}]{Denavit-Hartenberg}
+\newacro{DOF}[\AC@hyperlink{DOF}{DOF}]{degrees of freedom}
+\newacro{DT}[\AC@hyperlink{DT}{DT}]{Digital Twin}
+\newacro{EOAT}[\AC@hyperlink{EOAT}{EOAT}]{End Of Arm Tooling}
+\newacro{eq}[\AC@hyperlink{eq}{eq}]{equation}
+\newacro{ETCS}[\AC@hyperlink{ETCS}{ETCS}]{European Train Control System}
+\newacro{FHEM}[\AC@hyperlink{FHEM}{FHEM}]{Freundliche Hausautomation und Energie-Messung \cite {FHEM}}
+\newacro{fig}[\AC@hyperlink{fig}{fig}]{figure}
+\newacro{GUI}[\AC@hyperlink{GUI}{GUI}]{Graphical User Interface}
+\newacro{HAN}[\AC@hyperlink{HAN}{HAN}]{Hogeschool van Arnhem en Nijmegen}
+\newacro{IOT}[\AC@hyperlink{IOT}{IOT}]{Internet Of Things}
+\newacro{IPKW}[\AC@hyperlink{IPKW}{IPKW}]{Industrial Park Kleevse Waard}
+\newacro{NFC}[\AC@hyperlink{NFC}{NFC}]{Near-field communication}
+\newacro{OS}[\AC@hyperlink{OS}{OS}]{Operating System}
+\newacro{PL}[\AC@hyperlink{PL}{PL}]{Production Line}
+\newacro{ROS}[\AC@hyperlink{ROS}{ROS}]{Robot Operating System}
+\newacro{sect}[\AC@hyperlink{sect}{sect}]{section}
+\newacro{SPC}[\AC@hyperlink{SPC}{SPC}]{Smart Production Cell}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}\bgroup \beginL \latintext  Problem Definition\endL \egroup }{\if@rlmain \I {3}\else \textLR {3}\fi }{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\AC@undonewlabel{acro:FRC}
+\newlabel{acro:FRC}{{}{\if@rlmain \I {3}\else \textLR {3}\fi }{Problem Definition}{section*.18}{}}
+\newlabel{acro:FRC@cref}{{}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/bx/n/24.88 {\TU/lmr/m/n/10 }\OT1/lmr/bx/n/24.88 \size@update \enc@update \def TU{OT1}1\endL \egroup ][3][]\if@rlmain \I {3}\else \textLR {3}\fi }}
+\acronymused{FRC}
+\acronymused{FRC}
+\abx@aux@cite{Trung}
+\abx@aux@segm{0}{0}{Trung}
+\abx@aux@cite{6axisRobot}
+\abx@aux@segm{0}{0}{6axisRobot}
+\abx@aux@cite{IndustrialRobotArm}
+\abx@aux@segm{0}{0}{IndustrialRobotArm}
+\abx@aux@cite{Jazar2007}
+\abx@aux@segm{0}{0}{Jazar2007}
+\abx@aux@cite{CorkeRoboticsToolbox}
+\abx@aux@segm{0}{0}{CorkeRoboticsToolbox}
+\abx@aux@cite{MotionPlanning}
+\abx@aux@segm{0}{0}{MotionPlanning}
+\abx@aux@cite{RobotDynamics}
+\abx@aux@segm{0}{0}{RobotDynamics}
+\abx@aux@cite{ROS}
+\abx@aux@segm{0}{0}{ROS}
+\abx@aux@cite{IndustrialRobotArm}
+\abx@aux@segm{0}{0}{IndustrialRobotArm}
+\abx@aux@cite{ROSAnswers_WhatIsRos}
+\abx@aux@segm{0}{0}{ROSAnswers_WhatIsRos}
+\HyPL@Entry{7<</P(4)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}\bgroup \beginL \latintext  Literature survey\endL \egroup }{\if@rlmain \I {4}\else \textLR {4}\fi }{chapter.6}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }\bgroup \beginL \latintext  Field of study\endL \egroup }{\if@rlmain \I {4}\else \textLR {4}\fi }{section.6.1}\protected@file@percent }
+\acronymused{ROS}
+\abx@aux@cite{MathWorksInverseKinematics}
+\abx@aux@segm{0}{0}{MathWorksInverseKinematics}
+\abx@aux@cite{MathWorksInverseKinematics}
+\abx@aux@segm{0}{0}{MathWorksInverseKinematics}
+\abx@aux@cite{forwardVsInverseKinematics}
+\abx@aux@segm{0}{0}{forwardVsInverseKinematics}
+\abx@aux@cite{MathWorksInverseKinematics}
+\abx@aux@segm{0}{0}{MathWorksInverseKinematics}
+\abx@aux@cite{forwardVsInverseKinematics}
+\abx@aux@segm{0}{0}{forwardVsInverseKinematics}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{inverseKinematikWiki}
+\abx@aux@segm{0}{0}{inverseKinematikWiki}
+\abx@aux@cite{allgInvKin}
+\abx@aux@segm{0}{0}{allgInvKin}
+\abx@aux@cite{MathIntroRobManip}
+\abx@aux@segm{0}{0}{MathIntroRobManip}
+\abx@aux@cite{MathIntroRobManip}
+\abx@aux@segm{0}{0}{MathIntroRobManip}
+\abx@aux@cite{FwdInvAnalysRobManip}
+\abx@aux@segm{0}{0}{FwdInvAnalysRobManip}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\HyPL@Entry{8<</P(5)>>}
+\AC@undonewlabel{acro:OS}
+\newlabel{acro:OS}{{\if@rl \I {1.6}\else \textLR {6.1}\fi }{\if@rlmain \I {5}\else \textLR {5}\fi }{Field of study}{section*.19}{}}
+\newlabel{acro:OS@cref}{{[section][1][6]\if@rl \I {1.6}\else \textLR {6.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][4][]\if@rlmain \I {5}\else \textLR {5}\fi }}
+\acronymused{OS}
+\acronymused{ROS}
+\acronymused{DDS}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {2.6}\else \textLR {6.2}\fi }\bgroup \beginL \latintext  In depth literature\endL \egroup }{\if@rlmain \I {5}\else \textLR {5}\fi }{section.6.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {1.6}\else \textLR {6.1}\fi }{\ignorespaces Relation between inverse and forward kinematics translated from German Wikipedia site on inverse kinematics \cite {MathWorksInverseKinematics}, for content see Mathworks \cite {forwardVsInverseKinematics}\relax }}{\if@rlmain \I {5}\else \textLR {5}\fi }{figure.caption.20}\protected@file@percent }
+\newlabel{fig:FwVsInvKin}{{\if@rl \I {1.6}\else \textLR {6.1}\fi }{\if@rlmain \I {5}\else \textLR {5}\fi }{Relation between inverse and forward kinematics translated from German Wikipedia site on inverse kinematics \cite {MathWorksInverseKinematics}, for content see Mathworks \cite {forwardVsInverseKinematics}\relax }{figure.caption.20}{}}
+\newlabel{fig:FwVsInvKin@cref}{{[figure][1][6]\if@rl \I {1.6}\else \textLR {6.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][5][]\if@rlmain \I {5}\else \textLR {5}\fi }}
+\acronymused{DOF}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{FwdInvAnalysRobManip}
+\abx@aux@segm{0}{0}{FwdInvAnalysRobManip}
+\abx@aux@cite{FwInvKuka}
+\abx@aux@segm{0}{0}{FwInvKuka}
+\abx@aux@cite{geomModelingKamel}
+\abx@aux@segm{0}{0}{geomModelingKamel}
+\abx@aux@cite{invKinANNKSHITISH}
+\abx@aux@segm{0}{0}{invKinANNKSHITISH}
+\abx@aux@cite{KongWei}
+\abx@aux@segm{0}{0}{KongWei}
+\abx@aux@cite{MathIntroRobManip}
+\abx@aux@segm{0}{0}{MathIntroRobManip}
+\abx@aux@cite{Dyn6DOFBinLi}
+\abx@aux@segm{0}{0}{Dyn6DOFBinLi}
+\abx@aux@cite{evalNonlinFeedForBackControl}
+\abx@aux@segm{0}{0}{evalNonlinFeedForBackControl}
+\abx@aux@cite{FANUCcontrolMatlab}
+\abx@aux@segm{0}{0}{FANUCcontrolMatlab}
+\abx@aux@cite{RobotModelAnalContrexampleJamshed}
+\abx@aux@segm{0}{0}{RobotModelAnalContrexampleJamshed}
+\abx@aux@cite{GreivesDTfirst}
+\abx@aux@segm{0}{0}{GreivesDTfirst}
+\abx@aux@cite{Qi2018DigitalTS}
+\abx@aux@segm{0}{0}{Qi2018DigitalTS}
+\abx@aux@cite{DTwikip}
+\abx@aux@segm{0}{0}{DTwikip}
+\abx@aux@cite{SaddikDTmultimconv}
+\abx@aux@segm{0}{0}{SaddikDTmultimconv}
+\abx@aux@cite{WongWhatisDT}
+\abx@aux@segm{0}{0}{WongWhatisDT}
+\abx@aux@cite{KRITZINGER20181016}
+\abx@aux@segm{0}{0}{KRITZINGER20181016}
+\abx@aux@cite{SchleichDTshaping}
+\abx@aux@segm{0}{0}{SchleichDTshaping}
+\abx@aux@cite{WongWhatisDT}
+\abx@aux@segm{0}{0}{WongWhatisDT}
+\abx@aux@cite{SchleichDTshaping}
+\abx@aux@segm{0}{0}{SchleichDTshaping}
+\abx@aux@cite{AlaDTdataTransmission}
+\abx@aux@segm{0}{0}{AlaDTdataTransmission}
+\abx@aux@cite{ThalesETCS}
+\abx@aux@segm{0}{0}{ThalesETCS}
+\HyPL@Entry{9<</P(6)>>}
+\acronymused{DOF}
+\acronymused{DOF}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {3.6}\else \textLR {6.3}\fi }\bgroup \beginL \latintext  Digital twinning\endL \egroup }{\if@rlmain \I {6}\else \textLR {6}\fi }{section.6.3}\protected@file@percent }
+\acronymused{FRC}
+\AC@undonewlabel{acro:SPC}
+\newlabel{acro:SPC}{{\if@rl \I {3.6}\else \textLR {6.3}\fi }{\if@rlmain \I {6}\else \textLR {6}\fi }{Digital twinning}{section*.21}{}}
+\newlabel{acro:SPC@cref}{{[section][3][6]\if@rl \I {3.6}\else \textLR {6.3}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][6][]\if@rlmain \I {6}\else \textLR {6}\fi }}
+\acronymused{SPC}
+\AC@undonewlabel{acro:DT}
+\newlabel{acro:DT}{{\if@rl \I {3.6}\else \textLR {6.3}\fi }{\if@rlmain \I {6}\else \textLR {6}\fi }{Digital twinning}{section*.22}{}}
+\newlabel{acro:DT@cref}{{[section][3][6]\if@rl \I {3.6}\else \textLR {6.3}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][6][]\if@rlmain \I {6}\else \textLR {6}\fi }}
+\acronymused{DT}
+\acronymused{DT}
+\acronymused{DT}
+\acronymused{DT}
+\acronymused{DT}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{proxdist}
+\abx@aux@segm{0}{0}{proxdist}
+\abx@aux@cite{proxdist}
+\abx@aux@segm{0}{0}{proxdist}
+\HyPL@Entry{10<</P(7)>>}
+\acronymused{DT}
+\acronymused{DT}
+\AC@undonewlabel{acro:PL}
+\newlabel{acro:PL}{{\if@rl \I {3.6}\else \textLR {6.3}\fi }{\if@rlmain \I {7}\else \textLR {7}\fi }{Digital twinning}{section*.23}{}}
+\newlabel{acro:PL@cref}{{[section][3][6]\if@rl \I {3.6}\else \textLR {6.3}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][6][]\if@rlmain \I {7}\else \textLR {7}\fi }}
+\acronymused{PL}
+\acronymused{PL}
+\AC@undonewlabel{acro:ETCS}
+\newlabel{acro:ETCS}{{\if@rl \I {3.6}\else \textLR {6.3}\fi }{\if@rlmain \I {7}\else \textLR {7}\fi }{Digital twinning}{section*.24}{}}
+\newlabel{acro:ETCS@cref}{{[section][3][6]\if@rl \I {3.6}\else \textLR {6.3}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][6][]\if@rlmain \I {7}\else \textLR {7}\fi }}
+\acronymused{ETCS}
+\acronymused{ETCS}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}\bgroup \beginL \latintext  Forward Kinematics\endL \egroup }{\if@rlmain \I {7}\else \textLR {7}\fi }{chapter.7}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {1.7}\else \textLR {7.1}\fi }\bgroup \beginL \latintext  Approach\endL \egroup }{\if@rlmain \I {7}\else \textLR {7}\fi }{section.7.1}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {2.7}\else \textLR {7.2}\fi }\bgroup \beginL \latintext  Numbering the joints and links\endL \egroup }{\if@rlmain \I {7}\else \textLR {7}\fi }{section.7.2}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  numbering of links\endL \egroup }{\if@rlmain \I {7}\else \textLR {7}\fi }{section*.25}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  numbering of joints\endL \egroup }{\if@rlmain \I {7}\else \textLR {7}\fi }{section*.26}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  relation between links and joints\endL \egroup }{\if@rlmain \I {7}\else \textLR {7}\fi }{section*.27}\protected@file@percent }
+\abx@aux@cite{Angela_U1S2P1}
+\abx@aux@segm{0}{0}{Angela_U1S2P1}
+\HyPL@Entry{11<</P(8)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Joint and link numbering in Fanuc 210F\endL \egroup }{\if@rlmain \I {8}\else \textLR {8}\fi }{section*.28}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {1.7}\else \textLR {7.1}\fi }{\ignorespaces Links (turquoise) and joints (orange) in the FANUC 210F\relax }}{\if@rlmain \I {8}\else \textLR {8}\fi }{figure.caption.29}\protected@file@percent }
+\newlabel{fig:LinksANDJoints210F}{{\if@rl \I {1.7}\else \textLR {7.1}\fi }{\if@rlmain \I {8}\else \textLR {8}\fi }{Links (turquoise) and joints (orange) in the FANUC 210F\relax }{figure.caption.29}{}}
+\newlabel{fig:LinksANDJoints210F@cref}{{[figure][1][7]\if@rl \I {1.7}\else \textLR {7.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][7][]\if@rlmain \I {8}\else \textLR {8}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {3.7}\else \textLR {7.3}\fi }\bgroup \beginL \latintext  local coordinate reference frames\endL \egroup }{\if@rlmain \I {8}\else \textLR {8}\fi }{section.7.3}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Assignation of $z_i$ axes\endL \egroup }{\if@rlmain \I {8}\else \textLR {8}\fi }{section*.30}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Direction of rotation\endL \egroup }{\if@rlmain \I {8}\else \textLR {8}\fi }{section*.31}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  $z_i$ axes in Fanuc 210F\endL \egroup }{\if@rlmain \I {8}\else \textLR {8}\fi }{section*.32}\protected@file@percent }
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{SpongDynContr}
+\abx@aux@segm{0}{0}{SpongDynContr}
+\HyPL@Entry{12<</P(9)>>}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {2.7}\else \textLR {7.2}\fi }{\ignorespaces $z_i$ axes on the Fanuc 210F with the direction of positive rotation (orange)\relax }}{\if@rlmain \I {9}\else \textLR {9}\fi }{figure.caption.33}\protected@file@percent }
+\newlabel{fig:zi_Axes}{{\if@rl \I {2.7}\else \textLR {7.2}\fi }{\if@rlmain \I {9}\else \textLR {9}\fi }{$z_i$ axes on the Fanuc 210F with the direction of positive rotation (orange)\relax }{figure.caption.33}{}}
+\newlabel{fig:zi_Axes@cref}{{[figure][2][7]\if@rl \I {2.7}\else \textLR {7.2}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][8][]\if@rlmain \I {9}\else \textLR {9}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Base frame\endL \egroup }{\if@rlmain \I {9}\else \textLR {9}\fi }{section*.34}\protected@file@percent }
+\AC@undonewlabel{acro:EOAT}
+\newlabel{acro:EOAT}{{\if@rl \I {3.7}\else \textLR {7.3}\fi }{\if@rlmain \I {9}\else \textLR {9}\fi }{Base frame}{section*.35}{}}
+\newlabel{acro:EOAT@cref}{{[section][3][7]\if@rl \I {3.7}\else \textLR {7.3}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/bx/n/10 {\TU/lmr/m/n/10 }\TU/lmr/bx/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][9][]\if@rlmain \I {9}\else \textLR {9}\fi }}
+\acronymused{EOAT}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Assignation of frames $(i)$\endL \egroup }{\if@rlmain \I {9}\else \textLR {9}\fi }{section*.36}\protected@file@percent }
+\HyPL@Entry{13<</P(10)>>}
+\acronymused{EOAT}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Assignation of \ac {EOAT} frame\endL \egroup }{\if@rlmain \I {10}\else \textLR {10}\fi }{section*.37}\protected@file@percent }
+\acronymused{EOAT}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  local coordinate reference frames on the Fanuc 210F\endL \egroup }{\if@rlmain \I {10}\else \textLR {10}\fi }{section*.38}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {3.7}\else \textLR {7.3}\fi }{\ignorespaces Coordinate reference frames for Fanuc 210F\relax }}{\if@rlmain \I {10}\else \textLR {10}\fi }{figure.caption.39}\protected@file@percent }
+\newlabel{fig:RefFrame}{{\if@rl \I {3.7}\else \textLR {7.3}\fi }{\if@rlmain \I {10}\else \textLR {10}\fi }{Coordinate reference frames for Fanuc 210F\relax }{figure.caption.39}{}}
+\newlabel{fig:RefFrame@cref}{{[figure][3][7]\if@rl \I {3.7}\else \textLR {7.3}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][10][]\if@rlmain \I {10}\else \textLR {10}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  frame 0 (Base)\endL \egroup }{\if@rlmain \I {10}\else \textLR {10}\fi }{section*.40}\protected@file@percent }
+\acronymused{EOAT}
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\HyPL@Entry{14<</P(11)>>}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {4.7}\else \textLR {7.4}\fi }{\ignorespaces Standard pose of the robot\relax }}{\if@rlmain \I {11}\else \textLR {11}\fi }{figure.caption.41}\protected@file@percent }
+\newlabel{fig:StandardPose}{{\if@rl \I {4.7}\else \textLR {7.4}\fi }{\if@rlmain \I {11}\else \textLR {11}\fi }{Standard pose of the robot\relax }{figure.caption.41}{}}
+\newlabel{fig:StandardPose@cref}{{[figure][4][7]\if@rl \I {4.7}\else \textLR {7.4}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][10][]\if@rlmain \I {11}\else \textLR {11}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  frame 1\endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }{section*.42}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  frame 2\endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }{section*.43}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  frame 3\endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }{section*.44}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  frame 4\endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }{section*.45}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  frame 5\endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }{section*.46}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  frame 6 (EOAT)\endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }{section*.47}\protected@file@percent }
+\acronymused{DH}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {4.7}\else \textLR {7.4}\fi }\bgroup \beginL \latintext  Establishing \ac {DH} parameters for each link\endL \egroup }{\if@rlmain \I {11}\else \textLR {11}\fi }{section.7.4}\protected@file@percent }
+\acronymused{DH}
+\abx@aux@cite{AutRobVeh}
+\abx@aux@segm{0}{0}{AutRobVeh}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{FwdInvAnalysRobManip}
+\abx@aux@segm{0}{0}{FwdInvAnalysRobManip}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{allgInvKin}
+\abx@aux@segm{0}{0}{allgInvKin}
+\HyPL@Entry{15<</P(12)>>}
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\newlabel{eq:DH-Transform}{{7.1}{\if@rlmain \I {12}\else \textLR {12}\fi }{Establishing \ac {DH} parameters for each link}{equation.7.4.1}{}}
+\newlabel{eq:DH-Transform@cref}{{[equation][1][7]7.1}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][12][]\if@rlmain \I {12}\else \textLR {12}\fi }}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {5.7}\else \textLR {7.5}\fi }{\ignorespaces Visual representation of a \ac {DH}-transformation\relax }}{\if@rlmain \I {12}\else \textLR {12}\fi }{figure.caption.48}\protected@file@percent }
+\acronymused{DH}
+\newlabel{fig:DH_Parameters_visual}{{\if@rl \I {5.7}\else \textLR {7.5}\fi }{\if@rlmain \I {12}\else \textLR {12}\fi }{Visual representation of a \ac {DH}-transformation\relax }{figure.caption.48}{}}
+\newlabel{fig:DH_Parameters_visual@cref}{{[figure][5][7]\if@rl \I {5.7}\else \textLR {7.5}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][12][]\if@rlmain \I {12}\else \textLR {12}\fi }}
+\acronymused{DH}
+\HyPL@Entry{16<</P(13)>>}
+\acronymused{DH}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {5.7}\else \textLR {7.5}\fi }\bgroup \beginL \latintext  Establishing \ac {DH} parameters on the Fanuc 210F\endL \egroup }{\if@rlmain \I {13}\else \textLR {13}\fi }{section.7.5}\protected@file@percent }
+\acronymused{DH}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {6.7}\else \textLR {7.6}\fi }{\ignorespaces Assignment of DH-Parameters on the Fanuc 210F\relax }}{\if@rlmain \I {13}\else \textLR {13}\fi }{figure.caption.49}\protected@file@percent }
+\newlabel{fig:DH_Parameters_Fanuc210F}{{\if@rl \I {6.7}\else \textLR {7.6}\fi }{\if@rlmain \I {13}\else \textLR {13}\fi }{Assignment of DH-Parameters on the Fanuc 210F\relax }{figure.caption.49}{}}
+\newlabel{fig:DH_Parameters_Fanuc210F@cref}{{[figure][6][7]\if@rl \I {6.7}\else \textLR {7.6}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][13][]\if@rlmain \I {13}\else \textLR {13}\fi }}
+\@writefile{lot}{\contentsline {table}{\numberline {\if@rl \I {1.7}\else \textLR {7.1}\fi }{\ignorespaces Denavit Hartenberg Parameters for Fanuc 210F\relax }}{\if@rlmain \I {13}\else \textLR {13}\fi }{table.caption.50}\protected@file@percent }
+\newlabel{table:DH-Parameter}{{\if@rl \I {1.7}\else \textLR {7.1}\fi }{\if@rlmain \I {13}\else \textLR {13}\fi }{Denavit Hartenberg Parameters for Fanuc 210F\relax }{table.caption.50}{}}
+\newlabel{table:DH-Parameter@cref}{{[table][1][7]\if@rl \I {1.7}\else \textLR {7.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][13][]\if@rlmain \I {13}\else \textLR {13}\fi }}
+\abx@aux@cite{Paul1981RobotM}
+\abx@aux@segm{0}{0}{Paul1981RobotM}
+\abx@aux@cite{Paul1981RobotM}
+\abx@aux@segm{0}{0}{Paul1981RobotM}
+\HyPL@Entry{17<</P(14)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {6.7}\else \textLR {7.6}\fi }\bgroup \beginL \latintext  numeric values of DH-Parameters\endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }{section.7.6}\protected@file@percent }
+\acronymused{DH}
+\acronymused{DH}
+\newlabel{item:DH-LinparamValues}{{\if@rl \I {6.7}\else \textLR {7.6}\fi }{\if@rlmain \I {14}\else \textLR {14}\fi }{numeric values of DH-Parameters}{section.7.6}{}}
+\newlabel{item:DH-LinparamValues@cref}{{[section][6][7]\if@rl \I {6.7}\else \textLR {7.6}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][14][]\if@rlmain \I {14}\else \textLR {14}\fi }}
+\@writefile{lot}{\contentsline {table}{\numberline {\if@rl \I {2.7}\else \textLR {7.2}\fi }{\ignorespaces Numeric values of Denavit Hartenberg Parameters for Fanuc 210F\relax }}{\if@rlmain \I {14}\else \textLR {14}\fi }{table.caption.51}\protected@file@percent }
+\newlabel{table:DH-Parameter_num}{{\if@rl \I {2.7}\else \textLR {7.2}\fi }{\if@rlmain \I {14}\else \textLR {14}\fi }{Numeric values of Denavit Hartenberg Parameters for Fanuc 210F\relax }{table.caption.51}{}}
+\newlabel{table:DH-Parameter_num@cref}{{[table][2][7]\if@rl \I {2.7}\else \textLR {7.2}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][14][]\if@rlmain \I {14}\else \textLR {14}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {7.7}\else \textLR {7.7}\fi }\bgroup \beginL \latintext  Homogeneous transformation matrices\endL \egroup }{\if@rlmain \I {14}\else \textLR {14}\fi }{section.7.7}\protected@file@percent }
+\newlabel{eq:fourTransformations}{{7.2}{\if@rlmain \I {14}\else \textLR {14}\fi }{Homogeneous transformation matrices}{equation.7.7.2}{}}
+\newlabel{eq:fourTransformations@cref}{{[equation][2][7]7.2}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][14][]\if@rlmain \I {14}\else \textLR {14}\fi }}
+\newlabel{eq:TransformationMarix}{{7.3}{\if@rlmain \I {14}\else \textLR {14}\fi }{Homogeneous transformation matrices}{equation.7.7.3}{}}
+\newlabel{eq:TransformationMarix@cref}{{[equation][3][7]7.3}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][14][]\if@rlmain \I {14}\else \textLR {14}\fi }}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{RobotKinemDyn}
+\abx@aux@segm{0}{0}{RobotKinemDyn}
+\HyPL@Entry{18<</P(15)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {8.7}\else \textLR {7.8}\fi }\bgroup \beginL \latintext  Forward Kinematic Equations\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }{section.7.8}\protected@file@percent }
+\newlabel{ForKinEq}{{\if@rl \I {8.7}\else \textLR {7.8}\fi }{\if@rlmain \I {15}\else \textLR {15}\fi }{Forward Kinematic Equations}{section.7.8}{}}
+\newlabel{ForKinEq@cref}{{[section][8][7]\if@rl \I {8.7}\else \textLR {7.8}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/bx/n/14.4 {\TU/lmr/m/n/10 }\OT1/lmr/bx/n/14.4 \size@update \enc@update \def TU{OT1}1\endL \egroup ][14][]\if@rlmain \I {15}\else \textLR {15}\fi }}
+\acronymused{EOAT}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Sum of Transformations Matrix\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }{section*.52}\protected@file@percent }
+\newlabel{eq:SummofTranfMatr}{{7.4}{\if@rlmain \I {15}\else \textLR {15}\fi }{Sum of Transformations Matrix}{equation.7.8.4}{}}
+\newlabel{eq:SummofTranfMatr@cref}{{[equation][4][7]7.4}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][15][]\if@rlmain \I {15}\else \textLR {15}\fi }}
+\newlabel{eq:matrixForm}{{7.5}{\if@rlmain \I {15}\else \textLR {15}\fi }{Sum of Transformations Matrix}{equation.7.8.5}{}}
+\newlabel{eq:matrixForm@cref}{{[equation][5][7]7.5}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][15][]\if@rlmain \I {15}\else \textLR {15}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  short notation\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }{section*.53}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Transformation to cartesian coordinates with euler angles \endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }{section*.54}\protected@file@percent }
+\newlabel{eq:rotMatrix_composition}{{7.6}{\if@rlmain \I {15}\else \textLR {15}\fi }{Transformation to cartesian coordinates with euler angles}{equation.7.8.6}{}}
+\newlabel{eq:rotMatrix_composition@cref}{{[equation][6][7]7.6}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][15][]\if@rlmain \I {15}\else \textLR {15}\fi }}
+\newlabel{eq:rotMatrixToAbsFrame}{{7.8}{\if@rlmain \I {15}\else \textLR {15}\fi }{Transformation to cartesian coordinates with euler angles}{equation.7.8.8}{}}
+\newlabel{eq:rotMatrixToAbsFrame@cref}{{[equation][8][7]7.8}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][15][]\if@rlmain \I {15}\else \textLR {15}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {9.7}\else \textLR {7.9}\fi }\bgroup \beginL \latintext  Forward Kinematic Equations on the 210F\endL \egroup }{\if@rlmain \I {15}\else \textLR {15}\fi }{section.7.9}\protected@file@percent }
+\acronymused{DOF}
+\HyPL@Entry{19<</P(16)>>}
+\newlabel{eq:TransformMatrices_0-6}{{7.10}{\if@rlmain \I {16}\else \textLR {16}\fi }{Forward Kinematic Equations on the 210F}{equation.7.9.10}{}}
+\newlabel{eq:TransformMatrices_0-6@cref}{{[equation][10][7]7.10}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][15][]\if@rlmain \I {16}\else \textLR {16}\fi }}
+\HyPL@Entry{20<</P(17)>>}
+\HyPL@Entry{21<</P(18)>>}
+\HyPL@Entry{22<</P(19)>>}
+\newlabel{eq:ForwardKinEquations_6DOF}{{7.13}{\if@rlmain \I {19}\else \textLR {19}\fi }{Forward Kinematic Equations on the 210F}{equation.7.9.12}{}}
+\newlabel{eq:ForwardKinEquations_6DOF@cref}{{[equation][13][7]7.13}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][18][]\if@rlmain \I {19}\else \textLR {19}\fi }}
+\abx@aux@cite{craig1986introduction}
+\abx@aux@segm{0}{0}{craig1986introduction}
+\abx@aux@cite{craig1986introduction}
+\abx@aux@segm{0}{0}{craig1986introduction}
+\HyPL@Entry{23<</P(20)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}\bgroup \beginL \latintext  Inverse Kinematics\endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }{chapter.8}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\acronymused{EOAT}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {1.8}\else \textLR {8.1}\fi }\bgroup \beginL \latintext  Existence of solutions\endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }{section.8.1}\protected@file@percent }
+\newlabel{ExistSol}{{\if@rl \I {1.8}\else \textLR {8.1}\fi }{\if@rlmain \I {20}\else \textLR {20}\fi }{Existence of solutions}{section.8.1}{}}
+\newlabel{ExistSol@cref}{{[section][1][8]\if@rl \I {1.8}\else \textLR {8.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/bx/n/14.4 {\TU/lmr/m/n/10 }\OT1/lmr/bx/n/14.4 \size@update \enc@update \def TU{OT1}1\endL \egroup ][20][]\if@rlmain \I {20}\else \textLR {20}\fi }}
+\acronymused{EOAT}
+\acronymused{DOF}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {2.8}\else \textLR {8.2}\fi }\bgroup \beginL \latintext  multiple solutions\endL \egroup }{\if@rlmain \I {20}\else \textLR {20}\fi }{section.8.2}\protected@file@percent }
+\newlabel{MultipSol}{{\if@rl \I {2.8}\else \textLR {8.2}\fi }{\if@rlmain \I {20}\else \textLR {20}\fi }{multiple solutions}{section.8.2}{}}
+\newlabel{MultipSol@cref}{{[section][2][8]\if@rl \I {2.8}\else \textLR {8.2}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/bx/n/14.4 {\TU/lmr/m/n/10 }\OT1/lmr/bx/n/14.4 \size@update \enc@update \def TU{OT1}1\endL \egroup ][20][]\if@rlmain \I {20}\else \textLR {20}\fi }}
+\acronymused{DOF}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\HyPL@Entry{24<</P(21)>>}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {1.8}\else \textLR {8.1}\fi }{\ignorespaces Three link manipulator with 2 solutions\relax }}{\if@rlmain \I {21}\else \textLR {21}\fi }{figure.caption.55}\protected@file@percent }
+\newlabel{fig:multipSol3Link}{{\if@rl \I {1.8}\else \textLR {8.1}\fi }{\if@rlmain \I {21}\else \textLR {21}\fi }{Three link manipulator with 2 solutions\relax }{figure.caption.55}{}}
+\newlabel{fig:multipSol3Link@cref}{{[figure][1][8]\if@rl \I {1.8}\else \textLR {8.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][20][]\if@rlmain \I {21}\else \textLR {21}\fi }}
+\acronymused{DOF}
+\acronymused{EOAT}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {2.8}\else \textLR {8.2}\fi }{\ignorespaces Tree of inverse solutions (\cite {invKinSolYanWu}, fig.2)\relax }}{\if@rlmain \I {21}\else \textLR {21}\fi }{figure.caption.56}\protected@file@percent }
+\newlabel{fig:invKinTree}{{\if@rl \I {2.8}\else \textLR {8.2}\fi }{\if@rlmain \I {21}\else \textLR {21}\fi }{Tree of inverse solutions (\cite {invKinSolYanWu}, fig.2)\relax }{figure.caption.56}{}}
+\newlabel{fig:invKinTree@cref}{{[figure][2][8]\if@rl \I {2.8}\else \textLR {8.2}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][21][]\if@rlmain \I {21}\else \textLR {21}\fi }}
+\acronymused{DOF}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {3.8}\else \textLR {8.3}\fi }\bgroup \beginL \latintext  Inverse solution of 6 \ac {DOF} Robot\endL \egroup }{\if@rlmain \I {21}\else \textLR {21}\fi }{section.8.3}\protected@file@percent }
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_1}{97.53787pt}
+\ExplSyntaxOff 
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_2}{419.34155pt}
+\ExplSyntaxOff 
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_3}{121.72417pt}
+\ExplSyntaxOff 
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_4}{491.90048pt}
+\ExplSyntaxOff 
+\HyPL@Entry{25<</P(22)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  Forward kinematic equation\endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }{section*.57}\protected@file@percent }
+\acronymused{DOF}
+\newlabel{eq:ForwKinEquMatr}{{8.1}{\if@rlmain \I {22}\else \textLR {22}\fi }{Forward kinematic equation}{equation.8.3.1}{}}
+\newlabel{eq:ForwKinEquMatr@cref}{{[equation][1][8]8.1}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {4.8}\else \textLR {8.4}\fi }\bgroup \beginL \latintext  The inverse Solution\endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }{section.8.4}\protected@file@percent }
+\newlabel{InverseSol}{{\if@rl \I {4.8}\else \textLR {8.4}\fi }{\if@rlmain \I {22}\else \textLR {22}\fi }{The inverse Solution}{section.8.4}{}}
+\newlabel{InverseSol@cref}{{[section][4][8]\if@rl \I {4.8}\else \textLR {8.4}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/bx/n/14.4 {\TU/lmr/m/n/10 }\OT1/lmr/bx/n/14.4 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\AC@undonewlabel{acro:eq}
+\newlabel{acro:eq}{{\if@rl \I {4.8}\else \textLR {8.4}\fi }{\if@rlmain \I {22}\else \textLR {22}\fi }{The inverse Solution}{section*.58}{}}
+\newlabel{acro:eq@cref}{{[section][4][8]\if@rl \I {4.8}\else \textLR {8.4}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/bx/n/14.4 {\TU/lmr/m/n/10 }\OT1/lmr/bx/n/14.4 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\acronymused{eq}
+\acronymused{eq}
+\newlabel{eq:ForwKinEquMatr_reformed}{{8.2}{\if@rlmain \I {22}\else \textLR {22}\fi }{The inverse Solution}{equation.8.4.2}{}}
+\newlabel{eq:ForwKinEquMatr_reformed@cref}{{[equation][2][8]8.2}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\acronymused{eq}
+\pgfsyspdfmark {pgfid34}{4849713}{34346874}
+\pgfsyspdfmark {pgfid35}{8593062}{34346874}
+\pgfsyspdfmark {pgfid36}{15622971}{34346874}
+\pgfsyspdfmark {pgfid37}{22652880}{34346874}
+\pgfsyspdfmark {pgfid38}{29682789}{34346874}
+\pgfsyspdfmark {pgfid39}{4685873}{33560442}
+\pgfsyspdfmark {pgfid40}{8593062}{33560442}
+\pgfsyspdfmark {pgfid41}{15622971}{33560442}
+\pgfsyspdfmark {pgfid42}{22652880}{33560442}
+\pgfsyspdfmark {pgfid43}{29682789}{33560442}
+\pgfsyspdfmark {pgfid44}{4685873}{32704834}
+\pgfsyspdfmark {pgfid45}{8593062}{32704834}
+\pgfsyspdfmark {pgfid46}{15622971}{32704834}
+\pgfsyspdfmark {pgfid47}{22652880}{32704834}
+\pgfsyspdfmark {pgfid48}{29682789}{32704834}
+\pgfsyspdfmark {pgfid49}{4685873}{31849226}
+\pgfsyspdfmark {pgfid50}{8593062}{31849226}
+\pgfsyspdfmark {pgfid51}{15622971}{31849226}
+\pgfsyspdfmark {pgfid52}{22652880}{31849226}
+\pgfsyspdfmark {pgfid53}{29682789}{31849226}
+\pgfsyspdfmark {pgfid54}{4685873}{30993618}
+\pgfsyspdfmark {pgfid55}{8593062}{30993618}
+\pgfsyspdfmark {pgfid56}{15622971}{30993618}
+\pgfsyspdfmark {pgfid57}{22652880}{30993618}
+\pgfsyspdfmark {pgfid58}{29682789}{30993618}
+\pgfsyspdfmark {pgfid59}{33426137}{32270474}
+\pgfsyspdfmark {pgfid60}{33426137}{32270474}
+\pgfsyspdfmark {pgfid61}{33426137}{32270474}
+\pgfsyspdfmark {pgfid62}{33426137}{32270474}
+\pgfsyspdfmark {pgfid63}{33426137}{32270474}
+\pgfsyspdfmark {pgfid64}{33426137}{32270474}
+\pgfsyspdfmark {pgfid65}{33426137}{32270474}
+\pgfsyspdfmark {pgfid66}{33426137}{32270474}
+\newlabel{eq:prelinkmultip_right}{{8.3}{\if@rlmain \I {22}\else \textLR {22}\fi }{The inverse Solution}{equation.8.4.3}{}}
+\newlabel{eq:prelinkmultip_right@cref}{{[equation][3][8]8.3}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\pgfsyspdfmark {pgfid91}{8265245}{26229146}
+\pgfsyspdfmark {pgfid92}{16087691}{26229146}
+\pgfsyspdfmark {pgfid93}{23910137}{26229146}
+\pgfsyspdfmark {pgfid94}{32525120}{26229146}
+\pgfsyspdfmark {pgfid95}{8265245}{23919914}
+\pgfsyspdfmark {pgfid96}{16087691}{23919914}
+\pgfsyspdfmark {pgfid97}{23910137}{23919914}
+\pgfsyspdfmark {pgfid98}{32525120}{23919914}
+\pgfsyspdfmark {pgfid99}{8265245}{21992066}
+\pgfsyspdfmark {pgfid100}{16087691}{21992066}
+\pgfsyspdfmark {pgfid101}{23910137}{21992066}
+\pgfsyspdfmark {pgfid102}{32525120}{21992066}
+\pgfsyspdfmark {pgfid103}{8265245}{20803502}
+\pgfsyspdfmark {pgfid104}{16087691}{20803502}
+\pgfsyspdfmark {pgfid105}{23910137}{20803502}
+\pgfsyspdfmark {pgfid106}{32525120}{20803502}
+\pgfsyspdfmark {pgfid107}{37061005}{23873494}
+\pgfsyspdfmark {pgfid108}{37061005}{23873494}
+\pgfsyspdfmark {pgfid109}{37061005}{23873494}
+\pgfsyspdfmark {pgfid110}{37061005}{23873494}
+\pgfsyspdfmark {pgfid111}{37061005}{23873494}
+\pgfsyspdfmark {pgfid112}{37061005}{23873494}
+\pgfsyspdfmark {pgfid113}{37061005}{23873494}
+\pgfsyspdfmark {pgfid114}{37061005}{23873494}
+\newlabel{eq:prelinkmultip_left}{{8.4}{\if@rlmain \I {22}\else \textLR {22}\fi }{The inverse Solution}{equation.8.4.4}{}}
+\newlabel{eq:prelinkmultip_left@cref}{{[equation][4][8]8.4}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  $\theta _1$:\endL \egroup }{\if@rlmain \I {22}\else \textLR {22}\fi }{section*.59}\protected@file@percent }
+\newlabel{eq:equal_3-4}{{8.5}{\if@rlmain \I {22}\else \textLR {22}\fi }{$\theta _1$:}{equation.8.4.5}{}}
+\newlabel{eq:equal_3-4@cref}{{[equation][5][8]8.5}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\newlabel{eq:sol_theta_1}{{8.6}{\if@rlmain \I {22}\else \textLR {22}\fi }{$\theta _1$:}{equation.8.4.6}{}}
+\newlabel{eq:sol_theta_1@cref}{{[equation][6][8]8.6}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {22}\else \textLR {22}\fi }}
+\HyPL@Entry{26<</P(23)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  $\theta _2$:\endL \egroup }{\if@rlmain \I {23}\else \textLR {23}\fi }{section*.60}\protected@file@percent }
+\newlabel{eq:equal_1-4}{{8.7}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _2$:}{equation.8.4.7}{}}
+\newlabel{eq:equal_1-4@cref}{{[equation][7][8]8.7}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:equal_2-4}{{8.8}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _2$:}{equation.8.4.8}{}}
+\newlabel{eq:equal_2-4@cref}{{[equation][8][8]8.8}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][22][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:equal_1-4_midVar}{{8.10}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _2$:}{equation.8.4.10}{}}
+\newlabel{eq:equal_1-4_midVar@cref}{{[equation][10][8]8.10}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:equal_2-4_midVar}{{8.11}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _2$:}{equation.8.4.11}{}}
+\newlabel{eq:equal_2-4_midVar@cref}{{[equation][11][8]8.11}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:1-4+2_4}{{8.12}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _2$:}{equation.8.4.12}{}}
+\newlabel{eq:1-4+2_4@cref}{{[equation][12][8]8.12}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:1-4+2_4_reformed}{{8.13}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _2$:}{equation.8.4.13}{}}
+\newlabel{eq:1-4+2_4_reformed@cref}{{[equation][13][8]8.13}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:sol_theta_2}{{8.14}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _2$:}{equation.8.4.14}{}}
+\newlabel{eq:sol_theta_2@cref}{{[equation][14][8]8.14}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  $\theta _3$:\endL \egroup }{\if@rlmain \I {23}\else \textLR {23}\fi }{section*.61}\protected@file@percent }
+\newlabel{eq:eqal_1-4_reformed}{{8.15}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _3$:}{equation.8.4.15}{}}
+\newlabel{eq:eqal_1-4_reformed@cref}{{[equation][15][8]8.15}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:1-4_reformed+2_4}{{8.16}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _3$:}{equation.8.4.16}{}}
+\newlabel{eq:1-4_reformed+2_4@cref}{{[equation][16][8]8.16}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:1-4_reformed+2_4_reformed}{{8.17}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _3$:}{equation.8.4.17}{}}
+\newlabel{eq:1-4_reformed+2_4_reformed@cref}{{[equation][17][8]8.17}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:sol_theta_3}{{8.18}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _3$:}{equation.8.4.18}{}}
+\newlabel{eq:sol_theta_3@cref}{{[equation][18][8]8.18}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  $\theta _5$:\endL \egroup }{\if@rlmain \I {23}\else \textLR {23}\fi }{section*.62}\protected@file@percent }
+\newlabel{eq:equal_2-2}{{8.19}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _5$:}{equation.8.4.19}{}}
+\newlabel{eq:equal_2-2@cref}{{[equation][19][8]8.19}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:equal_1-2}{{8.20}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _5$:}{equation.8.4.20}{}}
+\newlabel{eq:equal_1-2@cref}{{[equation][20][8]8.20}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:2-2+1-2}{{8.21}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _5$:}{equation.8.4.21}{}}
+\newlabel{eq:2-2+1-2@cref}{{[equation][21][8]8.21}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\newlabel{eq:sol_theta_5}{{8.22}{\if@rlmain \I {23}\else \textLR {23}\fi }{$\theta _5$:}{equation.8.4.22}{}}
+\newlabel{eq:sol_theta_5@cref}{{[equation][22][8]8.22}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {23}\else \textLR {23}\fi }}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\HyPL@Entry{27<</P(24)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  $\theta _4$:\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }{section*.63}\protected@file@percent }
+\newlabel{eq:sol_theta_4}{{8.23}{\if@rlmain \I {24}\else \textLR {24}\fi }{$\theta _4$:}{equation.8.4.23}{}}
+\newlabel{eq:sol_theta_4@cref}{{[equation][23][8]8.23}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {24}\else \textLR {24}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  $\theta _6$:\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }{section*.64}\protected@file@percent }
+\newlabel{eq:equal_3-3}{{8.24}{\if@rlmain \I {24}\else \textLR {24}\fi }{$\theta _6$:}{equation.8.4.24}{}}
+\newlabel{eq:equal_3-3@cref}{{[equation][24][8]8.24}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {24}\else \textLR {24}\fi }}
+\newlabel{eq:sol_theta_6}{{8.25}{\if@rlmain \I {24}\else \textLR {24}\fi }{$\theta _6$:}{equation.8.4.25}{}}
+\newlabel{eq:sol_theta_6@cref}{{[equation][25][8]8.25}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][23][]\if@rlmain \I {24}\else \textLR {24}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {5.8}\else \textLR {8.5}\fi }\bgroup \beginL \latintext  Optimization of inverse kinematics solution\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }{section.8.5}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  cost function\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }{section*.65}\protected@file@percent }
+\newlabel{eq:costFuncinvOptim}{{8.26}{\if@rlmain \I {24}\else \textLR {24}\fi }{cost function}{equation.8.5.26}{}}
+\newlabel{eq:costFuncinvOptim@cref}{{[equation][26][8]8.26}{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \TU/lmr/m/n/10 {\TU/lmr/m/n/10 }\TU/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][24][]\if@rlmain \I {24}\else \textLR {24}\fi }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  limitations of cost function\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }{section*.66}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  description of implementation\endL \egroup }{\if@rlmain \I {24}\else \textLR {24}\fi }{section*.67}\protected@file@percent }
+\abx@aux@cite{extraneousroot}
+\abx@aux@segm{0}{0}{extraneousroot}
+\abx@aux@cite{DenavitHartenbergLesson}
+\abx@aux@segm{0}{0}{DenavitHartenbergLesson}
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{QingFanucAcademy}
+\abx@aux@segm{0}{0}{QingFanucAcademy}
+\abx@aux@cite{QingFanucAcademy}
+\abx@aux@segm{0}{0}{QingFanucAcademy}
+\HyPL@Entry{28<</P(25)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {paragraph}{\bgroup \beginL \latintext  algorithm for minimal computational effort\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }{section*.68}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}\bgroup \beginL \latintext  Denavit-Hartenberg-Convention\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }{chapter.9}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {section}{\numberline {\if@rl \I {1.9}\else \textLR {9.1}\fi }\bgroup \beginL \latintext  Robot configurations\endL \egroup }{\if@rlmain \I {25}\else \textLR {25}\fi }{section.9.1}\protected@file@percent }
+\acronymused{DOF}
+\HyPL@Entry{29<</P(26)>>}
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {1.9}\else \textLR {9.1}\fi }{\ignorespaces 6 axis robot configurations on the example of a FANUC Robot \cite {QingFanucAcademy}\relax }}{\if@rlmain \I {26}\else \textLR {26}\fi }{figure.caption.69}\protected@file@percent }
+\newlabel{fig:RobotConfigs}{{\if@rl \I {1.9}\else \textLR {9.1}\fi }{\if@rlmain \I {26}\else \textLR {26}\fi }{6 axis robot configurations on the example of a FANUC Robot \cite {QingFanucAcademy}\relax }{figure.caption.69}{}}
+\newlabel{fig:RobotConfigs@cref}{{[figure][1][9]\if@rl \I {1.9}\else \textLR {9.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][25][]\if@rlmain \I {26}\else \textLR {26}\fi }}
+\@writefile{toc}{\select@language{english}}
+\HyPL@Entry{30<</P(27)>>}
+\HyPL@Entry{31<</P(28)>>}
+\HyPL@Entry{32<</P(29)>>}
+\@writefile{toc}{\contentsline {chapter}{Appendices}{\if@rlmain \I {29}\else \textLR {29}\fi }{section*.71}\protected@file@percent }
+\abx@aux@cite{MatlabControl}
+\abx@aux@segm{0}{0}{MatlabControl}
+\HyPL@Entry{33<</P(30)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}\bgroup \beginL \latintext  Appendix 1\endL \egroup }{\if@rlmain \I {30}\else \textLR {30}\fi }{Appendix.a.A}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}\bgroup \beginL \latintext  Appendix 2\endL \egroup }{\if@rlmain \I {30}\else \textLR {30}\fi }{Appendix.a.B}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}\bgroup \beginL \latintext  Robot Quick start guide\endL \egroup }{\if@rlmain \I {30}\else \textLR {30}\fi }{Appendix.a.C}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\if@rl \I {1.0.3}\else \textLR {3.0.1}\fi }\bgroup \beginL \latintext  Parts of the robot\endL \egroup }{\if@rlmain \I {30}\else \textLR {30}\fi }{subsection.a.C.0.1}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {subsubsection}{\bgroup \beginL \latintext  FANUC R-2000iC/210F 6 axis robotic arm\endL \egroup }{\if@rlmain \I {30}\else \textLR {30}\fi }{section*.72}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {subsubsection}{\bgroup \beginL \latintext  R30iA Robot Controller \endL \egroup }{\if@rlmain \I {30}\else \textLR {30}\fi }{section*.73}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {subsubsection}{\bgroup \beginL \latintext  iPendant\endL \egroup }{\if@rlmain \I {30}\else \textLR {30}\fi }{section*.74}\protected@file@percent }
+\abx@aux@cite{MatlabControl}
+\abx@aux@segm{0}{0}{MatlabControl}
+\abx@aux@cite{MatlabControl}
+\abx@aux@segm{0}{0}{MatlabControl}
+\HyPL@Entry{34<</P(31)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {subsubsection}{\bgroup \beginL \latintext  Gripper\endL \egroup }{\if@rlmain \I {31}\else \textLR {31}\fi }{section*.75}\protected@file@percent }
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\if@rl \I {2.0.3}\else \textLR {3.0.2}\fi }\bgroup \beginL \latintext  iPendant Navigation Manual:\endL \egroup }{\if@rlmain \I {31}\else \textLR {31}\fi }{subsection.a.C.0.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {\if@rl \I {1.3}\else \textLR {3.1}\fi }{\ignorespaces Important buttons}}{\if@rlmain \I {31}\else \textLR {31}\fi }{figure.caption.76}\protected@file@percent }
+\newlabel{fig:ipendantnumbered}{{\if@rl \I {1.3}\else \textLR {3.1}\fi }{\if@rlmain \I {31}\else \textLR {31}\fi }{Important buttons}{figure.caption.76}{}}
+\newlabel{fig:ipendantnumbered@cref}{{[figure][1][3]\if@rl \I {1.3}\else \textLR {3.1}\fi }{[\protect \bgroup \beginL \protect \edef TU{OT1}\let \enc@update \relax \xdef \OT1/lmr/m/n/10 {\TU/lmr/m/n/10 }\OT1/lmr/m/n/10 \size@update \enc@update \def TU{OT1}1\endL \egroup ][31][]\if@rlmain \I {31}\else \textLR {31}\fi }}
+\abx@aux@refcontextdefaultsdone
+\abx@aux@defaultrefcontext{0}{AlaDTdataTransmission}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{invKinANNKSHITISH}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{RobotKinemDyn}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{automatonDef}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{AutRobVeh}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{geomModelingKamel}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ConstantinForwardKA}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{CorkeRoboticVisionControl}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{craig1986introduction}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FwInvKuka}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{DTwikip}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SaddikDTmultimconv}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ThalesETCS}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{QingFanucAcademy}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{RobotDynamics}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FHEM}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{GreivesDTfirst}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{inverseKinematikWiki}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{RobotModelAnalContrexampleJamshed}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Jazar2007}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{evalNonlinFeedForBackControl}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{KRITZINGER20181016}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{DenavitHartenbergLesson}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Dyn6DOFBinLi}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MotionPlanning}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{proxdist}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{invKinSeriallinkMani}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Trung}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Paul1981RobotM}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MathWorksInverseKinematics}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Qi2018DigitalTS}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MathIntroRobManip}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{robotDef}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{forwardVsInverseKinematics}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ROS}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Angela_U1S2P1}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{CorkeRoboticsToolbox}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SchleichDTshaping}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{allgInvKin}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SpongDynContr}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FwdInvAnalysRobManip}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SPCWebsite}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ROSAnswers_WhatIsRos}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{extraneousroot}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FANUCcontrolMatlab}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MatlabControl}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{6axisRobot}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ProjectPlan}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{KongWei}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{robotDef2}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{WongWhatisDT}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{IndustrialRobotArm}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{invKinSolYanWu}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{DenavitHartenbergKonventionen}{nty/global//global/global}
+\HyPL@Entry{35<</P(32)>>}
+\@writefile{toc}{\select@language{english}}
+\@writefile{toc}{\contentsline {subsubsection}{\bgroup \beginL \latintext  Emergency stop: \endL \egroup }{\if@rlmain \I {32}\else \textLR {32}\fi }{section*.77}\protected@file@percent }

@@ -1,0 +1,716 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\@nameuse{bbl@beforestart}
+\abx@aux@refcontext{nty/global//global/global}
+\AC@reset@newl@bel
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/r>>}
+\providecommand \oddpage@label [2]{}
+\providecommand\@newglossary[4]{}
+\@newglossary{main}{glg}{gls}{glo}
+\providecommand\@glsorder[1]{}
+\providecommand\@istfilename[1]{}
+\@istfilename{ThesisReport_KarlWallkum_617931_V2.xdy}
+\@glsorder{word}
+\@writefile{toc}{\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax }
+\@writefile{lof}{\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax }
+\@writefile{lot}{\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax }
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {part}{I\hspace  {1em}TODO}{i}{part.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{unmentioned tables}{ii}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{unspecific hyperlinks}{ii}{section*.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Glossary}{ii}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Ellens Comments}{ii}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Formulas in Appendix}{ii}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Methodology}{ii}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{MatlabToolbox}{ii}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Typos}{ii}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{References}{ii}{section*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{literature review}{ii}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Hyperlinks}{ii}{section*.11}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{signature}{ii}{section*.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{title}{ii}{section*.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {part}{II\hspace  {1em}Thesiswriting}{iii}{part.2}\protected@file@percent }
+\HyPL@Entry{3<</S/r>>}
+\HyPL@Entry{4<</S/r>>}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces FANUC R-2000iC/210F 6-axis industrial robot arm\relax }}{ii}{figure.caption.16}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:fanuc210}{{1}{ii}{FANUC R-2000iC/210F 6-axis industrial robot arm\relax }{figure.caption.16}{}}
+\newlabel{fig:fanuc210@cref}{{[figure][1][0]1}{[i][2][]ii}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Summary}{iii}{chapter.1}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\AC@undonewlabel{acro:DOF}
+\newlabel{acro:DOF}{{1}{iv}{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}{section*.18}{}}
+\newlabel{acro:DOF@cref}{{[chapter][1][]1}{[i][4][]iv}}
+\acronymused{DOF}
+\abx@aux@cite{FHEM}
+\abx@aux@segm{0}{0}{FHEM}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Acronyms}{vi}{chapter.2}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newacro{DCS}[\AC@hyperlink{DCS}{DCS}]{Dual Check Safety}
+\newacro{DDS}[\AC@hyperlink{DDS}{DDS}]{Data Distribution System}
+\newacro{DH}[\AC@hyperlink{DH}{DH}]{Denavit-Hartenberg}
+\newacro{DOF}[\AC@hyperlink{DOF}{DOF}]{degrees of freedom}
+\newacro{DT}[\AC@hyperlink{DT}{DT}]{Digital Twin}
+\newacro{EOAT}[\AC@hyperlink{EOAT}{EOAT}]{End Of Arm Tooling}
+\newacro{eq}[\AC@hyperlink{eq}{eq}]{equation}
+\newacro{ETCS}[\AC@hyperlink{ETCS}{ETCS}]{European Train Control System}
+\newacro{FHEM}[\AC@hyperlink{FHEM}{FHEM}]{Freundliche Hausautomation und Energie-Messung \cite {FHEM}}
+\newacro{fig}[\AC@hyperlink{fig}{fig}]{figure}
+\newacro{FRC}[\AC@hyperlink{FRC}{FRC}]{Fibre Reinforced Composites}
+\newacro{GUI}[\AC@hyperlink{GUI}{GUI}]{Graphical User Interface}
+\newacro{HAN}[\AC@hyperlink{HAN}{HAN}]{Hogeschool van Arnhem en Nijmegen}
+\newacro{IOT}[\AC@hyperlink{IOT}{IOT}]{Internet Of Things}
+\newacro{IPKW}[\AC@hyperlink{IPKW}{IPKW}]{Industrial Park Kleevse Waard}
+\newacro{NFC}[\AC@hyperlink{NFC}{NFC}]{Near-field communication}
+\newacro{OS}[\AC@hyperlink{OS}{OS}]{Operating System}
+\newacro{PL}[\AC@hyperlink{PL}{PL}]{Production Line}
+\newacro{ROS}[\AC@hyperlink{ROS}{ROS}]{Robot Operating System}
+\newacro{sect}[\AC@hyperlink{sect}{sect}]{section}
+\newacro{SPC}[\AC@hyperlink{SPC}{SPC}]{Smart Production Cell}
+\abx@aux@cite{InvkinMeth_Lukas}
+\abx@aux@segm{0}{0}{InvkinMeth_Lukas}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Glossary}{vii}{chapter.3}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\abx@aux@cite{robotDef}
+\abx@aux@segm{0}{0}{robotDef}
+\abx@aux@cite{automatonDef}
+\abx@aux@segm{0}{0}{automatonDef}
+\abx@aux@cite{robotDef2}
+\abx@aux@segm{0}{0}{robotDef2}
+\abx@aux@cite{CorkeRoboticVisionControl}
+\abx@aux@segm{0}{0}{CorkeRoboticVisionControl}
+\abx@aux@cite{CorkeRoboticVisionControl}
+\abx@aux@segm{0}{0}{CorkeRoboticVisionControl}
+\HyPL@Entry{11<</S/D>>}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Introduction}{1}{chapter.4}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Abstract}{1}{section.4.1}\protected@file@percent }
+\acronymused{DOF}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Preface}{1}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Definition of a Robot}{1}{section*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Origin of Robots}{1}{section*.21}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Simple robots}{1}{section*.22}\protected@file@percent }
+\abx@aux@cite{SPCWebsite}
+\abx@aux@segm{0}{0}{SPCWebsite}
+\abx@aux@cite{ProjectPlan}
+\abx@aux@segm{0}{0}{ProjectPlan}
+\@writefile{toc}{\contentsline {paragraph}{Current Robots}{2}{section*.23}\protected@file@percent }
+\AC@undonewlabel{acro:DCS}
+\newlabel{acro:DCS}{{4.2}{2}{Current Robots}{section*.24}{}}
+\newlabel{acro:DCS@cref}{{[section][2][4]4.2}{[1][1][]2}}
+\acronymused{DCS}
+\AC@undonewlabel{acro:PC}
+\newlabel{acro:PC}{{4.2}{2}{Current Robots}{section*.25}{}}
+\newlabel{acro:PC@cref}{{[section][2][4]4.2}{[1][1][]2}}
+\acronymused{PC}
+\@writefile{toc}{\contentsline {paragraph}{Future robots}{2}{section*.26}\protected@file@percent }
+\AC@undonewlabel{acro:DDS}
+\newlabel{acro:DDS}{{4.2}{2}{Future robots}{section*.27}{}}
+\newlabel{acro:DDS@cref}{{[section][2][4]4.2}{[1][2][]2}}
+\acronymused{DDS}
+\AC@undonewlabel{acro:fig}
+\newlabel{acro:fig}{{4.2}{2}{Future robots}{section*.28}{}}
+\newlabel{acro:fig@cref}{{[section][2][4]4.2}{[1][2][]2}}
+\acronymused{fig}
+\AC@undonewlabel{acro:ROS}
+\newlabel{acro:ROS}{{4.2}{2}{Future robots}{section*.29}{}}
+\newlabel{acro:ROS@cref}{{[section][2][4]4.2}{[1][2][]2}}
+\acronymused{ROS}
+\acronymused{ROS}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces \ac {DDS} as central information exchange platform\relax }}{2}{figure.caption.30}\protected@file@percent }
+\acronymused{DDS}
+\newlabel{fig:SmartCellDDS}{{4.1}{2}{\ac {DDS} as central information exchange platform\relax }{figure.caption.30}{}}
+\newlabel{fig:SmartCellDDS@cref}{{[figure][1][4]4.1}{[1][2][]2}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Problem Definition}{2}{section.4.3}\protected@file@percent }
+\AC@undonewlabel{acro:FRC}
+\newlabel{acro:FRC}{{4.3}{2}{Problem Definition}{section*.31}{}}
+\newlabel{acro:FRC@cref}{{[section][3][4]4.3}{[1][2][]2}}
+\acronymused{FRC}
+\acronymused{FRC}
+\abx@aux@cite{Trung}
+\abx@aux@segm{0}{0}{Trung}
+\abx@aux@cite{6axisRobot}
+\abx@aux@segm{0}{0}{6axisRobot}
+\abx@aux@cite{IndustrialRobotArm}
+\abx@aux@segm{0}{0}{IndustrialRobotArm}
+\abx@aux@cite{Jazar2007}
+\abx@aux@segm{0}{0}{Jazar2007}
+\abx@aux@cite{CorkeRoboticsToolbox}
+\abx@aux@segm{0}{0}{CorkeRoboticsToolbox}
+\abx@aux@cite{MotionPlanning}
+\abx@aux@segm{0}{0}{MotionPlanning}
+\abx@aux@cite{RobotDynamics}
+\abx@aux@segm{0}{0}{RobotDynamics}
+\abx@aux@cite{ROS}
+\abx@aux@segm{0}{0}{ROS}
+\abx@aux@cite{IndustrialRobotArm}
+\abx@aux@segm{0}{0}{IndustrialRobotArm}
+\abx@aux@cite{ROSAnswers_WhatIsRos}
+\abx@aux@segm{0}{0}{ROSAnswers_WhatIsRos}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Literature survey}{3}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Field of study}{3}{section.5.1}\protected@file@percent }
+\abx@aux@cite{MathWorksInverseKinematics}
+\abx@aux@segm{0}{0}{MathWorksInverseKinematics}
+\abx@aux@cite{MathWorksInverseKinematics}
+\abx@aux@segm{0}{0}{MathWorksInverseKinematics}
+\abx@aux@cite{forwardVsInverseKinematics}
+\abx@aux@segm{0}{0}{forwardVsInverseKinematics}
+\abx@aux@cite{MathWorksInverseKinematics}
+\abx@aux@segm{0}{0}{MathWorksInverseKinematics}
+\abx@aux@cite{forwardVsInverseKinematics}
+\abx@aux@segm{0}{0}{forwardVsInverseKinematics}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{inverseKinematikWiki}
+\abx@aux@segm{0}{0}{inverseKinematikWiki}
+\abx@aux@cite{allgInvKin}
+\abx@aux@segm{0}{0}{allgInvKin}
+\abx@aux@cite{MathIntroRobManip}
+\abx@aux@segm{0}{0}{MathIntroRobManip}
+\abx@aux@cite{MathIntroRobManip}
+\abx@aux@segm{0}{0}{MathIntroRobManip}
+\abx@aux@cite{FwdInvAnalysRobManip}
+\abx@aux@segm{0}{0}{FwdInvAnalysRobManip}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\acronymused{ROS}
+\AC@undonewlabel{acro:OS}
+\newlabel{acro:OS}{{5.1}{4}{Field of study}{section*.32}{}}
+\newlabel{acro:OS@cref}{{[section][1][5]5.1}{[1][3][]4}}
+\acronymused{OS}
+\acronymused{ROS}
+\acronymused{DDS}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}In depth literature}{4}{section.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Relation between inverse and forward kinematics translated from German Wikipedia site on inverse kinematics \cite {MathWorksInverseKinematics}, for content see Mathworks \cite {forwardVsInverseKinematics}\relax }}{4}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:FwVsInvKin}{{5.1}{4}{Relation between inverse and forward kinematics translated from German Wikipedia site on inverse kinematics \cite {MathWorksInverseKinematics}, for content see Mathworks \cite {forwardVsInverseKinematics}\relax }{figure.caption.33}{}}
+\newlabel{fig:FwVsInvKin@cref}{{[figure][1][5]5.1}{[1][4][]4}}
+\acronymused{DOF}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\abx@aux@cite{invKinSeriallinkMani}
+\abx@aux@segm{0}{0}{invKinSeriallinkMani}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{FwdInvAnalysRobManip}
+\abx@aux@segm{0}{0}{FwdInvAnalysRobManip}
+\abx@aux@cite{FwInvKuka}
+\abx@aux@segm{0}{0}{FwInvKuka}
+\abx@aux@cite{geomModelingKamel}
+\abx@aux@segm{0}{0}{geomModelingKamel}
+\abx@aux@cite{invKinANNKSHITISH}
+\abx@aux@segm{0}{0}{invKinANNKSHITISH}
+\abx@aux@cite{CorkeRoboticsToolbox}
+\abx@aux@segm{0}{0}{CorkeRoboticsToolbox}
+\abx@aux@cite{KongWei}
+\abx@aux@segm{0}{0}{KongWei}
+\abx@aux@cite{MathIntroRobManip}
+\abx@aux@segm{0}{0}{MathIntroRobManip}
+\abx@aux@cite{Dyn6DOFBinLi}
+\abx@aux@segm{0}{0}{Dyn6DOFBinLi}
+\abx@aux@cite{evalNonlinFeedForBackControl}
+\abx@aux@segm{0}{0}{evalNonlinFeedForBackControl}
+\abx@aux@cite{FANUCcontrolMatlab}
+\abx@aux@segm{0}{0}{FANUCcontrolMatlab}
+\abx@aux@cite{RobotModelAnalContrexampleJamshed}
+\abx@aux@segm{0}{0}{RobotModelAnalContrexampleJamshed}
+\abx@aux@cite{GreivesDTfirst}
+\abx@aux@segm{0}{0}{GreivesDTfirst}
+\abx@aux@cite{Qi2018DigitalTS}
+\abx@aux@segm{0}{0}{Qi2018DigitalTS}
+\abx@aux@cite{DTwikip}
+\abx@aux@segm{0}{0}{DTwikip}
+\abx@aux@cite{SaddikDTmultimconv}
+\abx@aux@segm{0}{0}{SaddikDTmultimconv}
+\abx@aux@cite{WongWhatisDT}
+\abx@aux@segm{0}{0}{WongWhatisDT}
+\abx@aux@cite{KRITZINGER20181016}
+\abx@aux@segm{0}{0}{KRITZINGER20181016}
+\abx@aux@cite{SchleichDTshaping}
+\abx@aux@segm{0}{0}{SchleichDTshaping}
+\abx@aux@cite{WongWhatisDT}
+\abx@aux@segm{0}{0}{WongWhatisDT}
+\abx@aux@cite{SchleichDTshaping}
+\abx@aux@segm{0}{0}{SchleichDTshaping}
+\abx@aux@cite{AlaDTdataTransmission}
+\abx@aux@segm{0}{0}{AlaDTdataTransmission}
+\abx@aux@cite{ThalesETCS}
+\abx@aux@segm{0}{0}{ThalesETCS}
+\acronymused{DOF}
+\acronymused{DOF}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Digital twinning}{5}{section.5.3}\protected@file@percent }
+\acronymused{FRC}
+\AC@undonewlabel{acro:SPC}
+\newlabel{acro:SPC}{{5.3}{5}{Digital twinning}{section*.34}{}}
+\newlabel{acro:SPC@cref}{{[section][3][5]5.3}{[1][5][]5}}
+\acronymused{SPC}
+\AC@undonewlabel{acro:DT}
+\newlabel{acro:DT}{{5.3}{5}{Digital twinning}{section*.35}{}}
+\newlabel{acro:DT@cref}{{[section][3][5]5.3}{[1][5][]5}}
+\acronymused{DT}
+\acronymused{DT}
+\acronymused{DT}
+\acronymused{DT}
+\acronymused{DT}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\acronymused{DT}
+\acronymused{DT}
+\AC@undonewlabel{acro:PL}
+\newlabel{acro:PL}{{5.3}{6}{Digital twinning}{section*.36}{}}
+\newlabel{acro:PL@cref}{{[section][3][5]5.3}{[1][5][]6}}
+\acronymused{PL}
+\AC@undonewlabel{acro:ETCS}
+\newlabel{acro:ETCS}{{5.3}{6}{Digital twinning}{section*.37}{}}
+\newlabel{acro:ETCS@cref}{{[section][3][5]5.3}{[1][5][]6}}
+\acronymused{ETCS}
+\acronymused{ETCS}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Setup of the physical Environment}{6}{chapter.6}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Building of a Model}{6}{chapter.7}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Forward Kinematics}{6}{section.7.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Approach}{6}{subsection.7.1.1}\protected@file@percent }
+\AC@undonewlabel{acro:DH}
+\newlabel{acro:DH}{{3}{6}{Approach}{section*.38}{}}
+\newlabel{acro:DH@cref}{{[enumi][3][]3}{[1][6][]6}}
+\acronymused{DH}
+\abx@aux@cite{proxdist}
+\abx@aux@segm{0}{0}{proxdist}
+\abx@aux@cite{proxdist}
+\abx@aux@segm{0}{0}{proxdist}
+\abx@aux@cite{Angela_U1S2P1}
+\abx@aux@segm{0}{0}{Angela_U1S2P1}
+\@writefile{toc}{\contentsline {subsubsection}{Numbering of joints and links}{7}{section*.39}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{numbering of links}{7}{section*.40}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{numbering of joints}{7}{section*.41}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{relation between links and joints}{7}{section*.42}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Joint and link numbering in Fanuc 210F}{7}{section*.43}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces Links (turquoise) and joints (orange) in the FANUC 210F\relax }}{7}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:LinksANDJoints210F}{{7.1}{7}{Links (turquoise) and joints (orange) in the FANUC 210F\relax }{figure.caption.44}{}}
+\newlabel{fig:LinksANDJoints210F@cref}{{[figure][1][7]7.1}{[1][7][]7}}
+\@writefile{toc}{\contentsline {subsubsection}{Set up local coordinate reference frames}{7}{section*.45}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Assignation of $z_i$ axes}{7}{section*.46}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Direction of rotation}{7}{section*.47}\protected@file@percent }
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{SpongDynContr}
+\abx@aux@segm{0}{0}{SpongDynContr}
+\@writefile{toc}{\contentsline {paragraph}{$z_i$ axes in Fanuc 210F}{8}{section*.48}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces $z_i$ axes on the Fanuc 210F with the direction of positive rotation (orange)\relax }}{8}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:zi_Axes}{{7.2}{8}{$z_i$ axes on the Fanuc 210F with the direction of positive rotation (orange)\relax }{figure.caption.49}{}}
+\newlabel{fig:zi_Axes@cref}{{[figure][2][7]7.2}{[1][7][]8}}
+\@writefile{toc}{\contentsline {paragraph}{Base frame}{8}{section*.50}\protected@file@percent }
+\AC@undonewlabel{acro:EOAT}
+\newlabel{acro:EOAT}{{7.1.1}{8}{Base frame}{section*.51}{}}
+\newlabel{acro:EOAT@cref}{{[subsection][1][7,1]7.1.1}{[1][8][]8}}
+\acronymused{EOAT}
+\@writefile{toc}{\contentsline {paragraph}{Assignation of frames $(i)$}{8}{section*.52}\protected@file@percent }
+\acronymused{EOAT}
+\@writefile{toc}{\contentsline {paragraph}{Assignation of \ac {EOAT} frame}{9}{section*.53}\protected@file@percent }
+\acronymused{EOAT}
+\@writefile{toc}{\contentsline {paragraph}{local coordinate reference frames on the Fanuc 210F}{9}{section*.54}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Coordinate reference frames for Fanuc 210F\relax }}{9}{figure.caption.55}\protected@file@percent }
+\newlabel{fig:RefFrame}{{7.3}{9}{Coordinate reference frames for Fanuc 210F\relax }{figure.caption.55}{}}
+\newlabel{fig:RefFrame@cref}{{[figure][3][7]7.3}{[1][9][]9}}
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\@writefile{toc}{\contentsline {paragraph}{frame 0 (Base)}{10}{section*.56}\protected@file@percent }
+\acronymused{EOAT}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Standard pose of the robot\relax }}{10}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:StandardPose}{{7.4}{10}{Standard pose of the robot\relax }{figure.caption.57}{}}
+\newlabel{fig:StandardPose@cref}{{[figure][4][7]7.4}{[1][9][]10}}
+\@writefile{toc}{\contentsline {paragraph}{frame 1}{10}{section*.58}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{frame 2}{10}{section*.59}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{frame 3}{10}{section*.60}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{frame 4}{10}{section*.61}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{frame 5}{10}{section*.62}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{frame 6 (EOAT)}{10}{section*.63}\protected@file@percent }
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{AutRobVeh}
+\abx@aux@segm{0}{0}{AutRobVeh}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{FwdInvAnalysRobManip}
+\abx@aux@segm{0}{0}{FwdInvAnalysRobManip}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{allgInvKin}
+\abx@aux@segm{0}{0}{allgInvKin}
+\acronymused{DH}
+\@writefile{toc}{\contentsline {subsubsection}{Establishing \ac {DH} parameters for each link}{11}{section*.64}\protected@file@percent }
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\newlabel{eq:DH-Transform}{{7.1}{11}{Establishing \ac {DH} parameters for each link}{equation.7.1.1}{}}
+\newlabel{eq:DH-Transform@cref}{{[equation][1][7]7.1}{[1][11][]11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Visual representation of a \ac {DH}-transformation\relax }}{11}{figure.caption.65}\protected@file@percent }
+\acronymused{DH}
+\newlabel{fig:DH_Parameters_visual}{{7.5}{11}{Visual representation of a \ac {DH}-transformation\relax }{figure.caption.65}{}}
+\newlabel{fig:DH_Parameters_visual@cref}{{[figure][5][7]7.5}{[1][11][]11}}
+\acronymused{DH}
+\acronymused{DH}
+\@writefile{toc}{\contentsline {subsubsection}{Establishing \ac {DH} parameters on the Fanuc 210F}{12}{section*.66}\protected@file@percent }
+\acronymused{DH}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces Assignment of DH-Parameters on the Fanuc 210F\relax }}{12}{figure.caption.67}\protected@file@percent }
+\newlabel{fig:DH_Parameters_Fanuc210F}{{7.6}{12}{Assignment of DH-Parameters on the Fanuc 210F\relax }{figure.caption.67}{}}
+\newlabel{fig:DH_Parameters_Fanuc210F@cref}{{[figure][6][7]7.6}{[1][12][]12}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.1}{\ignorespaces Denavit Hartenberg Parameters for Fanuc 210F\relax }}{12}{table.caption.68}\protected@file@percent }
+\newlabel{table:DH-Parameter}{{7.1}{12}{Denavit Hartenberg Parameters for Fanuc 210F\relax }{table.caption.68}{}}
+\newlabel{table:DH-Parameter@cref}{{[table][1][7]7.1}{[1][12][]12}}
+\abx@aux@cite{Paul1981RobotM}
+\abx@aux@segm{0}{0}{Paul1981RobotM}
+\abx@aux@cite{Paul1981RobotM}
+\abx@aux@segm{0}{0}{Paul1981RobotM}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}numeric values of DH-Parameters}{13}{section.7.2}\protected@file@percent }
+\acronymused{DH}
+\acronymused{DH}
+\newlabel{item:DH-LinparamValues}{{7.2}{13}{numeric values of DH-Parameters}{section.7.2}{}}
+\newlabel{item:DH-LinparamValues@cref}{{[section][2][7]7.2}{[1][13][]13}}
+\@writefile{lot}{\contentsline {table}{\numberline {7.2}{\ignorespaces Numeric values of Denavit Hartenberg Parameters for Fanuc 210F\relax }}{13}{table.caption.69}\protected@file@percent }
+\newlabel{table:DH-Parameter_num}{{7.2}{13}{Numeric values of Denavit Hartenberg Parameters for Fanuc 210F\relax }{table.caption.69}{}}
+\newlabel{table:DH-Parameter_num@cref}{{[table][2][7]7.2}{[1][13][]13}}
+\@writefile{toc}{\contentsline {subsubsection}{Calculate homogeneous transformation matrices}{13}{section*.70}\protected@file@percent }
+\newlabel{eq:fourTransformations}{{7.2}{13}{Calculate homogeneous transformation matrices}{equation.7.2.2}{}}
+\newlabel{eq:fourTransformations@cref}{{[equation][2][7]7.2}{[1][13][]13}}
+\newlabel{eq:TransformationMarix}{{7.3}{13}{Calculate homogeneous transformation matrices}{equation.7.2.3}{}}
+\newlabel{eq:TransformationMarix@cref}{{[equation][3][7]7.3}{[1][13][]13}}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{ConstantinForwardKA}
+\abx@aux@segm{0}{0}{ConstantinForwardKA}
+\abx@aux@cite{RobotKinemDyn}
+\abx@aux@segm{0}{0}{RobotKinemDyn}
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Compute Forward Kinematic Equations}{14}{section.7.3}\protected@file@percent }
+\newlabel{ForKinEq}{{7.3}{14}{Compute Forward Kinematic Equations}{section.7.3}{}}
+\newlabel{ForKinEq@cref}{{[section][3][7]7.3}{[1][13][]14}}
+\acronymused{EOAT}
+\@writefile{toc}{\contentsline {paragraph}{Sum of Transformations Matrix}{14}{section*.71}\protected@file@percent }
+\newlabel{eq:SummofTranfMatr}{{7.4}{14}{Sum of Transformations Matrix}{equation.7.3.4}{}}
+\newlabel{eq:SummofTranfMatr@cref}{{[equation][4][7]7.4}{[1][14][]14}}
+\newlabel{eq:matrixForm}{{7.5}{14}{Sum of Transformations Matrix}{equation.7.3.5}{}}
+\newlabel{eq:matrixForm@cref}{{[equation][5][7]7.5}{[1][14][]14}}
+\@writefile{toc}{\contentsline {paragraph}{short notation}{14}{section*.72}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Transformation to cartesian coordinates with euler angles }{14}{section*.73}\protected@file@percent }
+\newlabel{eq:rotMatrix_composition}{{7.6}{14}{Transformation to cartesian coordinates with euler angles}{equation.7.3.6}{}}
+\newlabel{eq:rotMatrix_composition@cref}{{[equation][6][7]7.6}{[1][14][]14}}
+\newlabel{eq:rotMatrixToAbsFrame}{{7.8}{14}{Transformation to cartesian coordinates with euler angles}{equation.7.3.8}{}}
+\newlabel{eq:rotMatrixToAbsFrame@cref}{{[equation][8][7]7.8}{[1][14][]14}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Forward Kinematic Equations on the 210F}{14}{section.7.4}\protected@file@percent }
+\acronymused{DOF}
+\newlabel{eq:TransformMatrices_0-6}{{7.10}{15}{Forward Kinematic Equations on the 210F}{equation.7.4.10}{}}
+\newlabel{eq:TransformMatrices_0-6@cref}{{[equation][10][7]7.10}{[1][14][]15}}
+\newlabel{eq:ForwardKinEquations_6DOF}{{7.13}{18}{Forward Kinematic Equations on the 210F}{equation.7.4.12}{}}
+\newlabel{eq:ForwardKinEquations_6DOF@cref}{{[equation][13][7]7.13}{[1][17][]18}}
+\abx@aux@cite{craig1986introduction}
+\abx@aux@segm{0}{0}{craig1986introduction}
+\abx@aux@cite{craig1986introduction}
+\abx@aux@segm{0}{0}{craig1986introduction}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\@writefile{toc}{\contentsline {section}{\numberline {7.5}Inverse Kinematics}{19}{section.7.5}\protected@file@percent }
+\acronymused{EOAT}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.1}Existence of solutions}{19}{subsection.7.5.1}\protected@file@percent }
+\newlabel{ExistSol}{{7.5.1}{19}{Existence of solutions}{subsection.7.5.1}{}}
+\newlabel{ExistSol@cref}{{[subsection][1][7,5]7.5.1}{[1][19][]19}}
+\acronymused{EOAT}
+\acronymused{DOF}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.2}multiple solutions}{19}{subsection.7.5.2}\protected@file@percent }
+\newlabel{MultipSol}{{7.5.2}{19}{multiple solutions}{subsection.7.5.2}{}}
+\newlabel{MultipSol@cref}{{[subsection][2][7,5]7.5.2}{[1][19][]19}}
+\acronymused{DOF}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Three link manipulator with 2 solutions\relax }}{19}{figure.caption.74}\protected@file@percent }
+\newlabel{fig:multipSol3Link}{{7.7}{19}{Three link manipulator with 2 solutions\relax }{figure.caption.74}{}}
+\newlabel{fig:multipSol3Link@cref}{{[figure][7][7]7.7}{[1][19][]19}}
+\acronymused{DOF}
+\acronymused{EOAT}
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_1}{97.53787pt}
+\ExplSyntaxOff 
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_2}{419.34155pt}
+\ExplSyntaxOff 
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_3}{121.72417pt}
+\ExplSyntaxOff 
+\ExplSyntaxOn 
+\cs_gset:cpn {__nicematrix_width_4}{491.90048pt}
+\ExplSyntaxOff 
+\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces Tree of inverse solutions (\cite {invKinSolYanWu}, fig.2)\relax }}{20}{figure.caption.75}\protected@file@percent }
+\newlabel{fig:invKinTree}{{7.8}{20}{Tree of inverse solutions (\cite {invKinSolYanWu}, fig.2)\relax }{figure.caption.75}{}}
+\newlabel{fig:invKinTree@cref}{{[figure][8][7]7.8}{[1][19][]20}}
+\acronymused{DOF}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.3}Inverse solution of 6 \ac {DOF} Robot}{20}{subsection.7.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Forward kinematic equation}{20}{section*.76}\protected@file@percent }
+\acronymused{DOF}
+\newlabel{eq:ForwKinEquMatr}{{7.14}{20}{Forward kinematic equation}{equation.7.5.14}{}}
+\newlabel{eq:ForwKinEquMatr@cref}{{[equation][14][7]7.14}{[1][20][]20}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.4}The inverse Solution}{20}{subsection.7.5.4}\protected@file@percent }
+\newlabel{InverseSol}{{7.5.4}{20}{The inverse Solution}{subsection.7.5.4}{}}
+\newlabel{InverseSol@cref}{{[subsection][4][7,5]7.5.4}{[1][20][]20}}
+\newlabel{eq:ForwKinEquMatr_reformed}{{7.15}{20}{The inverse Solution}{equation.7.5.15}{}}
+\newlabel{eq:ForwKinEquMatr_reformed@cref}{{[equation][15][7]7.15}{[1][20][]20}}
+\pgfsyspdfmark {pgfid34}{4522033}{11144240}
+\pgfsyspdfmark {pgfid35}{8265382}{11144240}
+\pgfsyspdfmark {pgfid36}{15295291}{11144240}
+\pgfsyspdfmark {pgfid37}{22325200}{11144240}
+\pgfsyspdfmark {pgfid38}{29355109}{11144240}
+\pgfsyspdfmark {pgfid39}{4358193}{10357808}
+\pgfsyspdfmark {pgfid40}{8265382}{10357808}
+\pgfsyspdfmark {pgfid41}{15295291}{10357808}
+\pgfsyspdfmark {pgfid42}{22325200}{10357808}
+\pgfsyspdfmark {pgfid43}{29355109}{10357808}
+\pgfsyspdfmark {pgfid44}{4358193}{9502200}
+\pgfsyspdfmark {pgfid45}{8265382}{9502200}
+\pgfsyspdfmark {pgfid46}{15295291}{9502200}
+\pgfsyspdfmark {pgfid47}{22325200}{9502200}
+\pgfsyspdfmark {pgfid48}{29355109}{9502200}
+\pgfsyspdfmark {pgfid49}{4358193}{8646592}
+\pgfsyspdfmark {pgfid50}{8265382}{8646592}
+\pgfsyspdfmark {pgfid51}{15295291}{8646592}
+\pgfsyspdfmark {pgfid52}{22325200}{8646592}
+\pgfsyspdfmark {pgfid53}{29355109}{8646592}
+\pgfsyspdfmark {pgfid54}{4358193}{7790984}
+\pgfsyspdfmark {pgfid55}{8265382}{7790984}
+\pgfsyspdfmark {pgfid56}{15295291}{7790984}
+\pgfsyspdfmark {pgfid57}{22325200}{7790984}
+\pgfsyspdfmark {pgfid58}{29355109}{7790984}
+\pgfsyspdfmark {pgfid59}{33098457}{9067840}
+\pgfsyspdfmark {pgfid60}{33098457}{9067840}
+\pgfsyspdfmark {pgfid61}{33098457}{9067840}
+\pgfsyspdfmark {pgfid62}{33098457}{9067840}
+\pgfsyspdfmark {pgfid63}{33098457}{9067840}
+\pgfsyspdfmark {pgfid64}{33098457}{9067840}
+\pgfsyspdfmark {pgfid65}{33098457}{9067840}
+\pgfsyspdfmark {pgfid66}{33098457}{9067840}
+\newlabel{eq:prelinkmultip_right}{{7.16}{20}{The inverse Solution}{equation.7.5.16}{}}
+\newlabel{eq:prelinkmultip_right@cref}{{[equation][16][7]7.16}{[1][20][]20}}
+\pgfsyspdfmark {pgfid91}{8265245}{49220243}
+\pgfsyspdfmark {pgfid92}{16087691}{49220243}
+\pgfsyspdfmark {pgfid93}{23910137}{49220243}
+\pgfsyspdfmark {pgfid94}{32525120}{49220243}
+\pgfsyspdfmark {pgfid95}{8265245}{46911011}
+\pgfsyspdfmark {pgfid96}{16087691}{46911011}
+\pgfsyspdfmark {pgfid97}{23910137}{46911011}
+\pgfsyspdfmark {pgfid98}{32525120}{46911011}
+\pgfsyspdfmark {pgfid99}{8265245}{44983163}
+\pgfsyspdfmark {pgfid100}{16087691}{44983163}
+\pgfsyspdfmark {pgfid101}{23910137}{44983163}
+\pgfsyspdfmark {pgfid102}{32525120}{44983163}
+\pgfsyspdfmark {pgfid103}{8265245}{43794599}
+\pgfsyspdfmark {pgfid104}{16087691}{43794599}
+\pgfsyspdfmark {pgfid105}{23910137}{43794599}
+\pgfsyspdfmark {pgfid106}{32525120}{43794599}
+\pgfsyspdfmark {pgfid107}{37061005}{46864591}
+\pgfsyspdfmark {pgfid108}{37061005}{46864591}
+\pgfsyspdfmark {pgfid109}{37061005}{46864591}
+\pgfsyspdfmark {pgfid110}{37061005}{46864591}
+\pgfsyspdfmark {pgfid111}{37061005}{46864591}
+\pgfsyspdfmark {pgfid112}{37061005}{46864591}
+\pgfsyspdfmark {pgfid113}{37061005}{46864591}
+\pgfsyspdfmark {pgfid114}{37061005}{46864591}
+\newlabel{eq:prelinkmultip_left}{{7.17}{21}{The inverse Solution}{equation.7.5.17}{}}
+\newlabel{eq:prelinkmultip_left@cref}{{[equation][17][7]7.17}{[1][20][]21}}
+\@writefile{toc}{\contentsline {paragraph}{$\theta _1$:}{21}{section*.77}\protected@file@percent }
+\newlabel{eq:equal_3-4}{{7.18}{21}{$\theta _1$:}{equation.7.5.18}{}}
+\newlabel{eq:equal_3-4@cref}{{[equation][18][7]7.18}{[1][21][]21}}
+\newlabel{eq:sol_theta_1}{{7.19}{21}{$\theta _1$:}{equation.7.5.19}{}}
+\newlabel{eq:sol_theta_1@cref}{{[equation][19][7]7.19}{[1][21][]21}}
+\@writefile{toc}{\contentsline {paragraph}{$\theta _2$:}{21}{section*.78}\protected@file@percent }
+\newlabel{eq:equal_1-4}{{7.20}{21}{$\theta _2$:}{equation.7.5.20}{}}
+\newlabel{eq:equal_1-4@cref}{{[equation][20][7]7.20}{[1][21][]21}}
+\newlabel{eq:equal_2-4}{{7.21}{21}{$\theta _2$:}{equation.7.5.21}{}}
+\newlabel{eq:equal_2-4@cref}{{[equation][21][7]7.21}{[1][21][]21}}
+\newlabel{eq:equal_1-4_midVar}{{7.23}{21}{$\theta _2$:}{equation.7.5.23}{}}
+\newlabel{eq:equal_1-4_midVar@cref}{{[equation][23][7]7.23}{[1][21][]21}}
+\newlabel{eq:equal_2-4_midVar}{{7.24}{21}{$\theta _2$:}{equation.7.5.24}{}}
+\newlabel{eq:equal_2-4_midVar@cref}{{[equation][24][7]7.24}{[1][21][]21}}
+\newlabel{eq:1-4+2_4}{{7.25}{21}{$\theta _2$:}{equation.7.5.25}{}}
+\newlabel{eq:1-4+2_4@cref}{{[equation][25][7]7.25}{[1][21][]21}}
+\newlabel{eq:1-4+2_4_reformed}{{7.26}{21}{$\theta _2$:}{equation.7.5.26}{}}
+\newlabel{eq:1-4+2_4_reformed@cref}{{[equation][26][7]7.26}{[1][21][]21}}
+\newlabel{eq:sol_theta_2}{{7.27}{21}{$\theta _2$:}{equation.7.5.27}{}}
+\newlabel{eq:sol_theta_2@cref}{{[equation][27][7]7.27}{[1][21][]21}}
+\@writefile{toc}{\contentsline {paragraph}{$\theta _3$:}{22}{section*.79}\protected@file@percent }
+\newlabel{eq:eqal_1-4_reformed}{{7.28}{22}{$\theta _3$:}{equation.7.5.28}{}}
+\newlabel{eq:eqal_1-4_reformed@cref}{{[equation][28][7]7.28}{[1][21][]22}}
+\newlabel{eq:1-4_reformed+2_4}{{7.29}{22}{$\theta _3$:}{equation.7.5.29}{}}
+\newlabel{eq:1-4_reformed+2_4@cref}{{[equation][29][7]7.29}{[1][21][]22}}
+\newlabel{eq:1-4_reformed+2_4_reformed}{{7.30}{22}{$\theta _3$:}{equation.7.5.30}{}}
+\newlabel{eq:1-4_reformed+2_4_reformed@cref}{{[equation][30][7]7.30}{[1][21][]22}}
+\newlabel{eq:sol_theta_3}{{7.31}{22}{$\theta _3$:}{equation.7.5.31}{}}
+\newlabel{eq:sol_theta_3@cref}{{[equation][31][7]7.31}{[1][22][]22}}
+\@writefile{toc}{\contentsline {paragraph}{$\theta _5$:}{22}{section*.80}\protected@file@percent }
+\newlabel{eq:equal_2-2}{{7.32}{22}{$\theta _5$:}{equation.7.5.32}{}}
+\newlabel{eq:equal_2-2@cref}{{[equation][32][7]7.32}{[1][22][]22}}
+\newlabel{eq:equal_1-2}{{7.33}{22}{$\theta _5$:}{equation.7.5.33}{}}
+\newlabel{eq:equal_1-2@cref}{{[equation][33][7]7.33}{[1][22][]22}}
+\newlabel{eq:2-2+1-2}{{7.34}{22}{$\theta _5$:}{equation.7.5.34}{}}
+\newlabel{eq:2-2+1-2@cref}{{[equation][34][7]7.34}{[1][22][]22}}
+\newlabel{eq:sol_theta_5}{{7.35}{22}{$\theta _5$:}{equation.7.5.35}{}}
+\newlabel{eq:sol_theta_5@cref}{{[equation][35][7]7.35}{[1][22][]22}}
+\@writefile{toc}{\contentsline {paragraph}{$\theta _4$:}{22}{section*.81}\protected@file@percent }
+\newlabel{eq:sol_theta_4}{{7.36}{22}{$\theta _4$:}{equation.7.5.36}{}}
+\newlabel{eq:sol_theta_4@cref}{{[equation][36][7]7.36}{[1][22][]22}}
+\@writefile{toc}{\contentsline {paragraph}{$\theta _6$:}{22}{section*.82}\protected@file@percent }
+\newlabel{eq:equal_3-3}{{7.37}{22}{$\theta _6$:}{equation.7.5.37}{}}
+\newlabel{eq:equal_3-3@cref}{{[equation][37][7]7.37}{[1][22][]22}}
+\newlabel{eq:sol_theta_6}{{7.38}{22}{$\theta _6$:}{equation.7.5.38}{}}
+\newlabel{eq:sol_theta_6@cref}{{[equation][38][7]7.38}{[1][22][]22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.5.5}Optimization of inverse kinematics solution}{22}{subsection.7.5.5}\protected@file@percent }
+\abx@aux@cite{invKinSolYanWu}
+\abx@aux@segm{0}{0}{invKinSolYanWu}
+\abx@aux@cite{extraneousroot}
+\abx@aux@segm{0}{0}{extraneousroot}
+\abx@aux@cite{DenavitHartenbergLesson}
+\abx@aux@segm{0}{0}{DenavitHartenbergLesson}
+\@writefile{toc}{\contentsline {paragraph}{cost function}{23}{section*.83}\protected@file@percent }
+\newlabel{eq:costFuncinvOptim}{{7.39}{23}{cost function}{equation.7.5.39}{}}
+\newlabel{eq:costFuncinvOptim@cref}{{[equation][39][7]7.39}{[1][23][]23}}
+\@writefile{toc}{\contentsline {paragraph}{limitations of cost function}{23}{section*.84}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{description of implementation}{23}{section*.85}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{algorithm for minimal computational effort}{23}{section*.86}\protected@file@percent }
+\abx@aux@cite{DenavitHartenbergKonventionen}
+\abx@aux@segm{0}{0}{DenavitHartenbergKonventionen}
+\abx@aux@cite{QingFanucAcademy}
+\abx@aux@segm{0}{0}{QingFanucAcademy}
+\abx@aux@cite{QingFanucAcademy}
+\abx@aux@segm{0}{0}{QingFanucAcademy}
+\@writefile{toc}{\contentsline {section}{\numberline {7.6}Denavit-Hartenberg-Convention}{24}{section.7.6}\protected@file@percent }
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\acronymused{DH}
+\@writefile{toc}{\contentsline {section}{\numberline {7.7}Robot configurations}{24}{section.7.7}\protected@file@percent }
+\acronymused{DOF}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces 6 axis robot configurations on the example of a FANUC Robot \cite {QingFanucAcademy}\relax }}{24}{figure.caption.87}\protected@file@percent }
+\newlabel{fig:RobotConfigs}{{7.9}{24}{6 axis robot configurations on the example of a FANUC Robot \cite {QingFanucAcademy}\relax }{figure.caption.87}{}}
+\newlabel{fig:RobotConfigs@cref}{{[figure][9][7]7.9}{[1][24][]24}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Developement of a control strategy}{25}{chapter.8}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {9}Conclusions and further work}{25}{chapter.9}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{26}{section*.88}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Appendices}{29}{section*.90}\protected@file@percent }
+\abx@aux@cite{MatlabControl}
+\abx@aux@segm{0}{0}{MatlabControl}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Appendix 1}{30}{Appendix.a.A}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Appendix 2}{30}{Appendix.a.B}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Robot Quick start guide}{30}{Appendix.a.C}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.0.1}Parts of the robot}{30}{subsection.a.C.0.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{FANUC R-2000iC/210F 6 axis robotic arm}{30}{section*.91}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{R30iA Robot Controller }{30}{section*.92}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{iPendant}{30}{section*.93}\protected@file@percent }
+\abx@aux@cite{MatlabControl}
+\abx@aux@segm{0}{0}{MatlabControl}
+\abx@aux@cite{MatlabControl}
+\abx@aux@segm{0}{0}{MatlabControl}
+\@writefile{toc}{\contentsline {subsubsection}{Gripper}{31}{section*.94}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {C.0.2}iPendant Navigation Manual:}{31}{subsection.a.C.0.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Important buttons}}{31}{figure.caption.95}\protected@file@percent }
+\newlabel{fig:ipendantnumbered}{{C.1}{31}{Important buttons}{figure.caption.95}{}}
+\newlabel{fig:ipendantnumbered@cref}{{[figure][1][3]C.1}{[1][31][]31}}
+\abx@aux@refcontextdefaultsdone
+\abx@aux@defaultrefcontext{0}{AlaDTdataTransmission}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{invKinANNKSHITISH}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{RobotKinemDyn}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{automatonDef}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{AutRobVeh}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{InvkinMeth_Lukas}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{geomModelingKamel}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ConstantinForwardKA}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{CorkeRoboticVisionControl}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{craig1986introduction}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FwInvKuka}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{DTwikip}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SaddikDTmultimconv}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ThalesETCS}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{QingFanucAcademy}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{RobotDynamics}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FHEM}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{GreivesDTfirst}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{inverseKinematikWiki}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{RobotModelAnalContrexampleJamshed}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Jazar2007}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{evalNonlinFeedForBackControl}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{KRITZINGER20181016}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{DenavitHartenbergLesson}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Dyn6DOFBinLi}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MotionPlanning}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{proxdist}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{invKinSeriallinkMani}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Trung}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Paul1981RobotM}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MathWorksInverseKinematics}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Qi2018DigitalTS}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MathIntroRobManip}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{robotDef}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{forwardVsInverseKinematics}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ROS}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{Angela_U1S2P1}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{CorkeRoboticsToolbox}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SchleichDTshaping}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{allgInvKin}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SpongDynContr}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FwdInvAnalysRobManip}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{SPCWebsite}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ROSAnswers_WhatIsRos}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{extraneousroot}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{FANUCcontrolMatlab}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{MatlabControl}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{6axisRobot}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{ProjectPlan}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{KongWei}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{robotDef2}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{WongWhatisDT}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{IndustrialRobotArm}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{invKinSolYanWu}{nty/global//global/global}
+\abx@aux@defaultrefcontext{0}{DenavitHartenbergKonventionen}{nty/global//global/global}
+\@writefile{toc}{\contentsline {subsubsection}{Emergency stop: }{32}{section*.96}\protected@file@percent }
+\providecommand\@xdylanguage[2]{}
+\@xdylanguage{main}{english}
+\providecommand\@gls@codepage[2]{}
+\@gls@codepage{main}{}

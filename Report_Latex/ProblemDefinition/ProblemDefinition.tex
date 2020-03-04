@@ -1,8 +1,10 @@
-\chapter{Problem Definition}
+\section{Problem Definition}
 
-For \ac{FRC} part production, a robot arm can be used to load the press with raw material, as it allows for more flexibility in the production line.
+For \ac{FRC} part production, a robot arm can be used to load the press with raw material, as it allows for more flexibility in the production line than specialized low DOF pick and place systems.
 As the robot arm has many degrees of freedom, there are different strategies for a control cycle. 
-Main constraint is to achieve this movement of materials as fast as possible to minimize the cool-down of the molten \ac{FRC}. 
-Additionally, the accelerations and forces on the material should be minimized while transferring, to make sure no material is lost in the process.
-This makes hit hard to find an ideal, fast control strategy to place the raw material into the press.
+There are two contratiction main constraints that need to balanced:
+On one hand, the movement of materials has to be achieved as fast as possible to minimize the cool-down of the molten \ac{FRC}. 
+On the other hand, the accelerations and forces on it should be minimized while transferring, to make sure no material is lost in the transfer process which would lead to deformations on the final product.
+This makes it hard to find an ideal, fast control strategy to place the raw material into the press.
+\medskip
 

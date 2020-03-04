@@ -3,7 +3,7 @@
 \documentclass[10pt,a4paper]{report}
 \usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
 \usepackage[utf8]{inputenc}		%utf8 allows also for umlauts
-\usepackage[arabic, english]{babel}
+\usepackage[english]{babel}
 \usepackage{amsmath}
 
 %Declare new math operators with amsmath:
@@ -11,6 +11,7 @@
 %atan2 function
 \DeclareMathOperator{\atantwo}{atan2}
 \DeclareMathOperator{\arctantwo}{arctan2}
+\DeclareMathOperator{\acos}{acos}
 
 
 \usepackage{amsfonts}
@@ -32,6 +33,9 @@
 \usepackage{breqn} %automatic linebreaking math environment
 %insert after all math stuff e.g. amsmath, amssymb mathpazo... is imported
 
+%insert external pdf pages in document
+\usepackage{pdfpages} 
+% http://texdoc.net/texmf-dist/doc/latex/pdfpages/pdfpages.pdf
 
 %Bibliography settings
 \usepackage[citestyle = numeric, style=numeric, bibstyle = numeric]{biblatex} 
@@ -68,8 +72,15 @@
 \usepackage{enumitem}
 \usepackage{multicol}%try it out!
 
+
+
+
+
 %acronym package (needs an acronym chapter)
-\usepackage{acronym}
+%\usepackage{acronym}
+%\usepackage{acro}	%Alternative, more elaborate package for acronyms
+%\input{Intro/Acro}
+
 
 %import PDF pages
 \usepackage{pdfpages}
@@ -129,6 +140,21 @@
 
 \usepackage{cleveref} %multi reference with \cref{x,y}
 % needs to be loaded after hyperref 
+
+%Making a Glossary
+%\usepackage{glossaries}
+\usepackage[acronyms,shortcuts,numberedsection,xindy]{glossaries}
+%\usepackage[style=long,toc,automake]{glossaries}
+%https://en.wikibooks.org/wiki/LaTeX/Glossary
+%http://tug.ctan.org/macros/latex/contrib/glossaries/glossariesbegin.pdf
+
+\include{Glossary/acronyms}
+\include{Glossary/glossary}
+
+%Note: Don't use dots in filenames, as this can lead to errors, e.g. with glossary package. Here the filename is cut after the dot, so wrong filenames are used for processing and will lead to errors.
+
+\makeglossaries
+%\makenoidxglossaries
 
 %Set some things clear 
 \newcommand{\HANSupervisor}{Wesselingh Ellen}
