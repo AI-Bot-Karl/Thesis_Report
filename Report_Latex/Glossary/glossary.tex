@@ -2,13 +2,19 @@
 
 
 \newglossaryentry{numSol}{
-	name={Numerical Solution},
+	name={Numerical Solutions},
 	description={Originally the term numerical solution describes a solution given in terms of numbers instead of an explicit closed form expression. In this work, the term "numerical solution" refers to numerical, iterative methods for solving the inverse kinematics problem by using a sequence of steps leading to incrementally better solutions for the joint angles. Examples for these methdods are the jacobian inversion method, the optimization based method cyclic coordinate descent as shown by Lukas Barinka \cite{InvkinMeth_Lukas}. 
 }}
+
+\newglossaryentry{clSol}{name={Closed-form solutions},description={Closed form solutions  in the contet of this thesis describe a solution in a closed form expression and  are used complementary to numerical Solutions }}
 
 \newglossaryentry{forwKin}{name={forward kinematics},description={Forward kinematics describes the position of the endpoint of a kinematic chain in the operational space by the kinematic equations with the joint variables as input. The non-linear kinematic equations map the joint parameters to the configuration of the robot system. This results in a pure geometrical description of motion by means of position, orientation, and their time derivatives.}}
 
 \newglossaryentry{joints}{name={joint},description={A joint is a connection between two links that allows for movement within certain contstraints. }}
 
-\newglossaryentry{link}{name={link},description={A link is a rigid body, defining the
-		spatial relationship between two following axes. Links can be rotated or translated by joints, but don't deform themselves.}}
+\newglossaryentry{link}{name={link},description={A link is a rigid body, defining the spatial relationship between two following axes. Links can be rotated or translated by joints, but don't deform themselves.}}
+
+
+\newglossaryentry{ipendant}{name={iPendant},description={Wired I/O device for FANUC robots that connects to the robot controller (here R30iA). Provides a touchscreen, buttons, deadman switch and E-stop for manual control, programming, monitoring and configuration of the robot.}}
+
+\newglossaryentry{deadman}{name={deadman switch},description={A button, that stops a machine or a whole production line as fast as possible. Can be pressed in dangerous situations. Should be pressed before servicing a device.}}

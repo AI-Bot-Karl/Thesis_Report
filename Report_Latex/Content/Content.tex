@@ -12,13 +12,20 @@
 
 %content
 %List of tables
+\listoffigures
 %List of Figures
+\listoftables
 %List of Symbols
+\printglossary[type=symbols,style=long,title={List of Symbols}]
+%acronyms
+\printglossary[type=\acronymtype]
+%Main Glossary
+\printglossary
 
 %Glossary and abbreviations
 %	\input{Intro/Abkuerzungsverzeichnis}
 	%\glsaddall
-	\printglossaries
+	%\printglossaries
 	%\printnoidxglossaries
 
 %config

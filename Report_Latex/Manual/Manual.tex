@@ -1,23 +1,23 @@
 \chapter{Robot Quick start guide}
 A big part of this was derived from \cite{MatlabControl}.
 
-\subsection{Parts of the robot}
+\section{Parts of the robot}
 A quick overview over the visible parts.
 
 \subsubsection{FANUC R-2000iC/210F 6 axis robotic arm}
 The robot has 6 movable joints with a possible payload attached to the end. Its features include a wide reach (2655 mm), sturdy but flexible arm design, a spring loaded counterbalance, relatively high payload capacity (210Kg) and fast moving axes. The joints also have hashes to indicate the zero positions which help with the calibration of the robot. 
 
-\subsubsection{R30iA Robot Controller }
+\subsection{R30iA Robot Controller }
 The Robot is controlled using an original equipment manufacturer controller called the FANUC R30iA controller. Its features include faster sustained speed and superior position accuracies. It also has the I/O ports that are used to connect grippers and other payloads. (It also houses the camera circuits which are required to access the data from the SONY camera provided with the robot. - Delta only)  The controller is also provided with a data card slot in which the special SD cards manufactured can be inserted and used as external memory. On the outside of the controller (side of iPendant at Delta) a USB port can be found. With these, programs, firmware files and other files can easily be transferred. Additionally, there is extended connectivity via its Ethernet port e.g. for FTP available.
 
-\subsubsection{iPendant}
+\subsection{iPendant}
 The teaching pendant is the primary user interface to the robot. It is used to move the joints of the robot manually, to program specific trajectories, to control the gripper, and various other actions. It also is an interface that can be used for input and output of the robot controller parameters. The user can access the system variables and position variables. (It is provided with a USB port that can be used to connect to a USB drive for external storage. - Delta only) It can also be used to setup an FTP server and client in order to communicate with the PC. 
 
 \subsubsection{Gripper}
 The robot as handed over does not have an active gripper system. It has been tested though with a pneumatic gripper controlled via the DO ports and pneumatic valves. A 2-way pneumatic valve, some piping and a pressure regulator are still available. (Delta Equipment varies here a lot).
 
 
-\subsection{iPendant Navigation Manual:}
+\section{iPendant Navigation Manual:}
 The teaching pendant is the primary user interface to the robot. This section deals with the important 
 buttons on the TP. 
 
@@ -32,7 +32,7 @@ buttons on the TP.
 \end{figure}
 
 
-\subsubsection{Emergency stop: }
+\subsection{Emergency stop: }
 
 Makes the robot stop immediately by applying brakes. Use it only when necessary as the brakes wear down. There is also an E-stop on the controller.
 Press down on the button to activate it.

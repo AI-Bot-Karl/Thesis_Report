@@ -1,1 +1,72 @@
 \chapter{Setup of the physical Environment}
+The production line at \ac{SPC} is palnned to produce steering knuckles with \ac{FRC}.
+
+\input{Thesis/ProductionLineSteps}
+
+\section{Notes on choice of robot} %should go to appendix
+The robot was chosen for this production line, as it provides a long reach. The arm without any \ac{EOAT} can reach a full circle with a radius of $2655 [\textit{mm}]$ with its mounting plate. Also the overall weight of $1240 [\textit{mm}]$ allows for reasonably fast movements between $90-190 [\textit{°/sec}] $ depending on the axis while still giving a payload capacity of $210 [\textit{Kg}]$ at the mounting plate.\cite{210FDatasheet}
+This high payload capacity is not needed directly, but it provides enough room for complex gripper designs, and provides room for future uses of the device.
+
+\section{Status of the production line at beginning of project}
+At the start of this thesis work, the \nameref{sec:HydraulicPress} was already fixed to the ground. 
+\nameref{sec:Deltarobot},\nameref{sec:conveyor2}, and the robot arm were roughly placed at their final positions.
+No gripper tools were available for either robots.
+The \nameref{sec:extruder}, \nameref{sec:oven}, \nameref{sec:conveyor1}, \nameref{sec:Cobot} and \nameref{sec:conveyor3} were not available.
+Electricity for the machines was not made available.
+A safety-fence was not set up.
+
+\section{Status of the production line at the end of thesiswork}
+At the end of the project, the robots are positioned at a preferable position for their intended use. Interaction between press and robot arm were tested. Grippers were being developed in \ac{CAD}, and some standardized pneumatic grippers were tested on the robot arm for pick and place operations. \nameref{sec:conveyor2} was positioned, and fixed to the ground. Also, it was also tested with a Profinet-controlled variable frequency drive via \ac{PLC}. A heat resistant belt still needs to be mounted. An \nameref{sec:extruder} was delivered, but still needs to be commissioned, tested and modified. 
+An \nameref{sec:oven}, \nameref{sec:conveyor1}, \nameref{sec:conveyor3} and a \nameCref{sec:Cobot}-station are still missing.
+A preliminary safety fence with no electronic safeguard has been set up. 
+
+
+\section{Set up process of Robot arm}
+
+\subsection{Positioning}
+In order to integrate the robot arm into the production line, it needed to be mounted at its final position. This position was determined with a floorplan. To create the floorplan, the three members of SPC responsible for the \nameref{sec:Deltarobot}, the \nameref{sec:conveyor2}/\nameref{sec:oven} and the robot arm worked out the positions of their machines with the help of Qing Groep. At Qing, the production line was modelled in \ac{VC}. With \ac{VC} different positions for these machines could be tested. 
+Simple pick and place programs could be simulated in that environment.
+These movements could be inspected an varied to allow a smooth and fast transfer of material.
+As the \nameref{sec:HydraulicPress} was already fixed to the ground, all other positions were determined relative to the press.
+After estimating good positions via \ac{VC} with respect to the movement range of the robot arm, the outlines of the machine feets were measured with a laser distance measurement system and marked on the floor.
+After placing the robots with a forklift on the desired positions, the actual positions were measured again with the laser distance measurement system, documented in an excel sheet and tested again in VC. 
+As the differences between actual and desired position were minimal, the simulations in VC did not show any problems.
+The robot arm and the other machines was then bolted down in the ground. 
+
+\subsection{Comissioning}
+After the robot arm was positioned at its desired position, it could be plugged into the accompanying Fanuc R-30iA controller and was provided with electricity. 
+This step was delayed a lot, as a safe and powerful enough electrical installation could not be provided by the \ac{MIC} from the beginning of the project.
+After the robot and controller were running, the basic functions as found in the manuals could be tested. 
+Manuals and configuration files were delivered by the previous owner, IRSA Robotics, on a set of \ac{usb}-sticks. 
+These \ac{usb} sticks had all kinds of manuals and configuration files for both robots without any context and order on them. 
+An extensive search and ordering was needed to get the right manuals.
+Additionally, the previous owner had left a non-functional configuration on the robot, that was overcome by a complete factory reset with the help of Fanuc customer service.
+When these issues were overcome, the robots could be calibrated. As described in the manual, the robots have calibration markings. With these markings aligned, a calibration could be made with the \gls{ipendant}.
+
+
+
+
+\subsection{Fieldbus and Network setup}
+
+For the state of this thesis-work, the field bus and network- installation consists of following parts:
+\begin{itemize}
+	\item \ac{PLC}
+	\item \ac{HMI}-Display
+	\item \ac{VFC} for conveyor belt
+	\item R-2000 iA Mate Controller for Delta robot
+	\item R-2000 iA Controller for Robot arm
+	\item Several student notebooks for configuration, monitoring and control of the machines
+\end{itemize}
+
+Additionally following devices are Planned:
+\begin{itemize}
+	\item \ac{DDS} (eventually consisting of several distributed nodes)
+	\item cameras for process monitoring 
+	\item Controller for \nameref{sec:Cobot}
+	\item Controller for Extruder and Feeding system
+	\item Part inspection system
+	\item various sensors
+	\item 
+\end{itemize}
+
+The physical layer of the network and fieldbus is based on ethernet. A basic connection to the PLC via Profinet as well as to the network via IP/Etherent at \ac{SPC} was achieved.

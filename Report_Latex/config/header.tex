@@ -95,9 +95,14 @@
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
 \makeatother
 
+% Incluse subsubsection in Toc
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
 
-\newcommand*\wildcard[2][6cm]{\vspace*{2cm}\parbox{#1}{\hrulefill\par#2}} %Wildcard for Signature line
+ %Wildcard for Signature line
+\newcommand*\wildcard[2][6cm]{\vspace*{2cm}\parbox{#1}{\hrulefill\par#2}}
 
+%A truly random package
 \usepackage{lipsum} %random text
 
 %If custom headers are needed
@@ -141,20 +146,28 @@
 \usepackage{cleveref} %multi reference with \cref{x,y}
 % needs to be loaded after hyperref 
 
+%Define \fulref command for nice cross referencing in document with hyperlinks:
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} 
+%How to use: see
+% https://tex.stackexchange.com/questions/121865/nameref-how-to-display-section-name-and-its-number
+
 %Making a Glossary
 %\usepackage{glossaries}
-\usepackage[acronyms,shortcuts,numberedsection,xindy]{glossaries}
+\usepackage[acronyms,shortcuts,symbols,numberedsection,xindy]{glossaries-extra}
 %\usepackage[style=long,toc,automake]{glossaries}
 %https://en.wikibooks.org/wiki/LaTeX/Glossary
 %http://tug.ctan.org/macros/latex/contrib/glossaries/glossariesbegin.pdf
 
 \include{Glossary/acronyms}
 \include{Glossary/glossary}
+\include{Glossary/symbols}
 
 %Note: Don't use dots in filenames, as this can lead to errors, e.g. with glossary package. Here the filename is cut after the dot, so wrong filenames are used for processing and will lead to errors.
 
 \makeglossaries
 %\makenoidxglossaries
+
+
 
 %Set some things clear 
 \newcommand{\HANSupervisor}{Wesselingh Ellen}
