@@ -8,17 +8,17 @@ Solving the inverse kinematic problem for a given serial link actuator allows to
 \subsection{Existence of solutions} \label{ExistSol}
 To determine the joint values for a \ac{EOAT}-position it needs to be determined, if there exists a solution.
 Not all positions are equally reachable.
-There are two types of workspace:
+There are two types of workspace(\cite{craig1986introduction}, ch4, p.102):
 \begin{itemize}[wide=\parindent] 
 	\item[\textbf{Dextrous workspace}] volume of space that the robot end-effector can reach with all orientations
 	\item[\textbf{reachable workspace}] volume of space, that the robot can reach in at least one orientation
 \end{itemize}
-(\cite{craig1986introduction}, ch4, p.102)
+
 
 A manipulator with less than 6\ac{DOF} cannot reach all positions and orientations in 3D-space. Further limitations can be imposed by the axis alignment. A planar manipulator for example cannot reach  out of the plane. \cite{craig1986introduction}
 
 \subsection{multiple solutions} \label{MultipSol}
-A 6\ac{DOF} robot has multiple sets of inverse solutions. To understand why there are multiple solutions, it helps to have a look at fig. \ref{multipSol3Link}. The same end effector position and orientation can be reached in two ways. 
+A 6\ac{DOF} robot has multiple sets of inverse solutions. To understand why there are multiple solutions, it helps to have a look at fig. \ref{fig:multipSol3Link}. The same end effector position and orientation can be reached in two ways by a 3-link manipulator. 
 
 \begin{figure}[H]
 	\includegraphics[
@@ -26,7 +26,7 @@ A 6\ac{DOF} robot has multiple sets of inverse solutions. To understand why ther
 	center,
 	keepaspectratio,
 	]{invKin/Multip_Sol}
-	\caption{Three link manipulator with 2 solutions}
+	\caption{Three link manipulator with 2 solutions (see \cite{craig1986introduction}, p.103 )}
 	\label{fig:multipSol3Link}
 \end{figure}
 
@@ -42,6 +42,9 @@ As stated by YanWu et al. there are 8 groups of inverse solution for most \ac{EO
 	\caption{Tree of inverse solutions (\cite{invKinSolYanWu}, fig.2)}
 	\label{fig:invKinTree}
 \end{figure}
+%
+The tree of inverse solutions shown in figure \ref{fig:invKinTree} is a schematic representation of different possible solutions. It does not show actual positions. A set of the different joint configurations for inverse solutions in the Fanuc can be found in \fullref{sec:RobConf}.
+
 
 \subsection{Inverse solution of 6 \ac{DOF} Robot}
 
@@ -49,7 +52,7 @@ As shown in chapter \ref{ForKinEq} the end effector position is defined by four 
 This problem  is solved by the method of using the inverse transformation of unknown link pre-multiplication as presented by Yan Wu et al. \cite{invKinSolYanWu}. 
 
 \paragraph{Forward kinematic equation}
-For a 6\ac{DOF} Robot, the  forward kinematic matrix equation from equation \cref{eq:SummofTranfMatr,eq:matrixForm} can be reformulated into equation \ref{eq:ForwKinEquMatr}
+For a  6\ac{DOF} Robot, the  forward kinematic matrix equation from equation \cref{eq:SummofTranfMatr,eq:matrixForm} can be reformulated into equation \ref{eq:ForwKinEquMatr}
 
 \begin{equation}\label{eq:ForwKinEquMatr}
 	^0_6T = \\
@@ -194,10 +197,11 @@ With $\theta_4$ and $\theta_1$ known, equation \ref{eq:equal_3-3} can be reforme
 \begin{equation}\label{eq:sol_theta_6}
 	\theta_{6_{1/2}} = \atantwo(s_1 n_x -c_1 n_y , s_1 o_x -c_1 o_y) \pm \atantwo(\sqrt{(s_1 n_x - c_1 n_y)^2 + (s_1 o_x - c_1 o_y )^2 - c_4^2} , c_4)
 \end{equation}
-
-With equations \cref{eq:sol_theta_1,eq:sol_theta_2,eq:sol_theta_3,eq:sol_theta_4,eq:sol_theta_5,eq:sol_theta_6} the values for $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated for all reachable end effector positions.
-
-The $\atantwo(x,y)$-function used in this solution which returns an angle between the positive x axis and a line pointing to $(x,y) \neq (0,0)$. The function takes two arguments and returns a single value $\theta$ between $-\pi$ and $\pi$ equivalent to the phase angle of complex numbers. While $\arctan$ can only solve in quadrant 1 and 4, $\arctantwo$ allows for calculation in all four quadrants because it differentiates between pos/neg $x$  and  $y$ direction independently. It is mostly a question of implementation and solving method, so this new notation arose with programming languages.
+\medskip
+With equations \cref{eq:sol_theta_1,eq:sol_theta_2,eq:sol_theta_3,eq:sol_theta_4,eq:sol_theta_5,eq:sol_theta_6} the values for $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated for all reachable end effector positions.\\
+\medskip
+For details on the \gls{atan2} function, see the glossary.
+\medskip
 
 
 \subsection{Optimization of inverse kinematics solution}
@@ -208,10 +212,10 @@ This optimization function needs to find the set of solution that can reach the 
 \\
 \paragraph{cost function}
 Equation \ref{eq:costFuncinvOptim} is the cost function to be minimized.
-\begin{itemize}
+\begin{itemize}[wide=\parindent] 
 	\item[$\theta_i (k+1)$:] target angle
 	\item[$\theta_i(k)$:] departing angle
-	\item[$k_i$] power value
+	\item[$k_i$:] power value
 \end{itemize}
 
 \begin{equation}\label{eq:costFuncinvOptim}

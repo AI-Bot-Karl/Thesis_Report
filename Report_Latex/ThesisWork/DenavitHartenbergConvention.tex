@@ -1,6 +1,6 @@
-\section{Denavit-Hartenberg-Convention}
+\chapter{\ac{DH}-Convention} \label{sec:DH-convention}
 
-The\ac{DH}-Convention is a commonly used and simplifies the forward and backward transformation. It was named after Jaques Denavit and Richard Hartenberg who developed a general theory to describe a serial link mechanism. \cite{DenavitHartenbergLesson}\\
+The \ac{DH}-Convention is a commonly used and simplifies the forward and backward transformation. It was named after Jaques Denavit and Richard Hartenberg who developed a general theory to describe a serial link mechanism. \cite{DenavitHartenbergLesson}\\
 It consists of following parts:
 
 \begin{itemize}[leftmargin=3cm]
@@ -9,6 +9,34 @@ It consists of following parts:
 	\item \ac{DH}-Parameters as a result form the transformations
 \end{itemize}
 
-Determining the coordinate systems is done according to set rules. Nevertheless, the choices of coordinate frames are also not uniqe, so different peole will derive different, but correct frame assignments. This freedom of choice should be used to bring as many \ac{DH}-Parameters as possible to zero. This simplifies subsequent equations and calculations. \cite{DenavitHartenbergKonventionen}
+Determining the coordinate systems is done according to set rules. Nevertheless, the choices of coordinate frames are also not unique, so different people will derive different, but correct frame assignments. This freedom of choice should be used to bring as many \ac{DH}-Parameters as possible to zero. This simplifies subsequent equations and calculations. \cite{DenavitHartenbergKonventionen}
 
 Each joint of the robot is described by four parameters.
+
+This leads to a kinematic chain with each frame determined by the previous one \cite{DenavitHartenbergKonventionen}.\\
+\\
+
+Link0 - Link1 - Link2 - Link3 - Link4 - Link5 - Link6\\
+\\
+
+Each \ac{DH}-transformation consists of four elementary transformations\cite{DenavitHartenbergKonventionen}:
+
+\begin{enumerate}[label=\emph{\arabic*)}]
+	\item rotation around the $x_i$-axis with the amount of $\alpha_i$
+	\item translation along $x_i$-axis with the amount of  $a_i$
+	\item translation along $z_i$-axis with the amount of  $d_i$
+	\item rotation around $z_i$-axis with the amount of  $\theta_i$
+\end{enumerate}
+
+This shows that the \ac{DH} robotic convention is a minimal line representation, as with four parameters, all possible lines in the Euclidean Space can be represented (\cite{AutRobVeh}, page 210).
+
+Following from this, two pairs of parameters determine the joints and links \cite{ConstantinForwardKA}:
+\begin{itemize}[wide=\parindent] 
+	\item[Links:] represented by link length ($a$) and link twist ($\alpha$)
+	%, defined as the relative location of the two attached joint axes.
+	\item[Joints:] represented by link offset ($d$)
+	% which is the distance from one link to the next 
+	and joint angle ($\theta$) 
+	%which is the rotation of one link with respect to the next around the joint axis.
+\end{itemize}
+\phantom{}\\

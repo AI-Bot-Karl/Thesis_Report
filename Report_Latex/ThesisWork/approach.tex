@@ -103,32 +103,13 @@ As there is no distal joint for the \ac{EOAT} frame, the steps for this frame ar
 
 \subsubsection{Establishing \ac{DH} parameters for each link} \label{sec:DHparPerLink}
 
-After assigning the local coordinate frames, the \ac{DH}-Transformations have to be determined. This leads to a kinematic chain with each frame determined by the previous one \cite{DenavitHartenbergKonventionen}.
+After assigning the local coordinate frames, the \ac{DH}-Transformations to connect the coordinate frames have to be determined according to \ac{DH}-convention.
+Further notes on the \ac{DH}-convention can be found in \fullref{sec:DH-convention}.
 
-Link0 - Link1 - Link2 - Link3 - Link4 - Link5 - Link6
 
-Each \ac{DH}-transformation consists of four elementary transformations\cite{DenavitHartenbergKonventionen}:
 
-\begin{enumerate}[label=\emph{\arabic*)}]
-	\item rotation around the $x_i$-axis with the amount of $\alpha_i$
-	\item translation along $x_i$-axis with the amount of  $a_i$
-	\item translation along $z_i$-axis with the amount of  $d_i$
-	\item rotation around $z_i$-axis with the amount of  $\theta_i$
-\end{enumerate}
 
-This shows that the \ac{DH} robotic convention is a minimal line representation, as with four parameters, all possible lines in the Euclidean Space can be represented (\cite{AutRobVeh}, page 210).
-
-Following from this, two pairs of parameters determine the joints and links \cite{ConstantinForwardKA}:
-\begin{itemize}[wide=\parindent] 
-	\item[Links:] represented by link length ($a$) and link twist ($\alpha$)
-	%, defined as the relative location of the two attached joint axes.
-	\item[Joints:] represented by link offset ($d$)
-	% which is the distance from one link to the next 
-	and joint angle ($\theta$) 
-	%which is the rotation of one link with respect to the next around the joint axis.
-\end{itemize}
-
-These are the \ac{DH}-parameters which form the transformation matrices that connect serial link coordinate frames. They can be distinguished into parameters and variables. While constructive parameters are dependent on the construction of the robot and are constant, variables depend on the joint movement \cite{FwdInvAnalysRobManip} \cite{ConstantinForwardKA} \cite{DenavitHartenbergKonventionen}.
+The \ac{DH}-parameters form the transformation matrices that connect serial link coordinate frames. They can be distinguished into parameters and variables. While constructive parameters are dependent on the construction of the robot and are constant, variables depend on the joint movement \cite{FwdInvAnalysRobManip} \cite{ConstantinForwardKA} \cite{DenavitHartenbergKonventionen}.
 
 \begin{enumerate}[label=\emph{\arabic*)}]
 	\item[$\alpha_i$] angle between $z_{i-1}$ and $z_i$, measured in plane normal to $x_i$ (constructive parameter)
@@ -229,7 +210,7 @@ R & p \\
 \end{equation}
 
 The rotation matrix describes the relative orientation of two frames towards each other. As the columns $[n,o,a]$ are the unit vectors along the axes of one frame relative to the other reference frame, the relative orientation of a frame ${b}$ with respect to a frame ${a}$ is given by the rotation matrix as seen in eq \ref{eq:rotMatrix_a-b} \cite{ConstantinForwardKA}
-\begin{equation}
+\begin{equation}\label{eq:rotMatrix_a-b}
 \phantom{}^b_aR =
 \begin{bmatrix}
 \phantom{}_ax^b) & \phantom{}_ay^b) & \phantom{}_az^b) \\
@@ -242,7 +223,7 @@ x^b \cdot z^a & y^b \cdot z^a & z^b \cdot z^a \\
 \end{bmatrix}
 \end{equation}
 
-As in equation \ref{eq:rotMatrixToAbsFrame} the coordinates relative to the reference frame ${a}$, of a point $p$, of which the coordinates are known with respect to a frame ${b}$ with the same origin can then be calculated ( see \cite{RobotKinemDyn}, "Description of Position and Orientation) .
+The coordinates relative to the reference frame ${a}$, of a point $p$, of which the coordinates are known with respect to a frame ${b}$ with the same origin can then be calculated as in equation \ref{eq:rotMatrixToAbsFrame}  ( see \cite{RobotKinemDyn}, "Description of Position and Orientation) .
 \begin{equation}\label{eq:rotMatrixToAbsFrame}
 \phantom{}_a p = \phantom{}^b_aR\phantom{.}_b p 
 \end{equation}

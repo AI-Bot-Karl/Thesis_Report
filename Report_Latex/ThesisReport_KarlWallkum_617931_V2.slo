@@ -1,5 +1,0 @@
-(indexentry :tkey (("x" "\\glossentry{x}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("v" "\\glossentry{v}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("a" "\\glossentry{a}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("t" "\\glossentry{t}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
-(indexentry :tkey (("F" "\\glossentry{F}") ) :locref "{}{3}" :attr "pageglsnumberformat" ) 
