@@ -1,1 +1,37 @@
 \section{Dynamic Modelling}
+
+With the kinematic model in place, dynamics can be attached. The motion of the \ac{EOAT} is a result of the motion of each link, which are moved by torques applied by the joints. These torques have to counteract friction, gravity and varying inertias.
+With the rigid-body equations of motion, the robot is described by a set of coupled dynamic equations. These give the joint torques necessary to move to and hold a certain pose.
+
+%\subsection{Rigid-Body equations of motion}
+\subsection{inverse Dynamics}
+
+For a serial link manipulator, the equations of motion can be expressed as a set of coupled differential equations in matrix form as seen in equation \ref{eq:RBeqMot}. These equations describing the manipulator rigid-body dynamics are called inverse dynamics.
+The inverse dynamics is described by following terms:
+\begin{itemize}
+	\item[$ M $] joint-space inertia matrix
+	\item[$ C $] coriolis and centripetal coupling matrix
+	\item[$ F $] friction Force
+	\item[$ G $] gravity loading
+	\item[$ W $] Wrench applied at the end effector
+	\item[$ J $] Jacobian of the robot
+\end{itemize}
+The equations are given in generalized joint coordinates $q$, velocities $\dot{q}$ and accelerations $\ddot{q}$.
+The result is the vector $Q$ of generalized actuator forces associated with the generalized coordinates $ q$, that can be used to control the robot.
+
+\begin{equation}\label{eq:RBeqMot}
+	Q=M(q)\ddot{q}+C(q,\dot{q})\dot{q}+F(\dot{q})+G(q)+J(q)^TW
+\end{equation}
+
+
+\subsection{title}
+
+
+
+
+\subsection{forward Dynamics}
+To simulate the effects of the joint torques on the robot, the equations of motion (eq. \ref{eq:RBeqMot}) can be rearranged as seen in equation \ref{eq:FWDyn}. This gives the resulting joint accelerations $\ddot{q}$ which can be used to calculate the movements of the links.
+
+\begin{equation} \label{eq:FWDyn}
+	\ddot{q}= M^{-1}(q) (Q-C(q,\dot{q})\dot{q} - F(\dot{q}) -G(q) -J(q)^T W)
+\end{equation}
