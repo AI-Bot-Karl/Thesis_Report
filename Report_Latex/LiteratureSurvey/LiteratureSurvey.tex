@@ -165,6 +165,13 @@ This solution can then be verified with the robotics toolbox created by Corke \c
 \section{Dynamic model}
 
 With this solution, a dynamic model of the robot can be created by attaching dynamics to the model as seen in "Control and Safety Mechanisms for a 3 DOF Manipulator with Human Interaction" \cite{KongWei} and "A mathematical introduction to Robotic Manipulation" \cite{MathIntroRobManip}. A complete example of a dynamic simulation of a 6 \ac{DOF} robot arm can be found in "Dynamic Multibody Simulation of a 6-DOF Robotic Arm" \cite{Dyn6DOFBinLi}
+\cite{CorkeRoboticVisionControl}.
+The dynamic model describes the behaviour of the manipulator with a set of equations, the equations of motion.
+The rigid-body equations of motion consist of five coupled differential equations in matrix form.
+%Each of them can be derived with Newton's second law and Eueler's euqation of motion as seen in section 3.2 of 
+The Manipulator inertia matrix, Coriolis matrix and gravity term can be found with a Lagrangian formulation of the equations of motion for an open-chain manipulator as seen in "A Mathematical Introduction to Robot Manipulation", section 3.1, "The Lagrangian for an open-chain robot". The force applied at the end-effector can be included as seen on page 157, section 5.11 \cite{IndustrialRobotArm}, according to the principle of virtual work. A goood overview on friction models can be found in \cite{CorkeRoboticVisionControl}, p. 252, section 9.1.2 "Friction". 
+%TODO
+%MOVE to Literature part
 
 \section{Controller}
 

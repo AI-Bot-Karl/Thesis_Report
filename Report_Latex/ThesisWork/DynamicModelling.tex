@@ -1,16 +1,16 @@
-\section{Dynamic Modelling}
+\section{Dynamics}
 
 With the kinematic model in place, dynamics can be attached. The motion of the \ac{EOAT} is a result of the motion of each link, which are moved by torques applied by the joints. These torques have to counteract friction, gravity and varying inertias.
 With the rigid-body equations of motion, the robot is described by a set of coupled dynamic equations. These give the joint torques necessary to move to and hold a certain pose.
 
 %\subsection{Rigid-Body equations of motion}
-\subsection{inverse Dynamics}
+\subsection{Inverse Dynamics}
 
 For a serial link manipulator, the equations of motion can be expressed as a set of coupled differential equations in matrix form as seen in equation \ref{eq:RBeqMot}. These equations describing the manipulator rigid-body dynamics are called inverse dynamics.
 The inverse dynamics is described by following terms:
 \begin{itemize}
 	\item[$ M $] joint-space inertia matrix
-	\item[$ C $] coriolis and centripetal coupling matrix
+	\item[$ C $] Coriolis and centripetal coupling matrix
 	\item[$ F $] friction Force
 	\item[$ G $] gravity loading
 	\item[$ W $] Wrench applied at the end effector
@@ -24,7 +24,137 @@ The result is the vector $Q$ of generalized actuator forces associated with the 
 \end{equation}
 
 
-\subsection{title}
+\subsection{Derivation of the Equations of motion}
+The equations of motion can be derived with a Lagrangian approach as seen in \cite{MathIntroRobManip}, chapter 3.
+
+\subsubsection{Lagrangian for an open-chain manipulator}
+
+The equations of motion for an open-chain robot can be formed by substituting the Lagrangian into the Lagrange equations . 
+The Lagrange equations in vector form can be seen in eq. \ref{eq:LagrEq}. They are given for a mechanical system with generalized coordinates $q$ and with $\Upsilon$ representing the actuator torque.
+\begin{equation} \label{eq:LagrEq}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}} - \frac{\partial L}{\partial q} = \Upsilon
+\end{equation}
+
+With the Lagrangian in place, expanding the terms of partial derivatives and rearranging, these terms form eq. \ref{eq:RBeqMot} as seen in \cite{MathIntroRobManip}, section 3.2.\\
+
+\paragraph{Lagrangian for an open-chain robot}
+
+The Lagrangian can be calculated with the potential and kinetic energy as seen in eq. \ref{eq:Lagrangian}. 
+\begin{equation} \label{eq:Lagrangian}
+	L(q,\dot{q}) = T(q,\dot{q}) - V(q)
+\end{equation} 
+
+
+
+\paragraph{Kinetic Energy of a link}
+%The kinetic energy of the ith link can be found in Math. Intro p.168  eq. 4.17
+For an open chain robot, the total kinetic energy can be defined as in equation \ref{eq:TotKinEn}.
+\begin{equation}\label{eq:TotKinEn}
+T(\theta,\dot{\theta}) = \sum_{i=1}^{n} T_i(\theta,\dot{\theta}) = \frac{1}{den} \dot{\theta}^T M(\theta)\dot{\theta}
+\end{equation}
+
+\paragraph{Potential Energy of a link}
+%The potential energy of the ith link can be found in Math. Intro p.169
+The total potential energy is defined similarly as in equation \ref{eq:TotPotEn}
+\begin{equation}\label{eq:TotPotEn}
+V(\theta)=\sum_{i=1}^{n} V_i(\theta) = m_i*g*h_i(\theta)
+\end{equation}
+
+\paragraph{Forming the Lagrangian}
+Substituting these into the Lagrangian gives eq. \ref{eq:LagrangianRobManip}.
+\begin{equation}\label{eq:LagrangianRobManip}
+	L(\theta, \dot{\theta})= \sum_{i=1}^{n} (T_i(\theta,\dot{\theta})- V_i(\theta)) = \frac{1}{2} \dot{\theta}^T M(\theta)\dot{\theta}-V(\theta)
+\end{equation}
+
+
+
+%\subsubsection{Equations of motion for a 6DOF robot arm}
+%
+%\subsubsection{Lagrangian for a 6DOF robot arm}
+
+%\paragraph{Potential Energy for an 6DOF robot arm}
+%
+%as in three link manipulator, page 17
+%
+%\paragraph{Kinetic Energy for a 6DOF robot arm}
+
+
+
+\subsubsection{Inertia Matrix }
+
+"The joint-space inertia is a positive definite, and therefore symmetric, matrix". \cite{CorkeRoboticVisionControl}, section 9.2.2
+
+The manipulator inertia matrix can be calculated with the Link inertia Matrix and the Jacobian as seen in equation \ref{eq:ManipInMatr}.
+\begin{equation}\label{eq:ManipInMatr}
+	M(\theta) = \sum_{i=1}^{n} J_i^T(\theta) M_i J_i(\theta)
+\end{equation}
+
+\paragraph{Link inertia Matrix}
+The link inertia Matrix can be created as in eq. \ref{eq:LinkInMatrix} with the Inertia Tensor $\mathcal{I}$ and the link mass $m$.
+\begin{equation}\label{eq:LinkInMatrix}
+	M= 
+	\begin{bmatrix}
+	mI & 0\\
+	0  & \mathcal{I}
+	\end{bmatrix}
+\end{equation}
+
+\paragraph{Inertia Tensor}
+The inertia Tensor
+ $\mathcal{I}$ 
+can be approximated with homogeneous simple forms like the cuboid or a cylinder as given in \cite{PhysScientEng}. 
+An example for the inertia Tensor can be found in \cite{MathIntroRobManip} 
+
+\paragraph{Inertia Matrix example}
+An example for the inertia matrix is given in eq. \ref{eq:InMatrHomBar} for a homogeneous bar with width $w$, height $h$ and length $l$. Other geometric shapes and non-homogeneous structures have different inertia matrices. 
+\begin{equation} \label{eq:InMatrHomBar}
+	M=
+	\begin{bmatrix}
+	m & 0 & 0 & 0 & 0 & 0\\
+	0 & m & 0 & 0 & 0 & 0\\
+	0 & 0 & m & 0 & 0 & 0\\
+	0 & 0 & 0 & \frac{m}{12}(w^2 + h^2) & 0 & 0\\
+	0 & 0 & 0 & 0 & \frac{m}{12}(l^2+h^2) & 0\\
+	0 & 0 & 0 & 0 & 0 & \frac{m}{12}(l^2 +w^2)\\
+	\end{bmatrix}
+\end{equation}
+
+
+%Translational motion of a body can be described in the inertial frame by Newton's second law as seen in eq. \ref{eq:NewtSecLaw}. It is simplified as a pointmass $m$ at position $x$. It gives the acceleration of the body due to the forces acting on it.
+%\begin{equation} \label{eq:NewtSecLaw}
+%	m * \ddot{x} = f
+%\end{equation}
+%
+%With Euler's equations of motion, the rotational motion of a body in SO(3) (3D rotation group) can be described as in eq. \ref{label}. It gives the angular accelerations of the body in the body frame due to the applied torque acting on it.
+%\begin{equation}
+%	
+%\end{equation}
+
+
+\subsubsection{Coriolis Matrix }
+%The Coriolis matrix can be calculated as seen in Math. Intro p.171  eq. 4.23
+The Coriolis matrix can be calculated with equation \ref{eq:CoriolisMatr}
+\begin{equation}\label{eq:CoriolisMatr}
+	C_{ij}(\theta,\dot{\theta}) = \sum_{k=1}^{n} \Gamma_{ijk}\dot{\theta}_k=\frac{1}{2} \sum_{k=1}^{n} (\frac{\partial M_{ij}}{\partial\theta_k}+\frac{\partial M_{ik}}{\partial\theta_j}-\frac{\partial M_{kj}}{\partial\theta_i})\dot{\theta}_k
+\end{equation}
+
+\subsubsection{Friction }
+The friction can be determined through friction models as given in  \cite{CorkeRoboticVisionControl}, section 9.1.2.
+As friction models are computationally very intensive, they will not be subject to this simulation of a robot arm.
+
+\subsubsection{Gravity Term}
+As  $V (\theta)$ is the potential energy due to gravity, the forces acting on the joint due to gravity can be determined by $dV/d\theta_i$. %see page 169
+
+\subsubsection{Wrench at Endeffector }
+A wrench $W$ is a combination of translational force $(f)$ and rotational moment $(m)$ into a vector with six elements:\\
+$ W = (f_x, f_y, f_z, m_x, m_y, m_z)$ (see page 69, section 3.2.2 \cite{CorkeRoboticVisionControl})\\
+This wrench works on the endeffector, so it is given in the Cartesian workspace.
+As seen in \fullref{sec:Jacobian}, these forces can be directly transformed into joint space with the Jacobian.
+
+
+
+
+
 
 
 

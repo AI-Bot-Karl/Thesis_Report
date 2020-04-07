@@ -1,0 +1,11 @@
+\section{Jacobian} \label{sec:Jacobian}%put somewhere else!
+When the position of the end-effector is $p=(x,y,z,\alpha,\beta,\gamma)$ and the joint angles are  $q=(q_1, q_2, q_3, q_4, q_5, q_6)$, the derivative of $p$ with respect to the joint variables $q$ gives the Jacobian matrix as seen in eq. \ref{eq:JacDeriv}.\\
+\begin{equation} \label{eq:JacDeriv}
+	\frac{dp}{dq}=J(q)
+\end{equation}
+\medskip
+As a result, the Jacobian connects the velocities of the two state-spaces as seen in equation \ref{eq:JacVel} ( see p.231, sec. 8.1 \cite{CorkeRoboticVisionControl})0. Further derivations like acceleration, Jerk, Snap an Crackle can be obtained similarly by dividing both sides through $dt$. \\
+\begin{equation}\label{eq:JacVel}
+	\dot{p}=J(q)\dot{p}
+\end{equation}
+As the Jacobian matrix $J$ connects the end-effector space in generalized coordinates with the joint space in angle coordinates, it can relate also forces between the state-spaces according to the principle of virtual work (see page 157, section 5.11 \cite{IndustrialRobotArm}).
