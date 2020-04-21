@@ -1,0 +1,176 @@
+\chapter{TP program} \label{TPprogram210F}
+
+\paragraph{TP language}Fanuc robots are usually programmed in a language called TP. For more information, the website of Onerobotics \cite{OneRobotics} gives an extensive collection of tutorials, manuals and guides. The book "Robot whispering" \cite{RobotWhispering} available on their website is a fast way to get started with programming Fanuc Robots.\\
+\\
+\paragraph{Pick and Place TP program for Fanuc 210F}
+Below, the program developed for the pick and place operation together with Qing can be found.
+
+\begin{lstlisting}
+	/PROG  FANUC2000_NoNUToffset_ToolframNumber
+	/ATTR
+	OWNER = MNEDITOR;
+	COMMENT = "RSL generated Program";
+	PROG_SIZE = 64000;
+	CREATE = DATE 19-09-12  TIME 16:02:18;
+	MODIFIED = DATE 19-09-12  TIME 16:02:18;
+	FILE_NAME = FANUC 2000;
+	VERSION = 0;
+	LINE_COUNT = 41;
+	MEMORY_SIZE = 64000;
+	PROTECT = READ_WRITE;
+	TCD: STACK_SIZE = 0,
+	TASK_PRIORITY = 50,
+	TIME_SLICE = 0,
+	BUSY_LAMP_OFF = 0,
+	ABORT_REQUEST = 0,
+	PAUSE_REQUEST = 0;
+	DEFAULT_GROUP = 1,*,*,*,*;
+	CONTROL_CODE = 00000000 00000000;
+	/MN
+	1:  LBL[1] ;
+	2:J P[1: P1]  80% FINE    ;
+	3:  WAIT DI[100: ]= OFF ;
+	4:  DO[106: ]= ON ;
+	5:J P[2: P14]  80% FINE    ;
+	6:  DO[1: ]= ON ;
+	7:  DO[102: ]= ON ;
+	8:  DO[104: ]= ON ;
+	9:  WAIT   0.50(sec) ;
+	10:J P[3: P3]  80% FINE    ;
+	11:J P[4: P12]  80% FINE    ;
+	12:J P[5: P2]  80% FINE    ;
+	13:L P[6: P13]  1500mm/sec FINE    ;
+	14:L P[7: P10]  1500mm/sec FINE    ;
+	15:  DO[1: ]= OFF ;
+	16:  DO[102: ]= OFF ;
+	17:  DO[104: ]= OFF ;
+	18:  DO[103: ]= ON ;
+	19:  DO[105: ]= ON ;
+	20:  WAIT   0.50(sec) ;
+	21:L P[8: P4]  1500mm/sec FINE    ;
+	22:J P[9: P15]  80% FINE    ;
+	23:  DO[101: ]= ON ;
+	24:  WAIT  50.00(sec) ;
+	25:L P[10: P18]  1500mm/sec FINE    ;
+	26:  DO[2: ]= ON ;
+	27:  DO[107: ]= OFF ;
+	28:  DO[106: ]= ON ;
+	29:  WAIT   0.50(sec) ;
+	30:L P[11: P7]  1500mm/sec FINE    ;
+	31:L P[12: P5]  1500mm/sec FINE    ;
+	32:J P[13: P8]  80% FINE    ;
+	33:J P[14: P11]  80% FINE    ;
+	34:  DO[2: ]= OFF ;
+	35:  DO[106: ]= OFF ;
+	36:  DO[107: ]= ON ;
+	37:  WAIT   0.50(sec) ;
+	38:J P[15: P9]  80% FINE    ;
+	39:J P[16: P16]  80% FINE    ;
+	40:L P[17: P17]  1500mm/sec FINE    ;
+	41: JMP LBL[1] ;
+	/POS
+	P[1]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   900.00  mm,     Y =  1600.00  mm,     Z =    26.00  mm,
+	W =   180.00 deg,     P =     0.00 deg,     R =  -180.00 deg
+	};
+	P[2]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   900.00  mm,     Y =  1600.00  mm,     Z =   -50.00  mm,
+	W =   180.00 deg,     P =     0.00 deg,     R =  -180.00 deg
+	};
+	P[3]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   900.00  mm,     Y =  1600.00  mm,     Z =    26.00  mm,
+	W =   180.00 deg,     P =     0.00 deg,     R =  -180.00 deg
+	};
+	P[4]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   900.00  mm,     Y =  1000.00  mm,     Z =    26.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =  -180.00 deg
+	};
+	P[5]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  1850.00  mm,     Y =     0.00  mm,     Z =   140.00  mm,
+	W =   180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[6]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  2250.00  mm,     Y =     0.00  mm,     Z =   123.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[7]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  2250.00  mm,     Y =     0.00  mm,     Z =    84.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[8]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  2000.00  mm,     Y =     0.00  mm,     Z =   130.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[9]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  1650.00  mm,     Y =     0.00  mm,     Z =   130.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[10]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  2250.00  mm,     Y =     0.00  mm,     Z =   130.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[11]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  2250.00  mm,     Y =     0.00  mm,     Z =   155.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[12]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =  1250.00  mm,     Y =     0.00  mm,     Z =   180.00  mm,
+	W =  -180.00 deg,     P =     0.00 deg,     R =    90.00 deg
+	};
+	P[13]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   815.00  mm,     Y = -1695.00  mm,     Z =  -170.00  mm,
+	W =   180.00 deg,     P =    -0.00 deg,     R =   -90.00 deg
+	};
+	P[14]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   815.00  mm,     Y = -1695.00  mm,     Z =  -296.00  mm,
+	W =   180.00 deg,     P =    -0.00 deg,     R =   -90.00 deg
+	};
+	P[15]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   815.00  mm,     Y = -1695.00  mm,     Z =  -170.00  mm,
+	W =   180.00 deg,     P =    -0.00 deg,     R =   -90.00 deg
+	};
+	P[16]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   885.00  mm,     Y =   500.00  mm,     Z =    26.00  mm,
+	W =   180.00 deg,     P =     0.00 deg,     R =  -180.00 deg
+	};
+	P[17]{ 
+	GP1:
+	UF : 1, UT : 1,              CONFIG : 'N U T, 0, 0, 0',
+	X =   900.00  mm,     Y =  1600.00  mm,     Z =    26.00  mm,
+	W =   180.00 deg,     P =     0.00 deg,     R =  -180.00 deg
+	};
+	/END
+	
+\end{lstlisting}

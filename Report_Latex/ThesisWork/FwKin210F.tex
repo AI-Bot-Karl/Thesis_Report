@@ -1,7 +1,7 @@
 \subsection{Forward kinematic equations of Fanuc 210F}
 
 \subsubsection{Joint and link numbering in Fanuc 210F}
-The numbering scheme presented in \fullref{sec:NumJointLink} can be applied to the Fanuc 210F (see \ref{fig:LinksANDJoints210F}) 
+The numbering scheme presented in \fullref{sec:NumJointLink} can be applied to the Fanuc 210F (see  \cref{fig:LinksANDJoints210F}) 
 
 
 \begin{figure}[H]
@@ -14,8 +14,8 @@ The numbering scheme presented in \fullref{sec:NumJointLink} can be applied to t
 	\label{fig:LinksANDJoints210F}
 \end{figure}
 
-\paragraph{$z_i$ axes in Fanuc 210F}
-As described in \fullref{par:z_iAxesAssign}, the $z_i$ axes can be attached to the Fanuc 210F (see figure \ref{fig:zi_Axes}).
+\paragraph{\textbf{\gls{z_i}} axes in Fanuc 210F}
+As described in \fullref{par:z_iAxesAssign}, the $\gls{z_i}$ axes can be attached to the Fanuc 210F (see figure \ref{fig:zi_Axes}).
 
 
 \begin{figure}[H]
@@ -59,8 +59,8 @@ For a better overview, the drawing of the robot can be removed, which reveals th
 	\label{fig:RefFrameAbstract}
 \end{figure}
 
-\paragraph{assignemnt of indvidual frames}
-The assignment of individual frames can be found in \fullref{app:IndFrameAss}
+\paragraph{assignment of indvidual frames}
+The assignment of individual frames can be found in appendix \fullref{app:IndFrameAss}
 
 
 
@@ -100,7 +100,7 @@ To wrap this up, a summary of the D-H parameters for each link as follows from f
 		6 & $\theta_6$ & $d_6$ & 0     & 0         \\ \cline{1-5}
 		%\hline
 	\end{tabular*}
-	\caption{Denavit Hartenberg Parameters for Fanuc 210F}
+	\caption{\acrfull{DH} Parameters for Fanuc 210F}
 	\label{table:DH-Parameter}
 \end{table}
 
@@ -110,7 +110,7 @@ To wrap this up, a summary of the D-H parameters for each link as follows from f
 As can be seen from table \ref{table:DH-Parameter}, many \ac{DH}-parameters are zero due to a good choice of pose and coordinate frames. 
 All angles are plus or minus 90°.
 
-Most of the frames have translational transformations in either $a_i$ or $d_i$ direction with link 1 and 5 being the exception.
+Most of the frames have translational transformations in either $\gls{a_i}$ or $\gls{d_i}$ direction with link 1 and 5 being the exception.
 By lifting the base frame out of the joint, parameter $d_1$ could be set to zero as well. For better understanding, the origin of the frame was originally kept inside the joint.
 Frame 5 shares the origin with frame 4, not requiring any translational movement.
 Most of the frames are also rotated by 90 degree around the x-axis with link 2 and 6 being the exception. Frame 6 was chosen with the same orientation as frame 5. Frame 2 has the same x-axis orientation as link 1 because joints two and three are parallel. There is just a rotational transformation around the z-axis of 90°. This is only due to the standard pose of the robot, as theta is a variable.
@@ -120,8 +120,8 @@ Besides the angle values for $\alpha_i$ which were easy to determine from the gr
 $d_1$, $d_4$, $d_6$ and \\
 $a_1$, $a_2$, $a_3$. 
 
-A great help to determine these values is fig \ref{fig:RefFrame}. This technical drawing was obtained from the datasheet for all Fanuc R-2000iB series robots. 
-With this drawing, following \ac{DH}-parametes can be obtained:
+A great help to determine these values is fig \ref{fig:RefFrame}. This technical drawing was obtained from the data-sheet for all Fanuc R-2000iB series robots. 
+With this drawing, following \ac{DH}-parameters can be obtained:
 
 \begin{itemize}\label{item:DH-LinparamValues}
 	\item[$a_1$=] 312 [\textit{mm}]
@@ -135,7 +135,7 @@ The parameter $d_1$ cannot be determined from this drawing. It can either be mea
 It must be clear though, that all referencing in the forward and backward kinematics will be relative to this point. 
 A change of this point of reference can be added later simply by adding another transformation matrix for translational movement along the z-axis as presented by Richard P. Paul \cite{Paul1981RobotM}.\\
 \\
-This results in a table of numeric DH-parameters as seen in \ref{table:DH-Parameter_num}. The transformation $^{i-1}T_i$ depends only on a single variable $\theta_i$ as all of the other quantities stay constant, and all joints are revolute.
+This results in a table of numeric DH-parameters as seen in \ref{table:DH-Parameter_num}. The transformation $^{i-1}T_i$ depends only on a single variable $\gls{theta_i}$ as all of the other quantities stay constant, and all joints are revolute.
 
 \begin{table}[H]
 	\centering
@@ -157,14 +157,15 @@ This results in a table of numeric DH-parameters as seen in \ref{table:DH-Parame
 
 \subsubsection{Calculate homogeneous transformation matrices}
 
-For further details on how to set up $R_z(\theta_i), T_z(d_i), T_x(a_i) and R_x(\alpha_i)$ and form the transformation matrix in equation \ref{eq:TransformationMarix} see chapter one "HOMOGENEOUS TRANSFORMATIONS" in "Robot manipulators: mathematics, programming, 
-and control: the computer control of robot manipulators" \cite{Paul1981RobotM}. The basic techniques for setting up the translation and rotation matrices as well as how to combine them are described in that chapter .
+For further details on how to set up $R_z(\theta_i), T_z(d_i), T_x(a_i) and R_x(\alpha_i)$ and form the transformation matrix in equation \ref{eq:TransformationMarix} see chapter 1 "Homogeneous Transformations" in %"Robot manipulators: mathematics, programming, 
+and control: the computer control of robot manipulators" 
+\cite{Paul1981RobotM}. The basic techniques for setting up the translation and rotation matrices as well as how to combine them are described in that chapter .
 
 
 
 
 \subsubsection{Forward Kinematic Equations on the 210F}
-As shown in fig.\ref{fig:zi_Axes}, the Fanuc 210F is a 6-\ac{DOF} robotic arm with n=six revolute joints in series. 
+As shown in fig.\ref{fig:zi_Axes}, the Fanuc 210F is a 6-\ac{DOF} robotic arm with \gls{N}=six revolute joints in series. 
 Their orientation can be expressed in short form with 
 \begin{equation}
 (R\perp R\parallel R\perp R\perp R\perp R )

@@ -41,7 +41,7 @@
 % http://texdoc.net/texmf-dist/doc/latex/pdfpages/pdfpages.pdf
 
 %Bibliography settings
-\usepackage[citestyle = numeric, style=numeric, bibstyle = numeric]{biblatex} 
+\usepackage[citestyle = numeric, style=numeric, bibstyle = numeric]{biblatex} %style =apa %citestyle = numeric, style=numeric, bibstyle = numeric
 \addbibresource{References.bib}    
 
 % for including current date into document
@@ -103,7 +103,7 @@
 \setcounter{secnumdepth}{3}
 
  %Wildcard for Signature line
-\newcommand*\wildcard[2][6cm]{\vspace*{2cm}\parbox{#1}{\hrulefill\par#2}}
+\newcommand*\wildcard[2][6cm]{\vspace*{0.5cm}\parbox{#1}{\hrulefill\par#2}}
 
 %A truly random package
 \usepackage{lipsum} %random text
@@ -156,7 +156,7 @@
 
 %Making a Glossary
 %\usepackage{glossaries}
-\usepackage[acronyms,shortcuts,symbols,numberedsection,xindy]{glossaries-extra}
+\usepackage[acronyms,shortcuts,symbols,xindy]{glossaries-extra}%,numberedsection
 %\usepackage[style=long,toc,automake]{glossaries}
 %https://en.wikibooks.org/wiki/LaTeX/Glossary
 %http://tug.ctan.org/macros/latex/contrib/glossaries/glossariesbegin.pdf
@@ -167,14 +167,20 @@
 
 %Note: Don't use dots in filenames, as this can lead to errors, e.g. with glossary package. Here the filename is cut after the dot, so wrong filenames are used for processing and will lead to errors.
 
+%remove clear page before printglossary
+\renewcommand*{\glsclearpage}{}
+
 \makeglossaries
 %\makenoidxglossaries
 
+%Include list of figures and list of tables in TOC
+\usepackage{tocbibind}
 
 
 %Set some things clear 
 \newcommand{\HANSupervisor}{Wesselingh Ellen}
 \newcommand{\CompanySupervisor}{Nguyen Trung}
+\newcommand{\AdditionalSupervisor}{Jeltsema Dimitri}
 \author{Karl Wallkum}
 
 %% Preamble 

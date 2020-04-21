@@ -4,15 +4,17 @@ With the help of the Robotics toolbox for Matlab, the robot can be implemented i
 
 \subsection{Guideline to the Toolbox}
 
-The Robotics toolbox for Matlab, created by Peter Corke can be found on his website \url{petercorke.com}. This website gives an extensive manual how to install and use the toolbox. The installation from a $.mltbx$ file has been chosen. 
+The Robotics toolbox for Matlab, created by Peter Corke can be found on his website \url{petercorke.com}. This website gives an extensive manual how to install and use the toolbox and is best downloaded with the latest installation of the toolbox. The installation from a $.mltbx$ file has been chosen. 
 The accompanying book "Robotics Vision and control" gives the background information in physics and explains the examples delivered with the installer. Notable information on the toolbox can be found in the handbook "Robotics Toolbox for Matlab" that can be found in its latest release on the website.
 For better performance, part of the inverse Dynamics can be compiled locally in a faster language. Notes on that can be found in \cite{CorkeRoboticVisionControl}, page 266, "fastRNE".
 
 \subsection{Quick start guide to the implementation}
-The implementation of the Fanuc210F in Matlab consists of two files:\\
-\begin{itemize}
-	\item[Model_210F.m] builds the Robot model and provides some tests to examine the behaviour
-	\item[SimulationAndControl_Fanuc210F.slx] contains a simulink model, that uses the robot model to simulate, visualize and control the manipulator arm
+The implementation of the Fanuc210F in Matlab consists of several files:\\
+\begin{itemize}[wide=\parindent]
+	\item[\textbf{Model_210F.m}] builds the Robot model and provides some tests to examine the behaviour
+	\item[\textbf{ComputedTorqueControl.slx}] Simulink file, that uses the robot model for a Computed Torque Control application
+	\item[\textbf{WorkspaceControl.slx}] Simulink file, that uses the robot model for a Workspace Control application
+	\item[\textbf{SimulationAndControl_Fanuc210F.slx}] contains a Simulink model, that uses the robot model to simulate, visualize and control the manipulator arm. It is the original file where the implementation was developed. This means, it contains more options for display, testing and debugging.
 \end{itemize}
 
 As the .m file loads the robot model into work space, it needs to be run first. The program will pause several times, and asks via command line output to continue via enter.  Then, the simulation in Simulink can be run.
@@ -27,10 +29,10 @@ The file Model_210F.m contains the definition of the Robot object \textbf{R}. Fo
 \paragraph{Standard positions}
 For simplicity of further work, four standard positions are provided:\\
 \begin{itemize}
-	\item[qz] Zero Angle
-	\item[qr] Ready, straight and vertical
-	\item[qs] Stretch, straight and horizontal
-	\item[qn] Nominal, arm is in a dextrous working pose
+	\item[\textbf{qz}] Zero Angle
+	\item[\textbf{qr}] Ready, straight and vertical
+	\item[\textbf{qs}] Stretch, straight and horizontal
+	\item[\textbf{qn}] Nominal, arm is in a dextrous working pose
 \end{itemize}
 
 \paragraph{Kinematic definiton of links}
@@ -45,7 +47,7 @@ Additionally to the links, the base and a tool are defined. After running some t
 \paragraph{Testing of the kinematics}
 After the kinematic model is set up, the kinematic abilites of this model are tested. 
 Forward kinematics can be simply tested by using the standard positions, and observing these with the plot command, provided with the toolbox, which gives a graphical representation of the manipulator.
-For the inverse kinematics, different solvers are available. The \textbf{ikine6s} function, an analytic solver has shown problems, as the robot does not take the intended positions, as can be observed in the graphical output.
+For the inverse kinematics, different solvers are available. The \textbf{ikine6s} function, an analytic solver has shown problems, as the robot does not take the intended positions, as can be observed in the graphical output. This is probably due to a bug in the implementation.
 Other solver functions like the \textbf{ikcon} function proved to be reliable in finding joint configurations for a desired endpoint coordinate within the workspace. If the position is outside of the workspace, and not reachable can be observed by the exit flag.
 
 \paragraph{Trajectories}
@@ -57,7 +59,7 @@ This is a very time- and labour intensive work which is expected to give the bes
 Another way to receive the parameters would be the measurement of the electric power going into the joint motors. With the knowledge of a set of rudimentary parameters like the kinematic structure, and the parameters of the electric motors, other parameters could be discovered with techniques from systems identification. This process is time-and labour intensive as well. On the other hand it is minimally invasive, can be automated and once set up, can be applied to other robots easily.\\
 These two techniques would have provided a very precise model of the robot. As they are too labour intensive, they will not be used in this work.\\
 
-\subparagraph{Innertia Matrices.}
+\subparagraph{Innertia Matrices}
 To get a model of the robot quickly with the data available, the data-sheet \cite{210FDatasheet} provides all necessary data. The whole structure is assumed to be of similar density. The links can be assumed as simple geometric structures like cylinders or cuboids. With the length, width and height of each link found in the data-sheet or estimated from the drawing, the volumes of the links can be calculated based on the volume model that best fits them. With the total mass of the machine is given in the data-sheet, the weight can be distributed by volume. Based on their shape, inertia tensors can be defined.\\
 
 \subparagraph{Center of mass}
@@ -75,17 +77,14 @@ Because of this, the corresponding parameters from the Puma 560, a model deliver
 The Puma 560 is a similarly sized robot as the 210F. These parameters will mostly not be used, but simply help to populate the model with values because the friction model is too computationally intensive and is spared from most dynamic simulations.
 
 \subparagraph{payload}
-As a robotic gripper was designed by another student, an estimation for weight and Center of mass could be included in the model. According to the student responsible for the gripper design, the total mass of the gripper would not exceed 25Kg and would have a maximum length of 0.658m.
+As a robotic gripper was designed by another student, an estimation for weight and center of mass could be included in the model. According to the student responsible for the gripper design, the total mass of the gripper would not exceed 25Kg and would have a maximum length of 0.658m.
 
 \paragraph{testing of dynamics}
 To test the dynamics, the forces to move between positions and holding them can be calculated with the \textbf{rne} function.
 With the \textbf{fdyn} function, a collapse due to gravity with no forces applied at the joints can be simulated an observed.
  
 \subsubsection{Dynamic simulation}
-The file SimulationAndControl_Fanuc210F.slx contains a simulation of the robot with control strategies.
-%TODO
-\\
+The file simulink files contain a simulation of the robot with control strategies. Further details will be discussed in the chapter about developing a control strategy.
 
-\textbf{write more here once finished}
 
 

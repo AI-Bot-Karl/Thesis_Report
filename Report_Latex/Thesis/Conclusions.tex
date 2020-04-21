@@ -1,1 +1,16 @@
 \chapter{Conclusions and further work}
+
+
+
+\section{Possible further improvements of Control}
+Further improvements on the control strategy could be made by changing the gains depending on the position error. Ways to achieve this would be a sliding mode control or a fuzzy logic. Additionally, as the dynamic parameters of the robot are hard to determine, an MRAC control could be added to compensate for that. 
+As the inverse kinematics is computationally intensive in its current implementation, it could be replaced by the form presented in \fullref{sec:InvSol6DOF}. Alternative approaches to that problem could be the use of an Artificial Neural network based structure to reduce computation time. 
+
+\section{Validation of Model and control}
+The model and control presented in the previous sections were not tested on the actual Robot. This was due to a lack of communication infrastructure for interfacing with the robot. For testing, a communication between the robot an MATLAB needs to be established. \ac{ROS} could be used here as a middleware to establish this realtime communication. As real-time performance is necessary, the program needs to run on a computer with high computational power.\\
+\\
+Also the parameters of the robot were not determined precisely. A further analysis of the manipulator by gathering movement data or complete disassembly and manual measurement are necessary. Like this, the model can be made more accurate, and the control can be fine-tuned for that machine.\\
+\\
+
+
+

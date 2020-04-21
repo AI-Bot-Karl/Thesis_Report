@@ -1,0 +1,37 @@
+\chapter{Digital twinning}
+
+Additionally to the modelling and control of the robot arm, digital twinning became a research topic within the project. In cooperation with Qing, an overall control strategy based was designed in visual Components. Visual components can provide twinning services like animation and control of existent machines with a virtual model.
+A review of existing literature on digital twinning will be done as well.\\
+\medskip
+
+
+In the setup of the experimental production line for \ac{FRC} at the \ac{SPC} 
+\ac{DT} has been chosen as one of the key technologies for “Smart manufacturing”. In the cooperation with Qing, there have been a few discrepancies on the understanding of a \ac{DT}.\\
+\\
+To approach this topic, the term digital twin has to be defined.
+This Concept was introduced for the first time by Grieves at one of his presentations about Product Lifecycle Management in 2003 at University of Michigan as a virtual representation of what has been produced \cite{GreivesDTfirst}.
+As stated by Qinglin Qi \cite{Qi2018DigitalTS}, a \ac{DT} is a high fidelity virtual model for physical objects in a digital way to simulate their behaviour. 
+When looking on the Wikipedia page on digital twinning \cite{DTwikip}, a wide variety of definitions can be found. 
+This shows, that the concept of the \ac{DT} is not yet clearly defined. All of these definitions have in common though, that \acp{DT} are "digital replications of living as well as nonliving entities that 
+enable data to be seamlessly transmitted between the physical and virtual worlds" \cite{SaddikDTmultimconv}.\\
+\\
+To approach the problem form the other side, it might help to look at, what is not a digital twin.
+A virtual representation of a physical object without any exchange of data is a digital model \cite{WongWhatisDT}. 
+If data is fed from the physical system into the model, a digital shadow is created \cite{KRITZINGER20181016}.
+Only a “bi-directional relation between a physical artefact and the set of its virtual models” \cite{SchleichDTshaping} fulfils Schleich's vision of a \ac{DT}.\\
+\\
+As an example, a computer aided design (CAD) model is a representation of a physical entity and it is typically used to describe the shape, dimensions and materials of a construction. This model can be a 2D or a 3D model. Only if the latest sensor data associated with a matching physical device is fed into this CAD model, it can be considered a DS. \cite{WongWhatisDT} By simulating different scenarios in a model and representing the current state of the system the DS turns into a digital twin, if decisions are made automatically fed back through an actuator into the physical entity \cite{SchleichDTshaping}.
+An implementation of this data transmission can be found in "Sensor Data Transmission from a Physical Twin to a Digital Twin" \cite{AlaDTdataTransmission}.\\
+\\
+As the \ac{DT} is mostly used in the context of production lines, it makes sense to look for similar examples in other industries, that have undergone comparable transformations with the beginning of the digital age.
+Such a comparable system can be found in the transport industry. 
+\acp{PL} have several points in common with train networks.
+%As in train networks, \acp{PL} often handle big masses at high velocities. As trains, the machines in a \ac{PL} run in a 
+%defined environment that they cannot leave. People can get involved and cross the paths of trains or 
+%machines in the case of \acp{PL}. Both train networks and \acp{PL} would ideally have full safety protection, full 
+%automatization and failure recovery while delivering best performance.\\
+%\\
+%When looking at these similarities, it becomes obvious to base a twinning specification for production lines on an existing comparable system found in rail infrastructure.
+One of the latest internationally standardized systems in rail infrastructure is \ac{ETCS} which will probably become the standard signalling and control component in all European countries. 
+A great overview on the \ac{ETCS}-standard is given by Thales on their website \cite{ThalesETCS}.\\
+

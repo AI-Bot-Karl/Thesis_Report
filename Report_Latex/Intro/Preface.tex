@@ -6,8 +6,8 @@
 \paragraph{Definition of a Robot}
 %% definition/clickbait
 Robots \cite{robotDef} can be defined as programmable movement automatons \cite{automatonDef} that can perform tasks without human supervision and can be taught at least repetitive tasks. 
-Increasingly, also ways to sense their surroundings are added and improve their movements according to the situation \cite{robotDef2}. 
-These sensors are placed additionally to the standard feedback-control sensors like pulse encoders. % at their axes to feedback control their endpoint position accuracy. 
+Increasingly, also ways to sense their surroundings are added to improve their movements according to the situation \cite{robotDef2}. 
+These sensors are placed additionally to the standard feedback-control sensors like pulse encoders and allow the robot to handle a wider range of situations without human intervention. % at their axes to feedback control their endpoint position accuracy. 
 %system supervision - robotic system - 
 % A robot is defined as a programmable movement automaton, with the ability to perform tasks without human supervision. Not only can the robot be taught repetitive tasks, that it can execute with pulse encoders at their axes. it can as well sense its surroundings and on the basis of that information improve movements accordingly. 
 % go to old from new! Go from general to specific Don't jump from general to specific to examples, don't mix it because reader has then to do all the work. and show that you are not only able to understand concepts, but are able to 1) present them in a coherent way and (later) critique them. chronology
@@ -17,7 +17,7 @@ These sensors are placed additionally to the standard feedback-control sensors l
 \paragraph{Origin of Robots}
 The origin of Robots is well documented in "Robotics, Vision and Control: Fundamental Algorithms in MATLAB" by Peter Corke \cite{CorkeRoboticVisionControl}:
 %From Corce Robotics Toolbox: (Refactor!)
-"The term robot ﬁrst appeared in a 1920 Czech science ﬁction play Rossum’s Universal Robots” by Karel .apek (pronounced Chapek). 
+\textit{The term robot ﬁrst appeared in a 1920 Czech science ﬁction play "Rossum’s Universal Robots” by Karel \v{C}apek (pronounced Chapek). 
 The term was coined by his brother Josef, and in the Czech language means serf labor but colloquially means hardwork or drudgery. 
 The robots in the play were artiﬁcial people or androids and as in so many robot stories that follow this one, the robots rebel and it ends badly for humanity. 
 Isaac Asimov’s robot series, comprising many books and short stories written between 1950 and 1985, explored issues of human and robot interaction and morality. 
@@ -25,7 +25,17 @@ The robots in these stories are equipped with “positronic brains” in which t
 The mid twentieth century also saw the advent of the ﬁeld of cybernetics  – an uncommon term today but then an exciting science at the frontiers of understanding life and creating intelligent machines.
 The ﬁrst patent for what we would now consider a robot was ﬁled in 1954 by George C. Devol and issued in 1961. 
 The device comprised a mechanical arm with a gripper that was mounted on a track and the sequence of motions was encoded as magnetic patterns stored on a rotating drum. 
-The ﬁrst robotics company, Unimation, was founded by Devol and Joseph Engelberger in 1956 and their ﬁrst industrial robot shown in Fig. \ref{fig:unimate} was installed in 1961. \cite{CorkeRoboticVisionControl}
+The ﬁrst robotics company, Unimation, was founded by Devol and Joseph Engelberger in 1956 and their ﬁrst industrial robot shown in Fig. \ref{fig:Unimate} was installed in 1961.} 
+
+\begin{figure}[H]
+	\includegraphics[
+	width=0.5\linewidth,
+	center,
+	keepaspectratio,
+	]{Unimate}
+	\caption{Unimate, the grandfather of industrial robots \cite{UnimateIEEE}  }
+	\label{fig:Unimate}
+\end{figure}
 %(Unimation) (Get picture from children book)
 \medskip
 
@@ -43,7 +53,7 @@ As no feedback control is usually available on these devices, loss of step contr
 
 \paragraph{Current Robots}
 %% current robots
-Highly developed automated platforms like the Fanuc 210F have feedback-sensors and -control for point to point as well as tracking motion, computer vision as seen on the deltarobot, digital and analog I/O,  builtin- safety like the \ac{DCS} motion safety system and high speed fieldbus connectivity like Profient.
+Highly developed automated platforms like the Fanuc 210F have feedback-sensors and -control for point to point as well as tracking motion, computer vision as seen on the deltarobot at \ac{SPC}, digital and analog I/O,  builtin- safety like the \ac{DCS} motion safety system and high speed fieldbus connectivity like Profient.
 With a teach pendant, these Robots can be configured and programmed. Alternatively \ac{PC}-based proprietary manufacturer-specific software with a model based test cell can be used to program the robot. 
 \medskip
 
@@ -53,7 +63,7 @@ To compete in the future developements of "Smart Manufacturing", "the Smart Cell
 Besides research in materials and production, the automation environment system is of interest for this research.
 To manage the interaction between material but also the machines among each other, a \ac{DDS} couples the subsystems as a middlware as seen in \ac{fig}. \ref{fig:SmartCellDDS}. A middleware is "glue code" that helps to interface systems with each other to exchange commands and data to use it as a single robotic system. 
 \ac{ROS} is a proposed middleware to model, simulate, and control the production line as a homogenious distributed system. 
-Besides the classical publish subscribe  pattern to simplify network programming, \ac{ROS} provides an ecosystem of interchangeable nodes and drivers to provide a wide codebase for complex tasks.
+Besides the classical publish subscribe  pattern to simplify network programming, \ac{ROS} provides an ecosystem of interchangeable nodes and drivers with a wide codebase for complex tasks.
 \medskip
 \begin{figure}[H]
 	\includegraphics[

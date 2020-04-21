@@ -43,16 +43,16 @@ As stated by YanWu et al. there are 8 groups of inverse solution for most \ac{EO
 	\label{fig:invKinTree}
 \end{figure}
 %
-The tree of inverse solutions shown in figure \ref{fig:invKinTree} is a schematic representation of different possible solutions. It does not show actual positions. A set of the different joint configurations for inverse solutions in the Fanuc can be found in \fullref{sec:RobConf}.
+The tree of inverse solutions shown in figure \ref{fig:invKinTree} is a schematic representation of different possible solutions. It does not show actual positions. A set of the different joint configurations for inverse solutions in the Fanuc can be found in appendix \fullref{sec:RobConf}.
 
 
-\subsection{Inverse solution of 6 \ac{DOF} Robot}
+\subsection{Inverse solution of 6 \ac{DOF} Robot} \label{sec:InvSol6DOF}
 
-As shown in chapter \ref{ForKinEq} the end effector position is defined by four $3 \times 1$ vectors $ (n,o,a,p) $. With these known, the joint variables $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated.
+As shown in chapter \ref{ForKinEq} the end effector position is defined by four $3 \times 1$ vectors $[\gls{n_xyz},\gls{o_xyz},\gls{a_xyz},\gls{p_xyz}]$. With these known, the joint variables $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated.
 This problem  is solved by the method of using the inverse transformation of unknown link pre-multiplication as presented by Yan Wu et al. \cite{invKinSolYanWu}. 
 
 \paragraph{Forward kinematic equation}
-For a  6\ac{DOF} Robot, the  forward kinematic matrix equation from equation \cref{eq:SummofTranfMatr,eq:matrixForm} can be reformulated into equation \ref{eq:ForwKinEquMatr}
+For a  6\ac{DOF} Robot, the  forward kinematic matrix equation from \cref{eq:SummofTranfMatr,eq:matrixForm} can be reformulated into equation \ref{eq:ForwKinEquMatr}
 
 \begin{equation}\label{eq:ForwKinEquMatr}
 	^0_6T = \\
@@ -67,7 +67,7 @@ n_z & o_z & a_z & p_z \\
 \end{equation}
 
 \subsection{The inverse Solution} \label{InverseSol}
-With $ (n,o,a,p) $ known, the angle values of the joint variables can be determined by separation of the joint variables. 
+With $[\gls{n_xyz},\gls{o_xyz},\gls{a_xyz},\gls{p_xyz}]$ known, the angle values of the joint variables can be determined by separation of the joint variables. 
 In a first step eq. \ref{eq:ForwKinEquMatr} is reformed into eq. \ref{eq:ForwKinEquMatr_reformed}.
 \begin{equation}\label{eq:ForwKinEquMatr_reformed}
 	\phantom{}^2T_3\phantom{}^3T_4\phantom{}^4T_5 = \phantom{}^0T_6(\phantom{}^0T_1)^{-1}(\phantom{}^1T_2)^{-1}(\phantom{}^5T_6)^{-1}
@@ -78,27 +78,27 @@ With the help of MATLAB and the symbolic toolbox, the inverses and the overall p
 	\input{ThesisWork/BackKinematics/Prelinkmultip}
 
 
-As shown by eq. \ref{eq:ForwKinEquMatr_reformed}, the elements of matrices \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} are corresponding equal. This allows to find analytic expressions for all $\theta_i$. As stated in section \ref{MultipSol}, there are two solutions for each $\theta_i$.
+As shown by eq. \ref{eq:ForwKinEquMatr_reformed}, the elements of matrices \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} are corresponding equal. This allows to find analytic expressions for all $\gls{theta_i}$. As stated in section \ref{MultipSol}, there are two solutions for each $\theta_i$.
 \medskip
 
 
-\paragraph{$\theta_1$:}
+\paragraph{$\pmb{\theta_1}$:}
 
-By taking the elements (\textcolor{green}{3},\textcolor{red}{4}) of equations \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal, equation \ref{eq:equal_3-4} is formed.
+By taking the elements (\textcolor{green}{3},\textcolor{red}{4}) of \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal, equation \ref{eq:equal_3-4} is formed.
 \begin{equation}\label{eq:equal_3-4}
 	-(-s_1a_x + c_1 a_y )d_6 - s_1 p_x +c_1 p_y = 0
 \end{equation}
-Reforming equation \ref{eq:equal_3-4} gives a solution for $\theta_1$ as seen in equation \ref{eq:sol_theta_1}.
+Reforming equation \ref{eq:equal_3-4} gives a solution for $\theta_1$ as seen in equations \ref{eq:sol_theta_1}.
 \begin{multline}\label{eq:sol_theta_1}
 	\theta_{1_1} = \atantwo ( p_y - a_y d_6 , p_x - a_x d_6) 
-	\phantom{......}
+	\phantom{..........}
 	\theta_{1_2} = \atantwo (-p_y + a_y d_6 ,-p_x + a_x d_6) 
 \end{multline}
 \medskip
 
-\paragraph{$\theta_2$:}
+\paragraph{$\pmb{\theta_2}$:}
 
-Taking elements (\textcolor{green}{1},\textcolor{red}{4}) and (\textcolor{green}{2},\textcolor{red}{4}) of equations \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal, equations \ref{eq:equal_1-4} and \ref{eq:equal_2-4} are formed.
+Taking elements (\textcolor{green}{1},\textcolor{red}{4}) and (\textcolor{green}{2},\textcolor{red}{4}) of \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal,  \cref{eq:equal_1-4,eq:equal_2-4} are formed.
 \begin{equation}\label{eq:equal_1-4}
 	a_3 c_3 - d_4 s_3 + a_2 = - (c_2 c_1 a_x + c_2 s_1 a_y -s_2 a_z)d_6 + c_2 c_1 p_x + c_2 s_1 p_y -s_2 p_z -c_2 a_1
 \end{equation}
@@ -118,7 +118,7 @@ With these middle variables equations \cref{eq:equal_1-4,eq:equal_2-4} can be re
 \begin{equation}\label{eq:equal_2-4_midVar}
 	a_3 s_3 + d_4 c_3 = - s_ u - c_2 v
 \end{equation}
-To eliminate $s_3$ and $c_3$ equations \cref{eq:equal_1-4_midVar,eq:equal_2-4_midVar} are squared and then added to form \ref{eq:1-4+2_4}.
+To eliminate $s_3$ and $c_3$ \cref{eq:equal_1-4_midVar,eq:equal_2-4_midVar} are squared and then added to form \ref{eq:1-4+2_4}.
 \begin{equation}\label{eq:1-4+2_4}
 	a_3^2 +d_4^2 = u^2 +v^2 - 2a_2 c_2 u + 2a_2 s_2 v +a_2^2
 \end{equation}
@@ -136,13 +136,13 @@ Reforming equation \ref{eq:1-4+2_4_reformed} and inserting the middle variable r
 
 
 
-\paragraph{$\theta_3$:}
+\paragraph{$\pmb{\theta_3}$:}
 
-To recive $\theta_3$ it helps to take equations \cref{eq:equal_1-4,eq:equal_2-4}. Equation \ref{eq:equal_1-4} needs to be reformed into \ref{eq:eqal_1-4_reformed}
+To receive $\theta_3$ it helps to take  \cref{eq:equal_1-4,eq:equal_2-4}. Equation \ref{eq:equal_1-4} needs to be reformed into \ref{eq:eqal_1-4_reformed}
 \begin{equation} \label{eq:eqal_1-4_reformed}
 	a_c c_3 d_4 s_3 + a_2 = c_2 u -s_2 v
 \end{equation}
-Squaring of equations \cref{eq:eqal_1-4_reformed,eq:equal_2-4} and adding them eliminates $s_2$ and $c_2$ as seen in eq \ref{eq:1-4_reformed+2_4}
+Squaring of \cref{eq:eqal_1-4_reformed,eq:equal_2-4} and adding them eliminates $s_2$ and $c_2$ as seen in eq \ref{eq:1-4_reformed+2_4}
 \begin{equation}\label{eq:1-4_reformed+2_4}
 	a_2^2 + a_3^2 +d_4^2 + 2 a_2(a_3 c_3 -d_4 s_3) = u^2 + v^2
 \end{equation}
@@ -155,14 +155,14 @@ Again, this equation can be further simplified by taking another middle variable
 	-\frac{a_3^2 + d_4^2 - u^2 -v^2 + a_2^2}{2a_2}
 \end{equation*}
 
-Reforming equation \ref{eq:1-4_reformed+2_4_reformed} and inserting the middle variable reveals a solution for $\theta_3$ as seen in eq\ref{eq:sol_theta_3}.
+Reforming equation \ref{eq:1-4_reformed+2_4_reformed} and inserting the middle variable reveals a solution for $\theta_3$ as seen in \cref{eq:sol_theta_3}.
 \begin{equation}\label{eq:sol_theta_3}
 	\theta_{3_{1/2}} = \atantwo(-d_4 , a_3) \pm A \tan (2 (\sqrt{d_4^2 +a_3^2 -h^2} , h))
 \end{equation}
 
 
-\paragraph{$\theta_5$:}
-Taking elements (\textcolor{green}{2},\textcolor{red}{2}) and (\textcolor{green}{1},\textcolor{red}{2}) of equations \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal, equations \ref{eq:equal_2-2} and \ref{eq:equal_1-2} are formed.
+\paragraph{$\pmb{\theta_5}$:}
+Taking elements (\textcolor{green}{2},\textcolor{red}{2}) and (\textcolor{green}{1},\textcolor{red}{2}) of  \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal,  \cref{eq:equal_2-2,eq:equal_1-2} are formed.
 
 \begin{equation}\label{eq:equal_2-2}
 	-s_3 c_4 s_5 + c_3 c_5 = -c_1 s_2 a_x - s_1 s_2 a_y -c_2 a_z
@@ -171,7 +171,7 @@ Taking elements (\textcolor{green}{2},\textcolor{red}{2}) and (\textcolor{green}
 	-c_3 c_4 s_5 - s_3 c_4 = c_1 c_2 a_x + s_1 c_2 a_y - s_2 a_z
 \end{equation}
 
-To combine equations \cref{eq:equal_2-2,eq:equal_1-2}, eq \ref{eq:equal_2-2} is multiplied with $c_3$ and eq \ref{eq:equal_1-2} is multiplied by $ s_2$. The resulting equations are then subtracted from each other giving eq \ref{eq:2-2+1-2}.
+To combine equations \cref{eq:equal_2-2,eq:equal_1-2}, \cref{eq:equal_2-2} is multiplied with $c_3$ and  \cref{eq:equal_1-2} is multiplied by $ s_2$. The resulting equations are then subtracted from each other giving \cref{eq:2-2+1-2}.
 \begin{equation}\label{eq:2-2+1-2}
 	c_5 = (-c_1 s_2 a_x - s_1 s_2 a_y -c_2 a_z) c_3 - (c_1 c_2 a_x +s_1 c_2 a_y - s_2 a_z) s_3
 \end{equation}
@@ -180,15 +180,15 @@ Reforming equation \ref{eq:2-2+1-2} gives a solution for $\theta_5$ as seen in e
 	\theta_{5_{1/2}} = \pm \acos [ ( -c_1 s_2 a_x - s_1 s_2 a_y - c_2 a_z) c_3 - (c_1 c_2 a_x + s_1 c_2 a_y - s_2 a_z) s_3]
 \end{equation}
 
-\paragraph{$\theta_4$:}
+\paragraph{$\pmb{\theta_4}$:}
 
 With $\theta_5$ and $\theta_{1-3}$ known, equation \ref{eq:equal_1-2} can be reformed into a solution for $\theta_4$ as seen in equation \ref{eq:sol_theta_4}
 \begin{equation}\label{eq:sol_theta_4}
 	\theta_{4_{1/}} = \pm \arccos [ \frac{ c_1 c_2 a_x + s_1 c_2 a_y - s_2 a_z + s_3 c_5}{-c_3 s_5}]
 \end{equation}
 
-\paragraph{$\theta_6$:}
-By taking the elements (\textcolor{green}{3},\textcolor{red}{3}) of equations \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal, equation \ref{eq:equal_3-3} is formed.
+\paragraph{$\pmb{\theta_6}$:}
+By taking the elements (\textcolor{green}{3},\textcolor{red}{3}) of \cref{eq:prelinkmultip_right,eq:prelinkmultip_left} as corresponding equal, equation \ref{eq:equal_3-3} is formed.
 \begin{equation} \label{eq:equal_3-3}
 	s_6 (s_1 n_x - c_1 n_y) + c_6 (s_1 o_x - c_1 o_y ) = c_4
 \end{equation}
@@ -198,7 +198,7 @@ With $\theta_4$ and $\theta_1$ known, equation \ref{eq:equal_3-3} can be reforme
 	\theta_{6_{1/2}} = \atantwo(s_1 n_x -c_1 n_y , s_1 o_x -c_1 o_y) \pm \atantwo(\sqrt{(s_1 n_x - c_1 n_y)^2 + (s_1 o_x - c_1 o_y )^2 - c_4^2} , c_4)
 \end{equation}
 \medskip
-With equations \cref{eq:sol_theta_1,eq:sol_theta_2,eq:sol_theta_3,eq:sol_theta_4,eq:sol_theta_5,eq:sol_theta_6} the values for $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated for all reachable end effector positions.\\
+With \cref{eq:sol_theta_1,eq:sol_theta_2,eq:sol_theta_3,eq:sol_theta_4,eq:sol_theta_5,eq:sol_theta_6} the values for $(\theta_1, \theta_2, \theta_3, \theta_4, \theta_5, \theta_6)$ can be calculated for all reachable end effector positions.\\
 \medskip
 For details on the \gls{atan2} function, see the glossary.
 \medskip
@@ -222,7 +222,7 @@ Equation \ref{eq:costFuncinvOptim} is the cost function to be minimized.
 	err =  \min\sum_{i=1}^{6} k_i [\theta_i (k+1) - \theta_i(k)] 
 \end{equation}
 
-As can be seen, this cost function minimizes the sum of angles over all axes for the movement of the end effector from position $[n_i,o_i,a_i,p_i ]$ to $[n_{i+1}, o_{i+1}, a_{i+1}, p_{i+1}]$ by using the inverse solution presented in chapter \ref{InverseSol}.
+As can be seen, this cost function minimizes the sum of angles over all axes for the movement of the end effector from position $[n_i,o_i,a_i,p_i ]$ to $[n_{i+1}, o_{i+1}, a_{i+1}, p_{i+1}]$ by using the inverse solution presented in \fullref{InverseSol}.
 
 \paragraph{limitations of cost function}
 This cost function not necessarily gives the fastest path, as it does not account for the actual movement speed of the different axes. 
@@ -232,7 +232,7 @@ A possible solution for this would require multiplying with a cost factor betwee
 
 \paragraph{description of implementation}
 
-An implementation of this function receives the current position either in joint angles or Cartesian coordinates of the end-effector which could be given in form of a rotation matrix as seen in eq\ref{eq:matrixForm} or in form of euclidean space and euler angle coordinates. $[x,y,z, \alpha, \beta, \gamma]$ which could be transformed by the inverse of equation \ref{eq:rotMatrix_composition} into a rotation matrix.
+An implementation of this function receives the current position either in joint angles or Cartesian coordinates of the end-effector which could be given in form of a rotation matrix as seen in eq\ref{eq:matrixForm} or in form of euclidean space $[x,y,z, \alpha, \beta, \gamma]$ which could be transformed by the inverse of equation \ref{eq:rotMatrix_composition} into a rotation matrix.
 
 This algorithm would then start the calculation to get all possible paths in the tree of inverse solutions (see figure \ref{fig:invKinTree}) for position ${i+1}$.
 
@@ -245,19 +245,20 @@ To minimize the computational effort, following algorithm is proposed by Yan Wu 
 	\item When calculating $\theta_2$:
 	\begin{enumerate}
 		\item  The term $ v^2 + u^2 - m^2 $ should be $ > 0$, otherwise the program can terminate the calculation of the subsequent steps of this group, return $err = inf $ or $NaN $ , and provide a varible like $P=1$ to determine the cause for the abortion of subsequent steps.
-		\item If there is a solution for $\theta_2$ it needs to be tested for extraneous roots. An extraneous root is  introduced into an equation in the process of solving another equation, but is not a solution of the equation to be solved \cite{extraneousroot}. This test is done simply by substituting the solution for $\theta_2$ into the original equation \ref{eq:1-4+2_4}. If an extraneous root is found, the program can terminate and return $err = inf$ or $ NaN$  and $P=2$ for cause of abortion. 
+		\item If there is a solution for $\theta_2$ it needs to be tested for \glspl{ExtraneousRoot}. 
+		%An extraneous root is  introduced into an equation in the process of solving another equation, but is not a solution of the equation to be solved \cite{extraneousroot}. This test is done simply by substituting the solution for $\theta_2$ into the original equation \ref{eq:1-4+2_4}. If an extraneous root is found, the program can terminate and return $err = inf$ or $ NaN$  and $P=2$ for cause of abortion. 
 	\end{enumerate}
-	\item If the calculation has been continued, $\theta_3$ can be determined. Again a test for extraneous roots is necessary.
-	\item When calculating $\theta_5$, test for extraneous roots.
-	\item When calculating $\theta_4$, test for extraneous roots.
+	\item If the calculation has been continued, $\theta_3$ can be determined. Again a test for \glspl{ExtraneousRoot} is necessary.
+	\item When calculating $\theta_5$, test for \glspl{ExtraneousRoot}.
+	\item When calculating $\theta_4$, test for \glspl{ExtraneousRoot}.
 	\item calculate $\theta_6$
 	\item determine error as seen in eq \ref{eq:costFuncinvOptim} for all possible paths
 	\item find $\min ( err(t_1^8))$ 
 \end{enumerate}
 
-The resulting set of angle values is the result of the algorithm. It is the unique inverse solution, determined easiest to reach with the given cost function in eq \ref{eq:costFuncinvOptim}. 
+The resulting set of angle values is the output of the algorithm. It is the unique inverse solution, determined easiest to reach with the given cost function in eq \ref{eq:costFuncinvOptim}. 
 
-
+\newpage
 
 
 
