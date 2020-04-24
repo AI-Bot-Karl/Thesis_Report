@@ -1,0 +1,10 @@
+(progn
+  (searchpath ".;C:/Program Files/MiKTeX 2.9/xindy/modules;C:/Program Files/MiKTeX 2.9/xindy/modules/base")
+  (xindy:startup
+    :idxstyle "C:\\Users\\Karl\\Dropbox\\Master_HAN\\Studyfiles\\Thesis_(Fanuc210)\\Thesis_Report\\Report_Latex\\rulcsJw2vP"
+    :rawindex "C:\\Users\\Karl\\Dropbox\\Master_HAN\\Studyfiles\\Thesis_(Fanuc210)\\Thesis_Report\\Report_Latex\\h9sjI71Rxq"
+    :output "ThesisReport_KarlWallkum_617931_V2.sls"
+    :logfile "ThesisReport_KarlWallkum_617931_V2.slg"
+    
+    )
+  (exit))

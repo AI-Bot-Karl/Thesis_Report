@@ -1,16 +1,19 @@
 \chapter{Conclusions and further work}
 
+\section{Model of 210F}
+The model created in Matlab is a good kinematic representation. Measurements could be directly taken from the datasheet. Due to difficulties in determining the dynamic parameters, the resemblance of the dynamics is limited.   A further analysis of the manipulator by gathering movement data or complete disassembly and manual measurement are necessary. Like this, the model can be made more accurate, and the control can be fine-tuned for that machine.\\
 
-
-\section{Possible further improvements of Control}
+\section{Control of 210F}
+The controller shows good performance in point to point motion as well as trajectory tracking. Good accuracy can be achieved, and movements are executed in a reasonable timespan. A more aggressive PD- tuning could provide better results if necessary. This tuning could be either done manually or by using a tuning method like Ziegler-Nichols.
 Further improvements on the control strategy could be made by changing the gains depending on the position error. Ways to achieve this would be a sliding mode control or a fuzzy logic. Additionally, as the dynamic parameters of the robot are hard to determine, an MRAC control could be added to compensate for that. 
 As the inverse kinematics is computationally intensive in its current implementation, it could be replaced by the form presented in \fullref{sec:InvSol6DOF}. Alternative approaches to that problem could be the use of an Artificial Neural network based structure to reduce computation time. 
 
 \section{Validation of Model and control}
-The model and control presented in the previous sections were not tested on the actual Robot. This was due to a lack of communication infrastructure for interfacing with the robot. For testing, a communication between the robot an MATLAB needs to be established. \ac{ROS} could be used here as a middleware to establish this realtime communication. As real-time performance is necessary, the program needs to run on a computer with high computational power.\\
-\\
-Also the parameters of the robot were not determined precisely. A further analysis of the manipulator by gathering movement data or complete disassembly and manual measurement are necessary. Like this, the model can be made more accurate, and the control can be fine-tuned for that machine.\\
-\\
+The model and control presented in the previous sections were not tested on the actual Robot. This was due to a lack of communication infrastructure for interfacing with the robot. For testing, a communication between the robot an MATLAB needs to be established. \ac{ROS} could be used here as a middleware to establish this real-time communication. As real-time performance is necessary, the program needs to run on a computer with high computational power.\\
+
+\section{Pick and Place operation}
+The goal of this thesis-work was setting up the Fanuc 210F for pick and place operation. This goal has been reached. The robot was mounted at the best position for this task. A program has been developed and communication with other subprocesses within the production line was achieved. 
+Further necessary steps lie in the detection of the \ac{FRC} material blops to be picked. This position could initially be provided by the delta robot. Further improvements could be made by including a camera detection system.
 
 
 

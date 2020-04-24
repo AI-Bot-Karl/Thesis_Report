@@ -1,6 +1,6 @@
 \section{Matlab implementation}
 
-With the help of the Robotics toolbox for Matlab, the robot can be implemented in Matlab.
+With the help of the Robotics toolbox for Matlab, the robot can be implemented in Matlab as seen in appendix \fullref{MatlabCode}.
 
 \subsection{Guideline to the Toolbox}
 
@@ -14,7 +14,8 @@ The implementation of the Fanuc210F in Matlab consists of several files:\\
 	\item[\textbf{Model_210F.m}] builds the Robot model and provides some tests to examine the behaviour
 	\item[\textbf{ComputedTorqueControl.slx}] Simulink file, that uses the robot model for a Computed Torque Control application
 	\item[\textbf{WorkspaceControl.slx}] Simulink file, that uses the robot model for a Workspace Control application
-	\item[\textbf{SimulationAndControl_Fanuc210F.slx}] contains a Simulink model, that uses the robot model to simulate, visualize and control the manipulator arm. It is the original file where the implementation was developed. This means, it contains more options for display, testing and debugging.
+	\item[\textbf{pickAndPlaceSequence.slx}] Simulink file, that uses the robot model for a pick and place operation with Workspace Control
+	%\item[\textbf{SimulationAndControl_Fanuc210F.slx}] contains a Simulink model, that uses the robot model to simulate, visualize and control the manipulator arm. It is the original file where the implementation was developed. This means, it contains more options for display, testing and debugging.
 \end{itemize}
 
 As the .m file loads the robot model into work space, it needs to be run first. The program will pause several times, and asks via command line output to continue via enter.  Then, the simulation in Simulink can be run.
