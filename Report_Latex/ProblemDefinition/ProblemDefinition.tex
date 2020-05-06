@@ -1,10 +1,16 @@
 \section{Problem Definition}
 
-For \ac{FRC} part production, a robot arm can be used to load the press with raw material, as it allows for more flexibility in the production line than specialized low DOF pick and place systems.
-As the robot arm has many degrees of freedom, there are different strategies for a control cycle. 
-There are two contratiction main constraints that need to balanced:
-On one hand, the movement of materials has to be achieved as fast as possible to minimize the cool-down of the molten \ac{FRC}. 
-On the other hand, the accelerations and forces on it should be minimized while transferring, to make sure no material is lost in the transfer process which would lead to deformations on the final product.
-This makes it hard to find an ideal, fast control strategy to place the raw material into the press.
+For \ac{FRP} part production, a robot arm can be used to load the press with raw material and unload the finished product. This allows for more flexibility in the production line than specialized low \ac{DOF} pick and place systems.
+For this task, a Fanuc 210F was obtained by \ac{SPC}. The robot was delivered by IRSA Robotics. As the robot was not yet ready to carry out any task, setup and commissioning was necessary. 
+
+%As the robot arm has many degrees of freedom, there are different strategies for a control cycle. 
+%There are two contractionary main constraints that need to balanced:
+%On one hand, the movement of materials has to be achieved as fast as possible to minimize the cool-down of the molten \ac{FRP}. 
+%On the other hand, the accelerations and forces on it should be minimized while transferring, to make sure no material is lost in the transfer process which would lead to deformations on the final product.
+%This makes it hard to find an ideal, fast control strategy to place the raw material into the press.
 \medskip
+
+\section{Objective}
+
+This thesis describes the setup, modelling and control of a 6\ac{DOF} serial link industrial robot arm in a pick and place application for a production line. A combined kinematic and dynamic model of the Fanuc 210F is obtained. This model is then used to create a model-based control for the intended pick and place operation in the production line.
 

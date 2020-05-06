@@ -1,4 +1,4 @@
-\section{Matlab implementation}
+\section{Matlab Implementation}
 
 With the help of the Robotics toolbox for Matlab, the robot can be implemented in Matlab as seen in appendix \fullref{MatlabCode}.
 
@@ -8,7 +8,7 @@ The Robotics toolbox for Matlab, created by Peter Corke can be found on his webs
 The accompanying book "Robotics Vision and control" gives the background information in physics and explains the examples delivered with the installer. Notable information on the toolbox can be found in the handbook "Robotics Toolbox for Matlab" that can be found in its latest release on the website.
 For better performance, part of the inverse Dynamics can be compiled locally in a faster language. Notes on that can be found in \cite{CorkeRoboticVisionControl}, page 266, "fastRNE".
 
-\subsection{Quick start guide to the implementation}
+\subsection{Quick Start Guide to the Implementation}
 The implementation of the Fanuc210F in Matlab consists of several files:\\
 \begin{itemize}[wide=\parindent]
 	\item[\textbf{Model_210F.m}] builds the Robot model and provides some tests to examine the behaviour
@@ -21,7 +21,7 @@ The implementation of the Fanuc210F in Matlab consists of several files:\\
 As the .m file loads the robot model into work space, it needs to be run first. The program will pause several times, and asks via command line output to continue via enter.  Then, the simulation in Simulink can be run.
 A copy of these files will be delivered with the written thesis-report.
 
-\subsection{Walkthrough on the impelmentation}
+\subsection{Walkthrough on the Impelmentation}
 The Fanuc210F was implemented in Matlab with the help of \cite{CorkeRoboticVisionControl} in Matlab. In that process, several decisions and simplifications had to be made. Subsequently, a walk-through of this implementation will be given.
 
 \subsubsection{Definition of Robot Model}
@@ -41,11 +41,11 @@ With the DH-parameters provided in table \ref{table:DH-Parameter_num}, the links
 As the toobox provides an offset parameter, link nr. 2 has an angular offset of $\frac{\pi}{2}$ to have the robot in the normal pose as seen in figure \ref{fig:RefFrame} at zero angle.
 Additionally, an estimation of the rotational freedom for the joints is estimated with the help of the data-sheet \cite{210FDatasheet}. All these parameters are loaded into link-objects provided by the toolbox.
 
-\paragraph{Definiton of the manipulator }
+\paragraph{Definiton of manipulator }
 With the \textbf{SerialLink} constructor, these link objects are combined into the robot arm, named "\textbf{R}". 
 Additionally to the links, the base and a tool are defined. After running some test commands like testing the joint types, the kinematic definition is finished.
 
-\paragraph{Testing of the kinematics}
+\paragraph{Testing of kinematics}
 After the kinematic model is set up, the kinematic abilites of this model are tested. 
 Forward kinematics can be simply tested by using the standard positions, and observing these with the plot command, provided with the toolbox, which gives a graphical representation of the manipulator.
 For the inverse kinematics, different solvers are available. The \textbf{ikine6s} function, an analytic solver has shown problems, as the robot does not take the intended positions, as can be observed in the graphical output. This is probably due to a bug in the implementation.
@@ -60,7 +60,7 @@ This is a very time- and labour intensive work which is expected to give the bes
 Another way to receive the parameters would be the measurement of the electric power going into the joint motors. With the knowledge of a set of rudimentary parameters like the kinematic structure, and the parameters of the electric motors, other parameters could be discovered with techniques from systems identification. This process is time-and labour intensive as well. On the other hand it is minimally invasive, can be automated and once set up, can be applied to other robots easily.\\
 These two techniques would have provided a very precise model of the robot. As they are too labour intensive, they will not be used in this work.\\
 
-\subparagraph{Innertia Matrices}
+\subparagraph{Innertia matrices}
 To get a model of the robot quickly with the data available, the data-sheet \cite{210FDatasheet} provides all necessary data. The whole structure is assumed to be of similar density. The links can be assumed as simple geometric structures like cylinders or cuboids. With the length, width and height of each link found in the data-sheet or estimated from the drawing, the volumes of the links can be calculated based on the volume model that best fits them. With the total mass of the machine is given in the data-sheet, the weight can be distributed by volume. Based on their shape, inertia tensors can be defined.\\
 
 \subparagraph{Center of mass}
@@ -77,14 +77,28 @@ Because of this, the corresponding parameters from the Puma 560, a model deliver
 \end{itemize}
 The Puma 560 is a similarly sized robot as the 210F. These parameters will mostly not be used, but simply help to populate the model with values because the friction model is too computationally intensive and is spared from most dynamic simulations.
 
-\subparagraph{payload}
+\subparagraph{Payload}
 As a robotic gripper was designed by another student, an estimation for weight and center of mass could be included in the model. According to the student responsible for the gripper design, the total mass of the gripper would not exceed 25Kg and would have a maximum length of 0.658m.
 
-\paragraph{testing of dynamics}
+\paragraph{Testing of Dynamics}
 To test the dynamics, the forces to move between positions and holding them can be calculated with the \textbf{rne} function.
 With the \textbf{fdyn} function, a collapse due to gravity with no forces applied at the joints can be simulated an observed.
+
+
+
+\subsubsection{Known Problems}
+Several problems have been identified with the toolbox. 
+These are in the "ikine6s" function, the simulink block "tr2delta" and the ikine function.
+
+\paragraph{ikine6s} does not deliver correct solutions. By observing the graphical output in the program part "Inverse Kinematics", it can be seen, that the endeffector positions for all 8 solutions differ.  The cause could not be identified. As an alternative, ikine suffices for most applications.
+
+\paragraph{tr2delta} in Simulink delivers wrong values for x and pitch. By observing the output with a scope, the error could be identified. The output can be corrected by multiplying these values with $-1$.
+
+\paragraph{ikine} fails to find any joint values sometimes. An error message "Warning: filed to converge: try a different initial value of joint coordinates"  This behaviour has been observed on some machines but cannot be reproduced on others. According to a forum post \cite{ikineConverge}, setting the initial estimate of joint angles to a reasonable estimate like $[0, 0, 0, 0, 0, 0]$ can help.
+
+
  
-\subsubsection{Dynamic simulation}
+\subsubsection{Dynamic Simulation}
 The file simulink files contain a simulation of the robot with control strategies. Further details will be discussed in the chapter about developing a control strategy.
 
 

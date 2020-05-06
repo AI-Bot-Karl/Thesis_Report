@@ -1,13 +1,13 @@
-\chapter{Setup of the physical Environment}
-The production line at \ac{SPC} is planned to produce steering knuckles with \ac{FRC}.
+\chapter{Setup of the Physical Environment}
+The production line at \ac{SPC} is planned to produce steering knuckles with \ac{FRP}.
 
 \input{Thesis/ProductionLineSteps}
 
-\section{Notes on choice of robot} %should go to appendix
+\section{Notes on Choice of Robot} %should go to appendix
 The robot was chosen for this production line, as it provides a long reach. The arm without any \ac{EOAT} can reach a full circle with a radius of $2655 [\textit{mm}]$ with its mounting plate. Also the overall weight of $1240 [\textit{mm}]$ allows for reasonably fast movements between $90-190 [\textit{°/sec}] $ depending on the axis while still giving a payload capacity of $210 [\textit{Kg}]$ at the mounting plate.\cite{210FDatasheet}
 This high payload capacity is not needed directly, but it provides enough room for complex gripper designs, and provides room for future uses of the device.
 
-\section{Status of the production line at beginning of project}
+\section{Status of the Production Line at the Beginning of Project}
 At the start of this thesis work, the \nameref{sec:HydraulicPress} was already fixed to the ground. 
 \nameref{sec:Deltarobot},\nameref{sec:conveyor2}, and the robot arm were roughly placed at their final positions.
 No gripper tools were available for either robots.
@@ -15,25 +15,28 @@ The \nameref{sec:extruder}, \nameref{sec:oven}, \nameref{sec:conveyor1}, \namere
 Electricity for the machines was not made available.
 A safety-fence was not set up.
 
-\section{Status of the production line at the end of thesiswork}
+\section{Status of the Production Line at the End of Thesiswork}
 At the end of the project, the robots are positioned at a preferable position for their intended use. Interaction between press and robot arm were tested. Grippers were being developed in \ac{CAD}, and some standardized pneumatic grippers were tested on the robot arm for pick and place operations. \nameref{sec:conveyor2} was positioned, and fixed to the ground. Also, it was also tested with a Profinet-controlled variable frequency drive via \ac{PLC}. A heat resistant belt still needs to be mounted. An \nameref{sec:extruder} was delivered, but still needs to be commissioned, tested and modified. 
-An \nameref{sec:oven}, \nameref{sec:conveyor1}, \nameref{sec:conveyor3} and a \nameCref{sec:Cobot}-station are still missing.
+An \nameref{sec:oven}, \nameref{sec:conveyor1}, \nameref{sec:conveyor3} and \nameref{sec:Cobot} station are still missing.
 A preliminary safety fence with no electronic safeguard has been set up. 
 
 
-\section{Set up process of Robot arm}
+\section{Set up Process of Robot Arm}
 
 \subsection{Positioning}
-In order to integrate the robot arm into the production line, it needed to be mounted at its final position. This position was determined with a floorplan. To create the floorplan, the three members of SPC responsible for the \nameref{sec:Deltarobot}, the \nameref{sec:conveyor2}/\nameref{sec:oven} and the robot arm worked out the positions of their machines with the help of Qing Groep. At Qing, the production line was modelled in \ac{VC}. With \ac{VC} different positions for these machines could be tested. 
-Simple pick and place programs could be simulated in that environment.
-These movements could be inspected an varied to allow a smooth and fast transfer of material.
+In order to integrate the robot arm into the production line, it needed to be mounted at its final position. This position was determined with a floorplan. To create the floorplan, the positions for the machines were worked out with two members of \ac{SPC} responsible for the \nameref{sec:Deltarobot} and the the \nameref{sec:conveyor2} with the \nameref{sec:oven} on top of it.
+% the three members of SPC responsible for the \nameref{sec:Deltarobot}, the \nameref{sec:conveyor2}/\nameref{sec:oven} and the \nameref{sec:RobotArm} worked out the positions of their machines with the help of Qing Groep. 
+At Qing, the production line was modelled in \ac{VC}. With \ac{VC} different positions for these machines could be tested. 
+Simple pick and place programs could be simulated in that environment at Qing.
+These movements were inspected and varied to allow a smooth and fast transfer of material. Feedback and measurements for these simulations were provided.
 As the \nameref{sec:HydraulicPress} was already fixed to the ground, all other positions were determined relative to the press.
-After estimating good positions via \ac{VC} with respect to the movement range of the robot arm, the outlines of the machine feets were measured with a laser distance measurement system and marked on the floor.
-After placing the robots with a forklift on the desired positions, the actual positions were measured again with the laser distance measurement system, documented in an excel sheet and tested again in VC. 
+After estimating good positions via \ac{VC} with respect to the movement range of the robot arm, the outlines of the machine feet were measured with a laser distance measurement system and marked on the floor.
+After placing the robots with a forklift by a member of the local fire brigade on the desired positions, the actual positions were measured again with the laser distance measurement system, documented in an excel sheet and tested again in VC. 
 As the differences between actual and desired position were minimal, the simulations in VC did not show any problems.
-The robot arm and the other machines was then bolted down in the ground. 
+The robot arm and the other machines were then bolted down in the ground. \\
 
-\subsection{Comissioning}
+
+\subsection{Commissioning}
 After the robot arm was positioned at its desired position, it could be plugged into the accompanying Fanuc R-30iA controller and was provided with electricity. 
 This step was delayed a lot, as a safe and powerful enough electrical installation could not be provided by the \ac{MIC} from the beginning of the project.
 After the robot and controller were running, the basic functions as found in the manuals could be tested. 
@@ -46,7 +49,7 @@ When these issues were overcome, the robots could be calibrated. As described in
 
 
 
-\subsection{Fieldbus and Network setup}
+\subsection{Fieldbus and Network Setup}
 
 For the state of this thesis-work, the field bus and network- installation consists of following parts:
 \begin{itemize}
@@ -72,5 +75,64 @@ The physical layer of the network and field bus is based on Ethernet. A basic co
 \\
 The currently loaded configurations for network and field bus can be found in the \ac{ipendant}.
 
+
+
+
+
+
+\section{Programming of Robot}
+
+For programming the robot, Fanuc's TP-language is used. The programming can either be done online with the \gls{ipendant} or with an offline programming environment like Fanuc's Roboguide. 
+
+\subsection{Online Programming}
+When programming the robot with the \gls{ipendant}, the robot can be moved to the desired position. This position can then be directly saved into program code within the \gls{ipendant} programming environment. More complex instructions like if/else, loops, or wait can be selected from a list provided in the \gls{ipendant} programming environment. The \gls{ipendant} can also be used to test programs written with an offline programming tool. It allows to simulate input states and run programs step by step in low speed to verify desired paths are taken.
+
+\subsection{Offline Programming}
+For offline-programming, programs can be created with various tools like Roboguide, a simple text editor or as in this project with \ac{VC}.
+
+\paragraph{Roboguide}
+Roboguide is the offline programming environment provided by Fanuc. It comes with dynamic models of all Fanuc robots. Programs can be written and tested with these models. Besides that, the robot controller can be directly connected to a computer running Roboguide for configuration and program transfer. Program transfer to the controller can be done either with USB sticks, via FTP or via a Fanuc specific machine to machine communication protocol. 
+
+
+\paragraph{Visual Components}
+\ac{VC} is a software package that is used for layout planning, production simulation and offline programming% and \ac{DT}
+. In figure \ref{fig:VCProgramming} the toolchain for offline programming with \ac{VC} can be seen.  \ac{VC} allows to simulate the robot together with other parts of the production line.  This simulation can be used to program the robot in correspondence with all subsystems involved in the production line. The resulting TP program should then be loaded into Roboguide for verification, and if needed compiled. TP programs created with external tools can be compiled in Roboguide into ".ls" files that can be executed if no compiler is available on the robot controller. The R30iA controller then runs the program and supervises safe operation of the robot.
+
+\begin{figure}[H]
+	\includegraphics[
+	width=1\linewidth,
+	center,
+	keepaspectratio,
+	]{VisualComponents/VCProgramming}
+	\caption{Steps for offline-programming with Visual Components}
+	\label{fig:VCProgramming}
+\end{figure}
+
+
+The simulation can be fed with live data from the running production line to create a digital shadow. On top of that, data can be exchanged via \ac{OPCUA} with a \ac{PLC} that is connected to the robot controller. Through that, a high bandwidth communication with low latency can be established, that can be used to create a \ac{DT}.
+
 \subsection{Cooperation with Qing}
-Together with the company Qing, an event about digital twinning was hosted at the \ac{SPC}. In the preparation of this event, a program for loading the press with the robot arm and unloading the finished product was developed. This program can be found in the appendix \fullref{TPprogram210F}.
+Together with the company Qing, an event about \ac{DT} was hosted at the \ac{SPC}. In the preparation of this event, a Sequence for loading the press with the robot arm and unloading the finished product was developed. The  pick and place sequence was created in Visual Components and then exported as a TP program. This program can be found in the appendix \fullref{TPprogram210F}.
+
+\subsection{Tasks Executed in the Machine Setup}
+Following tasks were executed in the machine setup process:
+
+\begin{itemize}
+	\item Measuring in the factory hall for planning and verification of the positions
+	\item Consulting Qing for good positioning of the machines
+	\item Instructing the forklift driver for placing the robots
+	\item Monitoring of safety on the factory floor
+	\item Setting up parts of the electrical installation
+	\item Setting up the robot controller with factory reset
+	\item Testing of the robot controller and robot
+	\item Requesting additional information, datasheets manuals and programs like Roboguide from Fanuc
+	\item Configuring robot controller to the needs of SPC
+	\item Developing TP program together with Qing
+	\item Sifting through manuals and configuration files provided by IRSA Robotics and ordering them
+	\item Providing help to the students setting up the oven and  the PLC controlling the press 
+	\item Assisting other students for various tasks like moving equipment, program configuration or fitting of bearings
+	\item Planning, ordering and installing the fieldbus and network equipment
+	\item Consulting SPC in cybersecurity for network installation
+	\item Cleaning the workshop regularly
+	\item Presenting the production line with Qing and SPC at the event day
+\end{itemize}

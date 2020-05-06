@@ -101,7 +101,7 @@
 \makeatother
 
 % Incluse subsubsection in Toc
-\setcounter{tocdepth}{3}
+\setcounter{tocdepth}{2}
 \setcounter{secnumdepth}{3}
 
  %Wildcard for Signature line
@@ -162,6 +162,7 @@
 %\usepackage[style=long,toc,automake]{glossaries}
 %https://en.wikibooks.org/wiki/LaTeX/Glossary
 %http://tug.ctan.org/macros/latex/contrib/glossaries/glossariesbegin.pdf
+\setabbreviationstyle[acronym]{long-short}
 
 \include{Glossary/acronyms}
 \include{Glossary/glossary}
@@ -172,8 +173,12 @@
 %remove clear page before printglossary
 \renewcommand*{\glsclearpage}{}
 
+
+
 \makeglossaries
 %\makenoidxglossaries
+
+
 
 %Include list of figures and list of tables in TOC
 \usepackage{tocbibind}

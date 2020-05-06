@@ -1,39 +1,11 @@
-\subsection{Forward kinematic equations of Fanuc 210F}
-
-\subsubsection{Joint and link numbering in Fanuc 210F}
-The numbering scheme presented in \fullref{sec:NumJointLink} can be applied to the Fanuc 210F (see  \cref{fig:LinksANDJoints210F}) 
+\subsection{Forward Kinematic Equations of Fanuc 210F}
 
 
-\begin{figure}[H]
-	\includegraphics[
-	width=1\linewidth,
-	center,
-	keepaspectratio,
-	]{linksANDjoints/linksAndJoints}
-	\caption{Links (turquoise) and joints (orange) in the FANUC 210F}
-	\label{fig:LinksANDJoints210F}
-\end{figure}
 
-\paragraph{\textbf{\gls{z_i}} axes in Fanuc 210F}
-As described in \fullref{par:z_iAxesAssign}, the $\gls{z_i}$ axes can be attached to the Fanuc 210F (see figure \ref{fig:zi_Axes}).
+\subsubsection{Local Coordinate Reference Frames on the Fanuc 210F}
 
-
-\begin{figure}[H]
-	\includegraphics[
-	width=1\linewidth,
-	center,
-	keepaspectratio,
-	]{coordinateFrames/z_axes}
-	\caption{$z_i$ axes on the Fanuc 210F with the direction of positive rotation (orange)}
-	\label{fig:zi_Axes}
-\end{figure}
-
-
-The positive direction of the triples $z_1$, $z_2$, $z_4$ and $z_0$, $z_3$, $z_5$, was chosen to make sure, the x-axis would always have the same direction for parallel joints. 
-
-\subsubsection{local coordinate reference frames on the Fanuc 210F}
-
-As described in \fullref{sec:localRefFrame}, the local coordinate reference frames can also be attached to the Fanuc 210F as seen in figure \ref{fig:RefFrame}. 
+As described in \fullref{sec:localRefFrame}, the local coordinate reference frames can also be attached to the Fanuc 210F as seen in figure \ref{fig:RefFrame}. For an overview how find the joints and links as well as the z-axis orientations see appendix \fullref{sec:jointsandlinks}. %\paragraph{Assignment of indvidual frames}
+The assignment of individual frames can be found in appendix \fullref{app:IndFrameAss}.\\
 
 \begin{figure}[H]
 	\includegraphics[
@@ -46,32 +18,21 @@ As described in \fullref{sec:localRefFrame}, the local coordinate reference fram
 \end{figure}
 
 
-\paragraph{Abstract view of coordinate frames}
-For a better overview, the drawing of the robot can be removed, which reveals the pure coordinate frames. In figure \ref{fig:RefFrameAbstract} is described, in which relation the coordinate frames stand to each other.
-
-\begin{figure}[H]
-	\includegraphics[
-	width=1\linewidth,
-	center,
-	keepaspectratio,
-	]{coordinateFrames/CoordinateFrames}
-	\caption{Coordinate reference frames for Fanuc 210F}
-	\label{fig:RefFrameAbstract}
-\end{figure}
-
-\paragraph{assignment of indvidual frames}
-The assignment of individual frames can be found in appendix \fullref{app:IndFrameAss}
 
 
 
 
+\medskip
 
-\subsubsection{Establishing \ac{DH} parameters on the Fanuc 210F}
+
+
+
+\subsubsection{Establishing \ac{DH} Parameters on the Fanuc 210F}
 
 As described in \fullref{sec:DHparPerLink}, the \ac{DH}-Parameters can also be determined for the Fanuc 210F.
 These parameters can be found with the help of the assigned coordinate frames as seen in figure \ref{fig:DH_Parameters_Fanuc210F}. For simplicity, only non-zero DH-parameters are shown in this figure.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\includegraphics[
 	width=1\linewidth,
 	center,
@@ -82,7 +43,7 @@ These parameters can be found with the help of the assigned coordinate frames as
 \end{figure}
 
 
-To wrap this up, a summary of the D-H parameters for each link as follows from figure \ref{fig:DH_Parameters_Fanuc210F} can be found in table \ref{table:DH-Parameter}
+To wrap this up, a summary of the D-H parameters for each link as follows from figure \ref{fig:DH_Parameters_Fanuc210F} can be found in \fullref{table:DH-Parameter}.\\
 
 
 %Generate tables easily with: % https://www.tablesgenerator.com/
@@ -105,23 +66,23 @@ To wrap this up, a summary of the D-H parameters for each link as follows from f
 \end{table}
 
 
-\paragraph{numeric values of DH-Parameters}
+\paragraph{Numeric values of DH-parameters}
 
 As can be seen from table \ref{table:DH-Parameter}, many \ac{DH}-parameters are zero due to a good choice of pose and coordinate frames. 
 All angles are plus or minus 90°.
 
 Most of the frames have translational transformations in either $\gls{a_i}$ or $\gls{d_i}$ direction with link 1 and 5 being the exception.
-By lifting the base frame out of the joint, parameter $d_1$ could be set to zero as well. For better understanding, the origin of the frame was originally kept inside the joint.
+By lifting the base frame out of the joint, parameter $d_1$ could be set to zero as well (see \fullref{fig:DH_Parameters_Fanuc210F}). For better understanding, the origin of the frame was originally kept inside the joint (see \fullref{fig:RefFrameAbstract}).
 Frame 5 shares the origin with frame 4, not requiring any translational movement.
 Most of the frames are also rotated by 90 degree around the x-axis with link 2 and 6 being the exception. Frame 6 was chosen with the same orientation as frame 5. Frame 2 has the same x-axis orientation as link 1 because joints two and three are parallel. There is just a rotational transformation around the z-axis of 90°. This is only due to the standard pose of the robot, as theta is a variable.
 For all coordinate frames theta is a variable, as all joints are revolute and none is translational. 
 
-Besides the angle values for $\alpha_i$ which were easy to determine from the graphical interpretation in figure \ref{fig:DH_Parameters_Fanuc210F}, following numeric values need to be determined through measurements or CAD-Drawings:
+Besides the angle values for $\alpha_i$ which were easy to determine from the graphical interpretation in figure \ref{fig:DH_Parameters_Fanuc210F}, following numeric values need to be determined through measurements or CAD-Drawings:\\
 $d_1$, $d_4$, $d_6$ and \\
 $a_1$, $a_2$, $a_3$. 
 
-A great help to determine these values is fig \ref{fig:RefFrame}. This technical drawing was obtained from the data-sheet for all Fanuc R-2000iB series robots. 
-With this drawing, following \ac{DH}-parameters can be obtained:
+%A great help to determine these values is fig \ref{fig:RefFrame}. This technical drawing was obtained from the data-sheet for all Fanuc R-2000iB series robots. 
+With figure \ref{fig:RefFrame} following \ac{DH}-parameters can be obtained:
 
 \begin{itemize}\label{item:DH-LinparamValues}
 	\item[$a_1$=] 312 [\textit{mm}]
@@ -155,11 +116,10 @@ This results in a table of numeric DH-parameters as seen in \ref{table:DH-Parame
 \end{table}
 
 
-\subsubsection{Calculate homogeneous transformation matrices}
+\subsubsection{Calculate Homogeneous Transformation Matrices}
 
-For further details on how to set up $R_z(\theta_i), T_z(d_i), T_x(a_i) and R_x(\alpha_i)$ and form the transformation matrix in equation \ref{eq:TransformationMarix} see chapter 1 "Homogeneous Transformations" in %"Robot manipulators: mathematics, programming, 
-and control: the computer control of robot manipulators" 
-\cite{Paul1981RobotM}. The basic techniques for setting up the translation and rotation matrices as well as how to combine them are described in that chapter .
+For further details on how to set up $R_z(\theta_i), T_z(d_i), T_x(a_i) and R_x(\alpha_i)$ and form the transformation matrix in  \ref{eq:TransformationMarix} see %chapter 1 "Homogeneous Transformations" in %"Robot manipulators: mathematics, programming, and control: the computer control of robot manipulators" 
+\cite{Paul1981RobotM}, chapter 1. The basic techniques for setting up the translation and rotation matrices as well as how to combine them are described in that chapter .
 
 
 
@@ -168,16 +128,11 @@ and control: the computer control of robot manipulators"
 As shown in fig.\ref{fig:zi_Axes}, the Fanuc 210F is a 6-\ac{DOF} robotic arm with \gls{N}=six revolute joints in series. 
 Their orientation can be expressed in short form with 
 \begin{equation}
-(R\perp R\parallel R\perp R\perp R\perp R )
+(R\perp R\parallel R\perp R\perp R\perp R ) .
 \end{equation}
 
-With this, the complete transformation matrix can be derived in the form as described in \ref{ForKinEq}:
-
-\input{ThesisWork/ForwardKinematics/TransformationMatrix1}
-
-This set of matrices can be filled with the numerical values from table \ref{table:DH-Parameter_num}. The intermediate steps, that lead to the forward kinematic equations, can be found in appendix \fullref{sec:FWKinEqSteps}
-
-
+With this, the complete transformation matrix can be derived in the form as described in \fullref{ForKinEq}.
+The intermediate steps, that lead to the forward kinematic equations, can be found in appendix \fullref{sec:FWKinEqSteps}.
 With matrix \ref{eq:matrixForm}, the forward kinematic equations can be formed:
 
 \input{ThesisWork/ForwardKinematics/ForwKinEqu}

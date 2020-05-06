@@ -1,4 +1,4 @@
-\chapter{Literature survey}
+\chapter{Literature Survey}
 
 In the project plan, it was stated, that "the master level will be demonstrated by understanding and simulating the dynamics of a 6 axis Robot arm." (see \cite{ProjectPlan}, sect. Master Level)
 This should be done by creating a model of the robot arm. This model can then be used to create a controller.
@@ -9,63 +9,85 @@ To create the model of the robot arm, a literature review is necessary to lay ou
 
 \section{Methodology}
 
-To start the literature review, a set of first keywords was needed. Through an expert interview with the technical supervisor Trung Nguyen, %\cite{Trung}
+To start the literature review, a set of first keywords was needed. Through an expert interview with the technical supervisor % Trung Nguyen, 
+\cite{Trung}
 who had already supervised other thesis projects in the domain of robotics, a list of keywords to start with was found in a quick discussion. 
 Not all of these keywords were immediately clear, so it was necessary to find definitions for these. 
-With the help of scientific databases and search engines, sources for these definitions could be found.\\
+With the help of search engines and scientific databases, sources for these definitions could be found.\\
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ | p {0.20\textwidth} | p {0.45\textwidth} | p {0.25\textwidth} | }
+		\hline
+		Keyword & Description & Source with search engine, website or database \\ \hline\hline
+		6 axis robot & serial 6 degree of freedom robots &\cite{6axisRobot} with HANQuest \\\hline
+		industrial robot arm&some form of jointed structure  achieved by the linking of a number of rotary and/or linear motions or \gls{joints} &\cite{IndustrialRobotArm} with Science Direct \\\hline
+		inverse kinematics& Determination of joint variables in terms of the end-effector position &\cite{Jazar2007} with Springer Link search \\\hline
+		Peter Corke robotics toolbox&Matlab toolbox for the study and simulation of classical arm-type robotics, for example such things as kinematics, dynamics, and  trajectory generation &\cite{CorkeRoboticsToolbox} with Google, yahoo, duckduckGo \\\hline
+		motion planning&find a sequence of valid configuration of the \gls{joints} that  guides a robot towards a goal &\cite{CorkeRoboticVisionControl} on website of Peter Corke \\\hline
+		robot dynamics&relationship between the forces acting on a robot mechanism and the accelerations they produce &\cite{RobotDynamics}, with Scholarpedia \\\hline
+		ROS&Robot Operating System - framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behaviour across a wide variety of robotic platforms &in \cite{ROS}, About ROS, with Google ,yahoo, duckduckGo  \\\hline
+
+		%\hline
+	\end{tabular}
+	\caption{Keywords for literature review with definitions and sources}
+	\label{table:Keywords}
+\end{table}
 
 
-
-
-\begin{itemize} [wide=\parindent]  % [leftmargin=3cm]
-	\item[\textbf{Keyword}] Description (Source with Search Engine)
-	\item [\textbf{6 axis robot}] serial 6 degree of freedom robots (\cite{6axisRobot} with HANQuest)
-	\item [\textbf{industrial robot arm}]  some form of jointed structure  achieved by the linking of a number of rotary and/or linear motions or \gls{joints}( \cite{IndustrialRobotArm} with Science Direct)
-	\item [\textbf{inverse kinematics}] Determination of joint variables in terms of the end-effector position 
-	(\cite{Jazar2007} with Springer Link search)
-	%Determination of joint variables in terms of the end-effector position mathematical process of recovering the movements of an object with kinematic equations to determine the joint parameters that provide a desired position for each of the robot's end effectors (\cite{InvKinDef} with Wikipedia)
-%	\item[{\parbox[t]{0.25\linewidth}{\raggedright\textbf{Peter Corke \\ robotics toolbox}}}] \parbox[t]{1\linewidth}{Matlab toolbox for the study and simulation of classical arm-type robotics,\\ for example such things as kinematics, dynamics, and  trajectory generation (\cite{CorkeRoboticsToolbox} with Google, yahoo, duckduckGo)}
-	\item[\textbf{Peter Corke robotics toolbox}] Matlab toolbox for the study and simulation of classical arm-type robotics,\\ for example such things as kinematics, dynamics, and  trajectory generation (\cite{CorkeRoboticsToolbox} with Google, yahoo, duckduckGo)
-	\item [\textbf{motion planning}]  find a sequence of valid configuration of the \gls{joints} that  guides a robot towards a goal (\cite{CorkeRoboticVisionControl} on website of Peter Corke)
-	\item [\textbf{robot dynamics}] relationship between the forces acting on a robot mechanism and the accelerations they produce (\cite{RobotDynamics}, with Scholarpedia)
-	\item [\textbf{ROS}] Robot Operating System - framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behaviour across a wide variety of robotic platforms. (in \cite{ROS}, About ROS, with Google ,yahoo, duckduckGo ) 
-	%manual linebreak in item label
-	%		\item[{\parbox[t]{0.2\linewidth}{force here \\ a linebreak}}] Some text right of the label 
-\end{itemize} 
+%\begin{itemize} [wide=\parindent]  % [leftmargin=3cm]
+%	\item[\textbf{Keyword}] Description (Source with Search Engine)
+%	\item [\textbf{6 axis robot}] serial 6 degree of freedom robots (\cite{6axisRobot} with HANQuest)
+%	\item [\textbf{industrial robot arm}]  some form of jointed structure  achieved by the linking of a number of rotary and/or linear motions or \gls{joints}( \cite{IndustrialRobotArm} with Science Direct)
+%	\item [\textbf{inverse kinematics}] Determination of joint variables in terms of the end-effector position 
+%	(\cite{Jazar2007} with Springer Link search)
+%	%Determination of joint variables in terms of the end-effector position mathematical process of recovering the movements of an object with kinematic equations to determine the joint parameters that provide a desired position for each of the robot's end effectors (\cite{InvKinDef} with Wikipedia)
+%%	\item[{\parbox[t]{0.25\linewidth}{\raggedright\textbf{Peter Corke \\ robotics toolbox}}}] \parbox[t]{1\linewidth}{Matlab toolbox for the study and simulation of classical arm-type robotics,\\ for example such things as kinematics, dynamics, and  trajectory generation (\cite{CorkeRoboticsToolbox} with Google, yahoo, duckduckGo)}
+%	\item[\textbf{Peter Corke robotics toolbox}] Matlab toolbox for the study and simulation of classical arm-type robotics,\\ for example such things as kinematics, dynamics, and  trajectory generation (\cite{CorkeRoboticsToolbox} with Google, yahoo, duckduckGo)
+%	\item [\textbf{motion planning}]  find a sequence of valid configuration of the \gls{joints} that  guides a robot towards a goal (\cite{CorkeRoboticVisionControl} on website of Peter Corke)
+%	\item [\textbf{robot dynamics}] relationship between the forces acting on a robot mechanism and the accelerations they produce (\cite{RobotDynamics}, with Scholarpedia)
+%	\item [\textbf{ROS}] Robot Operating System - framework for writing robot software. It is a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behaviour across a wide variety of robotic platforms. (in \cite{ROS}, About ROS, with Google ,yahoo, duckduckGo ) 
+%	%manual linebreak in item label
+%	%		\item[{\parbox[t]{0.2\linewidth}{force here \\ a linebreak}}] Some text right of the label 
+%\end{itemize} 
 \medskip
 
-Spreading from these keywords, the literature can be extended with the help of HANQuest and Google scholar by the use of specific keyword combinations like "6DOF AND Industrial Robot AND Matlab model". Platforms like academia and researchgate help to find the right vocabulary for the field whilst also providing the papers and contact options with the authors. Certain authors like Peter Corke have their own website where they provide an extensive overview on their research, teachings and publications for free. Wikipedia and other specialized wikis like scholarpedia break down the concepts and provide a summarizing view for different topics in the field of robotics. Individual phrases and keywords are best triangulated with different search engines like Google, DuckduckGo or yahoo to name a few. Databases like libgen and scihub are essential for scientific work, as not all universities can purchase access packages for all publishers. For applied knowledge online manuals like the mathworks website  or forums like stackexchange and roboDK provided most information. Information about the robot model was extracted from the manuals and other documents given by Fanuc.
+Spreading from these keywords, the literature can be extended with the help of HANQuest and Google scholar by the use of specific keyword combinations like "6DOF AND Industrial Robot AND Matlab model". Platforms like academia and researchgate help to find the right vocabulary for the field whilst also providing the papers and contact options with the authors. 
+%Certain authors like Peter Corke have their own website where they provide an extensive overview on their research, teachings and publications for free.
+Some authors provide an extensive overview on their research, teachings and publications on their personal website.​
+Wikipedia and other specialized wikis like scholarpedia break down the concepts and provide a summarizing view for different topics in the field of robotics. Individual phrases and keywords are best triangulated with different search engines like Google, DuckduckGo or yahoo to name a few. Databases like libgen and scihub are essential for scientific work, as not all universities can purchase access packages for all publishers. For applied knowledge, online manuals like the mathworks website or forums like stackexchange and roboDK are a good source. Information about the robot model can be extracted from the manuals and other documents given by Fanuc.
 
 
 
 
-\section{Field of study}
+\section{Field of Study}
 
 As seen in %"Implementation of Robot Systems" 
-\cite{IndustrialRobotArm}, the FANUC 210F is an articulated robot arm, also called a jointed arm. It is a 6 axis robot that has six rotational \gls{joints}, each mounted on the previous \gls{link}. %link instead of joint is correct
-This type of robot has the ability to reach a point within the working envelope in more than one configuration or position with its final joint,. 
-As there are multiple configurations possible to reach the same position, path planning would become an important topic. 
+\cite{IndustrialRobotArm}, the FANUC 210F is an articulated robot arm, also called a jointed arm. It is a 6 axis robot that has six rotational \glspl{joints}, each mounted on the previous \gls{link}. %link instead of joint is correct
+This type of robot has the ability to reach a point within the working envelope in more than one configuration or position with its final joint. 
+As there are multiple configurations possible to reach the same position, path planning becomes an important topic. 
 This means through inverse kinematics  the motion of the \glspl{joints} needs to be determined without considering the local forces that cause them to move.
 As stated in the project plan, MATLAB was intended to be used.
 The robotics toolbox by Peter Corke was seen as a good tool for simulating these kinematics in MATLAB. 
-When attaching the dynamics to this model, further simulations could be made to simulate the dynamic behaviour of the robot arm and create a controller. 
+When attaching the dynamics to this model, further simulations could be made to simulate the dynamic behaviour of the robot arm and to create a controller. 
 
 %power demand to move the \gls{joints} with the desired speed. 
 %As it became clear, that it would be difficult to determine the inertias, spring and damping forces on the robot within the given time, a pure kinematic analysis was seen sufficient.
 
 \section{ROS}
-\textit{\ac{ROS} is a flexible framework for writing robot software} as seen on the "about ROS" page of the ROS-project. As pointed out by other engineers on the "ROS Answers" page, a project related forum \cite{ROSAnswers_WhatIsRos}, the role of ROS is not clearly defined. ROS shares characteristics with middleware, frameworks, but also has \ac{OS}-like features. \ac{ROS} can take the Role of a \ac{DDS}, taking a central role in coordinating tasks and information on a distributed system of nodes. ROS can be used as a platform to create a digital twin.  % while being an advanced tool for robot control would not fall in the scope of this thesis, as it would rather be a tool for later in the process of integrating the robot into the production line.\\
+\textit{%\ac{ROS} 
+ROS is a flexible framework for writing robot software} as seen on the "about ROS" page of the ROS-project. As pointed out by other engineers on the "ROS Answers" page, a project related forum \cite{ROSAnswers_WhatIsRos}, the role of ROS is not clearly defined. ROS shares characteristics with middleware, frameworks, but also has \ac{OS}-like features. \ac{ROS} can take the role of a \ac{DDS}, taking a central role in coordinating tasks and information on a distributed system of nodes. %ROS can be used as a platform to create a digital twin.  % while being an advanced tool for robot control would not fall in the scope of this thesis, as it would rather be a tool for later in the process of integrating the robot into the production line.\\
 \medskip
 
-\section{Forward and inverse Kinematics}
+\section{Forward and Inverse Kinematics}
 
-As stated in the online manual of MathWorks, \textit{Kinematics is the study of motion without considering the cause of the motion, such as forces and torques.} \cite{MathWorksInverseKinematics}
-Inverse Kinematics, also called backward kinematics is the logical opposite to forward kinematics also called direct kinematics (See figure \ref{fig:FwVsInvKin}). 
+As stated in the online manual of MathWorks, \textit{Kinematics is the study of motion without considering the cause of the motion, such as forces and torques} \cite{MathWorksInverseKinematics}.
+\Gls{invKin} is the logical opposite to \Gls{forwKin} (See figure \ref{fig:FwVsInvKin}). 
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\includegraphics[
-	width=0.7\linewidth,
+	width=\linewidth,
 	center,
 	keepaspectratio,
 	]{FwInvKinematics/21.IJMPERDFEB201921.pdf_1}
@@ -82,13 +104,15 @@ Inverse Kinematics, also called backward kinematics is the logical opposite to f
 
 Mathworks \cite{forwardVsInverseKinematics} explains the relationship between forward and inverse kinematics.
 %"Verallgemeinerte inverse Kinematik für Anwendungen in der Robotersimulation und der virtuellen Realität" 
-\cite{allgInvKin} gives a good overview on the topic of forward and inverse kinematics and gives an idea about the Denavit-Hartenberg notation, a convention to map the local coordinate systems within a kinematic chain as found in robot arms.
+%Smidt
+Source \cite{allgInvKin} gives a good overview on the topic of forward and inverse kinematics and gives an idea about the Denavit-Hartenberg notation, a convention to map the local coordinate systems within a kinematic chain as found in robot arms.
 
 As seen in 
 %"A Mathematical Introduction to Robotic Manipulation" 
 \cite{MathIntroRobManip}, chapter 2.2
 %(obtained through Semantic Scholar, search phrase: robotic convention)
-, there are several other conventions besides the \acrfull{DH} notation used in the robotics research field like the the product of exponentials formulation (see \cite{MathIntroRobManip}).
+, there are several other conventions besides the \acrfull{DH} notation used in the robotics research field like the the product of exponentials formulation %(see \cite{MathIntroRobManip})
+.
 %Another overview on robotic conventions can be found in the Wikipedia article on robotic conventions \cite{RobConventionsWiki}. 
 As most textbooks prefer a \ac{DH} formulation of the kinematics (see \cite{MathIntroRobManip}, ch. 3.1 Manipulation using single robots), this convention will be chosen in this work as well.
 The forward kinematic analysis can be obtained as seen in %"Forward Kinematic Analysis of an Industrial Robot " 
@@ -96,44 +120,50 @@ The forward kinematic analysis can be obtained as seen in %"Forward Kinematic An
 
 Solutions for forward  kinematics are simple to obtain but solving inverse kinematics  has  been  one of  the  main  concerns  in  robot kinematics research. 
 With more \ac{DOF}, solutions get more complex as non-linear equations with transcendental functions need to be solved. 
-For this set of equations, no general algorithms are available.
-Often algebraic, geometric and iterative methods for complex manipulators are used to find a solution to the inverse kinematic problem as stated by Tarun Pratap Singh et al. in the abstract of %"Forward and Inverse Kinematic Analysis of Robotic Manipulators" 
+For this set of \gls{invKin} equations, no general algorithms (\gls{numSol}) are available.
+Often algebraic, geometric and iterative methods for complex manipulators are used to find a solution to the inverse kinematic problem as stated by source %Tarun Pratap Singh et al. in %the abstract of %"Forward and Inverse Kinematic Analysis of Robotic Manipulators" 
 \cite{FwdInvAnalysRobManip}.
 
 To find a suitable method for solving the inverse kinematic problem, a definition for the solution is needed:\\
 \medskip
 \\
-\fbox{\parbox{\textwidth}{\textit{A manipulator will be considered solvable if the joint variables can be determined by an algorithm that allows one to determine all sets of joint variables associated with a given position and orientation. [...] The algorithm should find all possible solutions} -Dr.-Ing. John Nassour \cite{invKinSeriallinkMani}}}
+\fbox{\parbox{\textwidth}{\textit{A manipulator will be considered solvable if the joint variables can be determined by an algorithm that allows one to determine all sets of joint variables associated with a given position and orientation. [...] The algorithm should find all possible solutions} %-Dr.-Ing. John Nassour 
+		\cite{invKinSeriallinkMani}}}
 \bigskip
 
-With this definition of solvability, all systems with revolute and prismatic \glspl{joints} with 6 \ac{DOF}  in a single series chain are solvable with the current available research. \cite{invKinSeriallinkMani}
+With this definition of solvability, all systems with \glspl{revjoint} and \glspl{prijoint} with 6 \ac{DOF}  in a single series chain are solvable with the current available research. \cite{invKinSeriallinkMani}
 %As a quick search on HAN Quest with the search term "7 DOF inverse kinematics" suggests, there is currently onging research for the inverse kinematics problem in higher DOF manipulators with fuzzy logic as multiple articles following this approach can be found.\\
 \\
 
 As the goal is to find a suitable solution strategy for the inverse kinematic problem, it helps to map out the different types of methods.
-Solution strategies can be split into two classes as stated by Dr.-Ing. John Nassour in his presentation \cite{invKinSeriallinkMani}:\\
+Solution strategies can be split into two classes as stated in % by Dr.-Ing. John Nassour in his presentation 
+\cite{invKinSeriallinkMani}:\\
 \medskip
 
 
 %\parbox[t][3cm][t]{7cm}{\normalsize Closed-form solutions\\}
 %\parbox[t][3cm][t]{7cm}{\normalsize Numerical solutions\\} 
 %Text on two sides of the page:%https://tex.stackexchange.com/questions/107491/left-and-right-aligned-text-boxes
-\fbox{\begin{minipage}[t]{0.6\textwidth}
+\fbox{
+	\begin{minipage}[t]{0.6\textwidth}
 	\textbf{{\large 
 		\Glspl{clSol}
 	}}\\
 	faster because analytical method\\ 
 	will find all solutions\\
 	Two approaches:\\
-	\\
-	\begin{minipage}[t]{0.4\textwidth}
-		\textbf{{\large algebraic approach}}\\
-	\end{minipage}
-	\begin{minipage}[t]{0.4\textwidth}
-	\begin{flushright}
-	\textbf{{\large geometric approach}}\\
-	\end{flushright}
-\end{minipage}
+	\begin{itemize}
+		\item algebraic approach
+		\item geometric approach
+	\end{itemize}
+%	\begin{minipage}[t]{0.4\textwidth}
+%		\textbf{{\large algebraic approach}}\\
+%	\end{minipage}
+%	\begin{minipage}[t]{0.4\textwidth}
+%	\begin{flushright}
+%	\textbf{{\large geometric approach}}\\
+%	\end{flushright}
+%\end{minipage}
 \end{minipage}
 \hfill
 \begin{minipage}[t]{0.4\textwidth}
@@ -142,24 +172,25 @@ Solution strategies can be split into two classes as stated by Dr.-Ing. John Nas
 			\Glspl{numSol}
 			}}\\
 		slower because of iterative nature\\
-		can not always finds all solutions\\
+		can not always find all solutions\\
 	\end{flushright}
 \end{minipage}}
 \medskip
 
-As 
-\glspl{numSol} 
-cannot always deliver all solutions and solve within an unknown number of operations as well as depend on the users decision for accuracy, \cite{invKinSeriallinkMani} a \gls{clSol} will be preferred.\\
+
+\Glspl{numSol} 
+cannot always deliver all solutions and solve within an unknown number of operations. Also they depend on the users decision for accuracy \cite{invKinSeriallinkMani}, which is why a \gls{clSol} will be preferred.\\
 
 %On HAN Quest, with the keywords "6DOF inverse kinematics" the article "Inverse Kinematics Solution and Optimization of 6DOF Handling Robot"
-\cite{invKinSolYanWu} 
+%Yan Wu et. al. 
+Source \cite{invKinSolYanWu} 
 %can be found. This 
-offers an  algebraic method to solve the inverse kinematic problem for 6 axis robots.
-A similar approach is shown in %"Forward and Inverse Kinematic Analysis of Robotic Manipulators" 
-\cite{FwdInvAnalysRobManip}. Another approach can be found in %"Forward and Inverse Kinematics Model for Robotic Welding Process Using KR-16KS KUKA Robot" 
+offers an algebraic method to solve the inverse kinematic problem for 6 axis robots.
+Other approaches are shown in %"Forward and Inverse Kinematic Analysis of Robotic Manipulators" 
+\cite{FwdInvAnalysRobManip} and %. Another approach can be found in %"Forward and Inverse Kinematics Model for Robotic Welding Process Using KR-16KS KUKA Robot" 
 \cite{FwInvKuka}. \\
 
-As an alternative, a geometric modelling can be done as seen in %"Workspace analysis and geometric modeling of 6 DOF Fanuc 200IC "
+As an alternative, geometric modelling can be done as seen in %"Workspace analysis and geometric modeling of 6 DOF Fanuc 200IC "
 \cite{geomModelingKamel}. 
 A completely different approach based on artificial neural networks is given in %"A inverse kinematic solution of  a 6-DOF industrial robot using ANN"
 \cite{invKinANNKSHITISH}.\\
@@ -169,30 +200,37 @@ A completely different approach based on artificial neural networks is given in 
 %Robots, for which a closed-form solution exists, are characterized either by having several intersecting joint axes or by having many twist angles αibe equal to0 or+/-90°.
 %
 With one of these methods, a solution can be found for the inverse kinematic problem.
-This solution can then be verified with the robotics toolbox created by Corke \cite{CorkeRoboticsToolbox}.
+This solution can then be verified with the robotics toolbox % created by Corke 
+\cite{CorkeRoboticsToolbox}.
+\medskip
 
-\section{Dynamic model}
+\section{Dynamic Model}
 
 With this solution for the kinematics, a dynamic model of the robot can be created by attaching dynamics to the model as seen in %"Control and Safety Mechanisms for a 3 DOF Manipulator with Human Interaction" 
 \cite{KongWei} and %"A mathematical introduction to Robotic Manipulation" 
-\cite{MathIntroRobManip}. A complete example of a dynamic simulation of a 6 \ac{DOF} robot arm can be found in %"Dynamic Multibody Simulation of a 6-DOF Robotic Arm" \
-cite{Dyn6DOFBinLi}
+\cite{MathIntroRobManip}. A complete example of a dynamic simulation of a 6 \ac{DOF} robot arm can be found in %"Dynamic Multibody Simulation of a 6-DOF Robotic Arm" \cite{Dyn6DOFBinLi}
 \cite{CorkeRoboticVisionControl}.
 The dynamic model describes the behaviour of the manipulator with a set of equations, the equations of motion.
 The rigid-body equations of motion consist of five coupled differential equations in matrix form.
 %Each of them can be derived with Newton's second law and Eueler's euqation of motion as seen in section 3.2 of 
 The Manipulator inertia matrix, Coriolis matrix and gravity term can be found with a Lagrangian formulation of the equations of motion for an open-chain manipulator as seen in %"A Mathematical Introduction to Robot Manipulation", 
-\cite{MathIntroRobManip} section 3.1, "The Lagrangian for an open-chain robot". The force applied at the end-effector can be included as seen on page 157, section 5.11 \cite{IndustrialRobotArm}, according to the principle of virtual work. A goood overview on friction models can be found in \cite{CorkeRoboticVisionControl}, p. 252, section 9.1.2 "Friction". 
+\cite{MathIntroRobManip} section 3.1%, "The Lagrangian for an open-chain robot"
+. The force applied at the end-effector can be included as in % seen on page 157, section 5.11 
+\cite{IndustrialRobotArm}, section 5.11, according to the principle of virtual work. A good overview on Coulomb and viscous friction can be found in \cite{CorkeRoboticVisionControl}, p. 252, section 9.1.2 %"Friction"
+. 
 %TODO
 %MOVE to Literature part
+\medskip
 
 \section{Controller}
 
 A controller for trajectory tracking can then be created with the model as seen in %"Experimental Evaluation of Non-linear Feedback and Feedforward Control Schemes for Manipulators" 
-\cite{evalNonlinFeedForBackControl}. In this thesis work, the controller will be based on \cite{CorkeRoboticVisionControl} and \cite{MathIntroRobManip}.
+\cite{evalNonlinFeedForBackControl}. %Khosla and Kanade describe 
+This is a robot manipulator control based on plant inversion. In this thesis work, the controller will be based on \cite{CorkeRoboticVisionControl} and \cite{MathIntroRobManip}.
 
 This controller could then be plugged into the real robot as stated in %the "Control of a FANUC Robotic arm using MATLAB manual" 
-\cite{FANUCcontrolMatlab}. An example of this can be found in %"Modelling and analysis of a 6 DOF robotic arm manipulator"
+\cite{FANUCcontrolMatlab}, which aims%. This project at USC Viterbi aimed 
+to achieve manipulator live control with Matlab. An example of this can be found in %"Modelling and analysis of a 6 DOF robotic arm manipulator"
 \cite{RobotModelAnalContrexampleJamshed}.
 An overview on different control strategies for serial link manipulators can be found in \cite{CorkeRoboticVisionControl}, chapter 9 and \cite{MathIntroRobManip}, chapter 4.
 \bigskip

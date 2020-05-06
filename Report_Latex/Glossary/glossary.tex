@@ -2,25 +2,43 @@
 
 
 \newglossaryentry{numSol}{
-	name={numerical Solution},
-	description={Originally the term numerical solution describes a solution given in terms of numbers instead of an explicit closed form expression. In this work, the term "numerical solution" refers to numerical, iterative methods for solving the inverse kinematics problem by using a sequence of steps leading to incrementally better solutions for the joint angles. Examples for these methdods are the jacobian inversion method, the optimization based method cyclic coordinate descent as shown by Lukas Barinka \cite{InvkinMeth_Lukas}. 
-}}
+	name={numerical solution},
+	description={Originally the term numerical solution describes a solution given in terms of numbers instead of an explicit closed form expression. In this work, the term "numerical solution" refers to numerical, iterative methods for solving the inverse kinematics problem by using a sequence of steps leading to incrementally better solutions for the joint angles. Examples for these methods are the jacobian inversion method, the optimization based method cyclic coordinate descent as shown by Lukas Barinka \cite{InvkinMeth_Lukas}. },
+	plural = {numerical solutions}
+}
 
 \newglossaryentry{clSol}{
 	name={closed-form solution},
-	description={Closed form solutions  in the contet of this thesis describe a solution in a closed form expression and  are used complementary to numerical Solutions },
+	description={Closed form solutions in the context of this thesis describe a solution in a closed form expression and  are used complementary to numerical Solutions.},
 	plural = {closed form solutions}
 }
 
 \newglossaryentry{forwKin}{
 	name={forward kinematics},
-	description={Forward kinematics describes the position of the endpoint of a kinematic chain in the operational space by the kinematic equations with the joint variables as input. The non-linear kinematic equations map the joint parameters to the configuration of the robot system. This results in a pure geometrical description of motion by means of position, orientation, and their time derivatives.}
+	description={Forward kinematics (also called direct kinematics) describes the position of the endpoint of a kinematic chain in the operational space by the kinematic equations with the joint variables as input. The non-linear kinematic equations map the joint parameters to the configuration of the robot system. This results in a pure geometrical description of motion by means of position, orientation, and their time derivatives.}
+}
+
+\newglossaryentry{invKin}{
+	name={inverse kinematics},
+	description={Inverse Kinematics (also called backward kinematics) gives a set of solutions for a kinematic chain to reach a desired endpoint position. Depending on the type of kinematic chain, the number of solutions can be more than 1 or zero. }
 }
 
 \newglossaryentry{joints}{
 	name={joint},
 	description={A joint is a connection between two links that allows for movement within certain contstraints. },
 	plural = {joints}
+}
+
+\newglossaryentry{revjoint}{
+	name={revolute joint},
+	description={Revolute joints rotate arount an axis like door hindges and folding mechanisms. They provide a single-axis rotation function that does not allow translation or sliding linear motion.},
+	plural = {revolute joints}
+}
+
+\newglossaryentry{prijoint}{
+	name={prismatic joint},
+	description={Prismatic joints slide along an axis like linear bearings. They provide a translation while resisting rotation.},
+	plural = {prismatic joints}
 }
 
 \newglossaryentry{link}{
@@ -47,6 +65,22 @@
 \newglossaryentry{ExtraneousRoot}{
 	name={extraneous root},
 	description={An extraneous root is  introduced into an equation in the process of solving another equation, but is not a solution of the equation to be solved \cite{extraneousroot}. This test is done simply by substituting the solution %for $\theta_2$ 
-		into the original equation %\ref{eq:1-4+2_4}. If an extraneous root is found, the program can terminate and return $err = inf$ or $ NaN$  and $P=2$ for cause of abortion. 
+		into the original equation %\ref{eq:1-4+2_4}. If an extraneous root is found, the program can terminate and return $err = inf$ or $ NaN$  and $P=2$ for cause of abortion
+		.},
+	plural = {extraneous roots}
+}
+
+\newglossaryentry{Robot}{
+	name={robot},
+	description={Robots \cite{robotDef} can be defined as programmable movement automatons \cite{automatonDef} that can perform tasks without human supervision and can be taught at least repetitive tasks. 
+		Increasingly, also ways to sense their surroundings are added to improve their movements according to the situation \cite{robotDef2}. 
+		These sensors are placed additionally to the standard feedback-control sensors like pulse encoders and allow the robot to handle a wider range of situations without human intervention.}
 	}
-	}
+
+\newglossaryentry{EOAT_long}{
+	name={end of arm tool},
+	description={The EOAT refers to the equipment that interacts with the payload. Examples for this are a gripper or a welding torch.}}
+
+\newglossaryentry{endeffector}{
+	name={endeffector},
+	description={The endeffector describes the end of the robotic arm. In the context of this thesis, this describes the end of the serial link mechanism without any EOAT.}}
