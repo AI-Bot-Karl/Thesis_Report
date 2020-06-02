@@ -1,0 +1,24 @@
+highlight the choices
+Mathematics starting from jacobian
+
+
+contact dimitir
+- istead of * or dot no multiplication sign [Done]
+- puctuation, dot + comma[Done]
+- dots after equations, if part of the sentence[Done]
+- Figure instead of fig [Done]
+- no word "equation", and put brackets around it, only put equation if start of a sentence. [Done]
+- equations of motion in appendix [Done]
+- equations of motion (typos) [Done]
+- with 4.12 -4.17 page 22 [Done]
+- cost function - write nicer [Done]
+- is proposed by Yan Wu et al remove name [Done]
+- rework jacobian [Done]
+- inertia matrix rework M = J^T(\ [Done]
+-Christophelsymbol define! - removed [Done]
+- capital letters! [Done]
+- no fullref with name, subsection capital[Done]
+- better present and explain mathematics - take a look at literature,
+make it easier to understand for inexperienced readers
+- 
+

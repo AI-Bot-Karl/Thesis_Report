@@ -1,6 +1,6 @@
 \section{Matlab Implementation}
 
-With the help of the Robotics toolbox for Matlab, the robot can be implemented in Matlab as seen in appendix \fullref{MatlabCode}.
+With the help of the Robotics toolbox for Matlab, the robot can be implemented in Matlab as seen in appendix \Autoref{MatlabCode}.
 
 \subsection{Guideline to the Toolbox}
 
@@ -37,16 +37,16 @@ For simplicity of further work, four standard positions are provided:\\
 \end{itemize}
 
 \paragraph{Kinematic definiton of links}
-With the DH-parameters provided in table \ref{table:DH-Parameter_num}, the links are defined. 
-As the toobox provides an offset parameter, link nr. 2 has an angular offset of $\frac{\pi}{2}$ to have the robot in the normal pose as seen in figure \ref{fig:RefFrame} at zero angle.
+With the DH-parameters provided in \Autoref{table:DH-Parameter_num}, the links are defined. 
+As the toolbox provides an offset parameter, link nr. 2 has an angular offset of $\frac{\pi}{2}$ to have the robot in the normal pose as seen in \Autoref{fig:RefFrame} at zero angle.
 Additionally, an estimation of the rotational freedom for the joints is estimated with the help of the data-sheet \cite{210FDatasheet}. All these parameters are loaded into link-objects provided by the toolbox.
-
+.
 \paragraph{Definiton of manipulator }
 With the \textbf{SerialLink} constructor, these link objects are combined into the robot arm, named "\textbf{R}". 
 Additionally to the links, the base and a tool are defined. After running some test commands like testing the joint types, the kinematic definition is finished.
 
 \paragraph{Testing of kinematics}
-After the kinematic model is set up, the kinematic abilites of this model are tested. 
+After the kinematic model is set up, the kinematic abilities of this model are tested. 
 Forward kinematics can be simply tested by using the standard positions, and observing these with the plot command, provided with the toolbox, which gives a graphical representation of the manipulator.
 For the inverse kinematics, different solvers are available. The \textbf{ikine6s} function, an analytic solver has shown problems, as the robot does not take the intended positions, as can be observed in the graphical output. This is probably due to a bug in the implementation.
 Other solver functions like the \textbf{ikcon} function proved to be reliable in finding joint configurations for a desired endpoint coordinate within the workspace. If the position is outside of the workspace, and not reachable can be observed by the exit flag.

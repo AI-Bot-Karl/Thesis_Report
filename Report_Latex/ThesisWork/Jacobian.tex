@@ -1,16 +1,23 @@
 \section{Jacobian} \label{sec:Jacobian}
-When the position of the end-effector is $\gls{p}=(x,y,z,\alpha,\beta,\gamma)$ and the joint angles are  $\gls{q}=(q_1, q_2, q_3, q_4, q_5, q_6)$, the derivative of $p$ with respect to the joint variables $q$ gives the Jacobian matrix as seen in  \ref{eq:JacDeriv}.\\
+When the position of the end-effector is $\gls{p}=(\gls{x},\gls{y},\gls{z},\gls{roll},\gls{pitch},\gls{yaw})$ and the joint angles are  $\gls{q}=(q_1, q_2, q_3, q_4, q_5, q_6)$, the derivative of $p$ with respect to the joint variables $q$ gives the Jacobian matrix as seen in  \ref{eq:JacDeriv}.\\
 \begin{equation} \label{eq:JacDeriv}
 	\frac{dp}{dq}=J(q)
 \end{equation}
 \medskip
-As a result, the Jacobian connects the velocities of the two state-spaces as seen in equation \ref{eq:JacVel} ( see \cite{CorkeRoboticVisionControl} p.231, sec. 8.1 ). Further derivations like acceleration, Jerk, Snap an Crackle can be obtained similarly by dividing both sides through $dt$. \\
+As a result, the Jacobian connects the velocities of the two state-spaces as seen in equation \Autoref{eq:JacVel} ( see \cite{CorkeRoboticVisionControl}). % p.231, sec. 8.1 ). 
+Further derivations like acceleration, Jerk, Snap and Crackle can be obtained similarly by dividing both sides through $dt$. \\
 \begin{equation}\label{eq:JacVel}
-	\dot{p}=J(q)\dot{p}
+	\dot{p}=J(q)\dot{q}
 \end{equation}
-As the Jacobian matrix $\gls{J}$ connects the end-effector space in generalized coordinates with the joint space in angle coordinates, it can relate also forces between the state-spaces according to the principle of virtual work (see \cite{IndustrialRobotArm} page 157, section 5.11 ).\\
-These are a few notable conversions, the Jacobian provides:\\
-$ \dot{x}=J(\theta)\dot{\theta} $ \\
-$ \theta=J{^-1}x $ \\
-$ \dot{\theta} = J^{-1} \dot{x} $\\
-$ \ddot{\theta} = J^{-1} \ddot{x} + \frac{d}{dt}(J^{-1}) \dot{x} $\\
+As the Jacobian matrix $\gls{J}$ connects the end-effector space in generalized coordinates with the joint space in angle coordinates, it can relate also forces between the state-spaces according to the principle of virtual work (see \cite{IndustrialRobotArm}).% page 157, section 5.11 ).\\
+%These are a few notable conversions, the Jacobian provides:\\
+%$ \dot{x}=J(\theta)\dot{\theta} $ \\
+%$ \theta=J{^-1}x $ \\
+%$ \dot{\theta} = J^{-1} \dot{x} $\\
+%$ \ddot{\theta} = J^{-1} \ddot{x} + \frac{d}{dt}(J^{-1}) \dot{x} $\\
+
+As seen in \Autoref{eq:JacWrenchTorques} wrench $W$ in the world coordinate frame can be transformed into torques and forces experienced by the joints $Q$ \cite{CorkeRoboticVisionControl}.
+
+\begin{equation} \label{eq:JacWrenchTorques}
+	Q = J(q) W
+\end{equation}

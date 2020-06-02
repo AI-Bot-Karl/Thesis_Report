@@ -30,11 +30,15 @@
 \glsxtrnewsymbol[description={x-position within frame}]{x}{\ensuremath{x}}
 \glsxtrnewsymbol[description={y-position within frame}]{y}{\ensuremath{y}}
 \glsxtrnewsymbol[description={z-position within frame}]{z}{\ensuremath{z}}
-\glsxtrnewsymbol[description={rotation around x}]{alpha}{\ensuremath{\alpha}}
-\glsxtrnewsymbol[description={rotation around y}]{beta}{\ensuremath{\beta}}
-\glsxtrnewsymbol[description={rotation around z}]{gamma}{\ensuremath{\gamma}}
+%\glsxtrnewsymbol[description={rotation around x}]{alpha}{\ensuremath{\alpha}}
+%\glsxtrnewsymbol[description={rotation around y}]{beta}{\ensuremath{\beta}}
+%\glsxtrnewsymbol[description={rotation around z}]{gamma}{\ensuremath{\gamma}}
+\glsxtrnewsymbol[description={rotation around x}]{roll}{\ensuremath{\theta_r}}
+\glsxtrnewsymbol[description={rotation around y}]{pitch}{\ensuremath{\theta_p}}
+\glsxtrnewsymbol[description={rotation around z}]{yaw}{\ensuremath{\theta_y}}
 
-\glsxtrnewsymbol[description={Transformation matrix}]{T}{\ensuremath{T}}
+\glsxtrnewsymbol[description={Transformation matrix}]{T_hat}{\ensuremath{\hat{T}}}
+\glsxtrnewsymbol[description={Transformation matrix from frame i to i-1}]{T_hat_i}{\ensuremath{{^{i-1}\hat{T}_i}}}
 \glsxtrnewsymbol[description={Rotation matrix}]{R}{\ensuremath{R}}
 
 \glsxtrnewsymbol[description={$\sin(\theta_i)$}]{s_i}{\ensuremath{s_i}}
@@ -45,6 +49,7 @@
 
 \glsxtrnewsymbol[description={Jacobian matrix}]{J}{\ensuremath{J}}
 \glsxtrnewsymbol[description={Joint-space inertia matrix}]{M}{\ensuremath{M}}
+\glsxtrnewsymbol[description={link inertia matrix}]{M_hat}{\ensuremath{\hat{M}}}
 \glsxtrnewsymbol[description={Coriolis and centripetal coupling matrix}]{C}{\ensuremath{C}}
 \glsxtrnewsymbol[description={force}]{F}{\ensuremath{F}}
 \glsxtrnewsymbol[description={Gravity loading}]{G}{\ensuremath{G}}
@@ -60,6 +65,10 @@
 \glsxtrnewsymbol[description={Innertia Matrix}]{InertiaMatr}{\ensuremath{\mathcal{I}}}
 
 \glsxtrnewsymbol[description={link mass}]{m}{\ensuremath{m}}
+
+
+
+
 \glsxtrnewsymbol[description={width}]{w}{\ensuremath{w}}
 \glsxtrnewsymbol[description={height}]{h}{\ensuremath{h}}
 \glsxtrnewsymbol[description={length}]{l}{\ensuremath{k}}

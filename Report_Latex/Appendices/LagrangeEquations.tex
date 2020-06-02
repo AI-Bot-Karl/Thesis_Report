@@ -1,0 +1,38 @@
+\chapter{Lagrange Equations for an Open-Chain Manipulator} \label{sec:LagrangeEquations}
+
+The equations of motion for an open-chain robot can be formed by substituting the Lagrangian into the Lagrange equations. 
+The Lagrange equations in vector form can be seen in \Autoref{eq:LagrEq}. They are given for a mechanical system with generalized coordinates $\gls{q}$ and with $\gls{Upsilon}$ representing the actuator torque.
+\begin{equation} \label{eq:LagrEq}
+\frac{d}{dt}\frac{\partial L}{\partial \dot{q}} - \frac{\partial L}{\partial q} = \Upsilon
+\end{equation}
+
+With the Lagrangian in place, expanding the terms of partial derivatives and rearranging, these terms form \Autoref{eq:RBeqMot} as seen in \cite{MathIntroRobManip}. %, section 3.2.\\
+
+\paragraph{Lagrangian for an open-chain robot}
+
+The Lagrangian \gls{L} can be calculated with the potential \gls{PotEner} and kinetic \gls{KinEner} energy as seen in \Autoref{eq:Lagrangian}. 
+\begin{equation} \label{eq:Lagrangian}
+L(q,\dot{q}) = T(q,\dot{q}) - V(q)
+\end{equation}
+
+
+
+\paragraph{Kinetic energy of the links}
+%The kinetic energy of the ith link can be found in Math. Intro p.168  eq. 4.17
+For an open chain robot, the total kinetic energy can be defined as in \Autoref{eq:TotKinEn}.
+\begin{equation}\label{eq:TotKinEn}
+T(\theta,\dot{\theta}) = \sum_{i=1}^{n} T_i(\theta,\dot{\theta}) = \frac{1}{2} \dot{\theta}^T M(\theta)\dot{\theta}
+\end{equation}
+
+\paragraph{Potential energy of the links}
+%The potential energy of the ith link can be found in Math. Intro p.169
+The total potential energy is defined similarly as in  \Autoref{eq:TotPotEn}.
+\begin{equation}\label{eq:TotPotEn}
+V(\theta)=\sum_{i=1}^{n} V_i(\theta) = \sum_{i=1}^{n} m_i  g  h_i(\theta)
+\end{equation}
+
+\paragraph{Forming the Lagrangian}
+Substituting these into the Lagrangian gives \Autoref{eq:LagrangianRobManip}.
+\begin{equation}\label{eq:LagrangianRobManip}
+L(\theta, \dot{\theta})= \sum_{i=1}^{n} (T_i(\theta,\dot{\theta})- V_i(\theta)) = \frac{1}{2} \dot{\theta}^T M(\theta)\dot{\theta}-V(\theta)
+\end{equation}

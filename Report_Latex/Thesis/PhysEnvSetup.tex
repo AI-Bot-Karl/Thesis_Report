@@ -4,20 +4,19 @@ The production line at \ac{SPC} is planned to produce steering knuckles with \ac
 \input{Thesis/ProductionLineSteps}
 
 \section{Notes on Choice of Robot} %should go to appendix
-The robot was chosen for this production line, as it provides a long reach. The arm without any \ac{EOAT} can reach a full circle with a radius of $2655 [\textit{mm}]$ with its mounting plate. Also the overall weight of $1240 [\textit{mm}]$ allows for reasonably fast movements between $90-190 [\textit{°/sec}] $ depending on the axis while still giving a payload capacity of $210 [\textit{Kg}]$ at the mounting plate.\cite{210FDatasheet}
-This high payload capacity is not needed directly, but it provides enough room for complex gripper designs, and provides room for future uses of the device.
+The robot was chosen for this production line, as it provides a long reach. The arm without any \ac{EOAT} can reach a full circle with a radius of $2655 [\textit{mm}]$ with its \gls{endeffector}. Also the overall weight of $1240 [\textit{mm}]$ allows for reasonably fast movements between $90-190 [\textit{°/sec}] $ depending on the axis while still giving a payload capacity of $210 [\textit{Kg}]$ at the mounting plate.\cite{210FDatasheet}
+This high payload capacity is not needed directly, but it provides enough room for complex gripper designs, and leaves room for future uses of the device.
 
 \section{Status of the Production Line at the Beginning of Project}
 At the start of this thesis work, the \nameref{sec:HydraulicPress} was already fixed to the ground. 
-\nameref{sec:Deltarobot},\nameref{sec:conveyor2}, and the robot arm were roughly placed at their final positions.
+\nameref{sec:Deltarobot}, \nameref{sec:conveyor2}, and the robot arm were roughly placed around the intended positions. % at their final positions.
 No gripper tools were available for either robots.
 The \nameref{sec:extruder}, \nameref{sec:oven}, \nameref{sec:conveyor1}, \nameref{sec:Cobot} and \nameref{sec:conveyor3} were not available.
 Electricity for the machines was not made available.
 A safety-fence was not set up.
 
 \section{Status of the Production Line at the End of Thesiswork}
-At the end of the project, the robots are positioned at a preferable position for their intended use. Interaction between press and robot arm were tested. Grippers were being developed in \ac{CAD}, and some standardized pneumatic grippers were tested on the robot arm for pick and place operations. \nameref{sec:conveyor2} was positioned, and fixed to the ground. Also, it was also tested with a Profinet-controlled variable frequency drive via \ac{PLC}. A heat resistant belt still needs to be mounted. An \nameref{sec:extruder} was delivered, but still needs to be commissioned, tested and modified. 
-An \nameref{sec:oven}, \nameref{sec:conveyor1}, \nameref{sec:conveyor3} and \nameref{sec:Cobot} station are still missing.
+At the end of the project, the robots are positioned at a preferable position for their intended use. Interaction between press and robot arm were tested. Grippers were being developed in \ac{CAD}, and some standardized pneumatic grippers were tested on the robot arm for pick and place operations. \nameref{sec:conveyor2} was positioned, and fixed to the ground. It was also tested with a Profinet-controlled variable frequency drive via \ac{PLC}. A heat resistant belt still needs to be mounted. An \nameref{sec:extruder} was delivered, but still needs to be commissioned, tested and modified. The \nameref{sec:oven}, \nameref{sec:conveyor1}, \nameref{sec:conveyor3} and a \nameref{sec:Cobot} station are still missing.
 A preliminary safety fence with no electronic safeguard has been set up. 
 
 
@@ -31,7 +30,8 @@ Simple pick and place programs could be simulated in that environment at Qing.
 These movements were inspected and varied to allow a smooth and fast transfer of material. Feedback and measurements for these simulations were provided.
 As the \nameref{sec:HydraulicPress} was already fixed to the ground, all other positions were determined relative to the press.
 After estimating good positions via \ac{VC} with respect to the movement range of the robot arm, the outlines of the machine feet were measured with a laser distance measurement system and marked on the floor.
-After placing the robots with a forklift by a member of the local fire brigade on the desired positions, the actual positions were measured again with the laser distance measurement system, documented in an excel sheet and tested again in VC. 
+After placing the robots with a forklift % by a member of the local fire brigade
+on the desired positions, the actual positions were measured again with the laser distance measurement system, documented in an excel sheet and tested again in VC. 
 As the differences between actual and desired position were minimal, the simulations in VC did not show any problems.
 The robot arm and the other machines were then bolted down in the ground. \\
 
@@ -58,16 +58,16 @@ For the state of this thesis-work, the field bus and network- installation consi
 	\item \ac{VFC} for conveyor belt
 	\item R-2000 iA Mate Controller for Delta robot
 	\item R-2000 iA Controller for Robot arm
-	\item Several student notebooks for configuration, monitoring and control of the machines
+	\item several student notebooks for configuration, monitoring and control of the machines
 \end{itemize}
 
 Additionally following devices are Planned:
 \begin{itemize}
 	\item \ac{DDS} (eventually consisting of several distributed nodes)
 	\item cameras for process monitoring 
-	\item Controller for \nameref{sec:Cobot}
-	\item Controller for Extruder and Feeding system
-	\item Part inspection system
+	\item controller for \nameref{sec:Cobot}
+	\item controller for Extruder and Feeding system
+	\item part inspection system
 	\item various sensors
 \end{itemize}
 
@@ -112,7 +112,8 @@ Roboguide is the offline programming environment provided by Fanuc. It comes wit
 The simulation can be fed with live data from the running production line to create a digital shadow. On top of that, data can be exchanged via \ac{OPCUA} with a \ac{PLC} that is connected to the robot controller. Through that, a high bandwidth communication with low latency can be established, that can be used to create a \ac{DT}.
 
 \subsection{Cooperation with Qing}
-Together with the company Qing, an event about \ac{DT} was hosted at the \ac{SPC}. In the preparation of this event, a Sequence for loading the press with the robot arm and unloading the finished product was developed. The  pick and place sequence was created in Visual Components and then exported as a TP program. This program can be found in the appendix \fullref{TPprogram210F}.
+Together with the company Qing, an event about \ac{DT} was hosted at the \ac{SPC}. In preparation of this event, a sequence for loading the press with the robot arm and unloading the finished product was developed. The  pick and place sequence was created in Visual Components and then exported as a TP program. This program can be found in %Appendix
+\Autoref{TPprogram210F}.
 
 \subsection{Tasks Executed in the Machine Setup}
 Following tasks were executed in the machine setup process:
@@ -125,14 +126,14 @@ Following tasks were executed in the machine setup process:
 	\item Setting up parts of the electrical installation
 	\item Setting up the robot controller with factory reset
 	\item Testing of the robot controller and robot
-	\item Requesting additional information, datasheets manuals and programs like Roboguide from Fanuc
+	\item Requesting additional information, datasheets manuals and programs like Roboguide from Fanuc and other companies
 	\item Configuring robot controller to the needs of SPC
 	\item Developing TP program together with Qing
 	\item Sifting through manuals and configuration files provided by IRSA Robotics and ordering them
 	\item Providing help to the students setting up the oven and  the PLC controlling the press 
 	\item Assisting other students for various tasks like moving equipment, program configuration or fitting of bearings
 	\item Planning, ordering and installing the fieldbus and network equipment
-	\item Consulting SPC in cybersecurity for network installation
+	\item Consulting SPC in cybersecurity for the necessary network installation
 	\item Cleaning the workshop regularly
 	\item Presenting the production line with Qing and SPC at the event day
 \end{itemize}

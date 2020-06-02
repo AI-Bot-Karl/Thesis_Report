@@ -25,12 +25,12 @@
 \usepackage{siunitx}
 %\usepackage[numbered,framed]{matlab-prettifier}
 \usepackage{float}
-\usepackage[usenames,dvipsnames]{color} % color text
+\usepackage[usenames,dvipsnames]{xcolor} % color text
 \definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
 \definecolor{mylilas}{RGB}{170,55,241}
 
 %coloured text
-\usepackage{xcolor} %\textcolor{blue}{This is a sample text in blue.}
+%\usepackage{xcolor} %\textcolor{blue}{This is a sample text in blue.}
 
 \usepackage{listings}
 \usepackage{alphalph}
@@ -43,7 +43,8 @@
 % http://texdoc.net/texmf-dist/doc/latex/pdfpages/pdfpages.pdf
 
 %Bibliography settings
-\usepackage[citestyle = numeric, bibstyle=numeric]{biblatex} %style =apa %citestyle = numeric, style=numeric, bibstyle = numeric
+\usepackage[citestyle = apa, %numeric,
+bibstyle=numeric]{biblatex} %style =apa %citestyle = numeric, style=numeric, bibstyle = numeric
 \addbibresource{References.bib}    
 
 % for including current date into document
@@ -151,10 +152,34 @@
 \usepackage{cleveref} %multi reference with \cref{x,y}
 % needs to be loaded after hyperref 
 
+\makeatletter
+\def\tagform@#1{\maketag@@@{\ignorespaces#1\unskip\@@italiccorr}}
+\let\orgtheequation\theequation
+\def\theequation{(\orgtheequation)}
+\makeatother
+%Capital Autoref
+\newcommand{\Autoref}[1]{%
+	\begingroup%
+%	\def\tableautorefname{Table}%
+	\def\chapterautorefname{Chapter}%
+	\def\sectionautorefname{Section}%
+	\def\subsectionautorefname{\sectionautorefname}%
+	\def\subsubsectionautorefname{\sectionautorefname}%
+	\def\Appendixautorefname{Appendix}%
+	\def\equationautorefname{}%
+	\autoref{#1}%
+	\endgroup%
+}
+
+
 %Define \fulref command for nice cross referencing in document with hyperlinks:
 \newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1}}} 
+%%Define better ref command \goodref 
+%\newcommand*{\goodref}[1]{\hyperref[{#1}]{\autoref*{#1} }} 
 %How to use: see
 % https://tex.stackexchange.com/questions/121865/nameref-how-to-display-section-name-and-its-number
+
+
 
 %Making a Glossary
 %\usepackage{glossaries}

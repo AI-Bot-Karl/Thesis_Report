@@ -10,7 +10,7 @@ This description can be obtained through a five step algorithm:\cite{ConstantinF
 	\item Set up local coordinate reference frames
 	\item Establishing \ac{DH} parameters for each link
 	\item Calculate homogeneous transformation matrices
-	\item Compute Forward Kinematic Equations
+	\item Compute forward kinematic equations
 \end{enumerate}
 
 \subsubsection{Numbering of Joints and Links} \label{sec:NumJointLink}
@@ -25,14 +25,14 @@ The numbering scheme for joints starts at $(1)$ with the joint connecting the fi
 \paragraph{Relation between Links and Joints}
 Link $(\gls{i})$ is connected to its 
 \begin{itemize}
-	\item lower link $(\gls{i}-1)$ at its proximal \cite{proxdist} end by joint $(\gls{i})$
-	\item upper link $(\gls{i}+1)$ at its distal \cite{proxdist} end by joint $(i+1)$
+	\item lower link $(\gls{i}-1)$ at its proximal \cite{proxdist} end by joint $(\gls{i} = \gls{n})$
+	\item upper link $(\gls{i}+1)$ at its distal \cite{proxdist} end by joint $(i+1 = \gls{n}+1)$
 \end{itemize}
 
 
 
 \subsubsection{Set up Local Coordinate Reference Frames} \label{sec:localRefFrame}
-With the \ac{DH} convention, local coordinate frames can be attached to the links $ (\gls{i}) $ and their accompanying joints $ (i-1) $.
+With the \ac{DH} convention, local coordinate frames can be attached to the links $ (\gls{i}) $ and their accompanying joints. % $ (i-1) $.
 Each link $(\gls{i})$ is described relative to the pose of the preceding link.
 
 %\paragraph{Assignation of coordinate frames}
@@ -43,14 +43,14 @@ Each link $(\gls{i})$ is described relative to the pose of the preceding link.
 With the \ac{DH}-notation, the \gls{z_i} axes are assigned to link $(\gls{i})$. 
 By using the  \ac{DH} convention, both prismatic and revolute joints can be treated similarly: %regarding joint $(i+1)$:
 \begin{itemize}[wide=\parindent]
-	\item[\textbf{revolute:}] \gls{z_i} is the axis of revolution of joint $(\gls{i}+1) = \gls{n}$
-	\item[\textbf{prismatic:}] \gls{z_i} is the axis of translation of joint $(\gls{i}+1) = \gls{n}$
+	\item[\textbf{revolute:}] \gls{z_i} is the axis of revolution of joint $\gls{i} = \gls{n}$ %$(\gls{i}+1)
+	\item[\textbf{prismatic:}] \gls{z_i} is the axis of translation of joint $\gls{i}= \gls{n}$ %$(\gls{i}+1)
 \end{itemize}
 %of joint $(i+1)$
-This means, that joint \gls{n} turns around axis \gls{z_i}.
+This means, that joint \gls{n} = \gls{i} turns around axis \gls{z_i}.
 
 \paragraph{Direction of rotation}
-With the direction of the \gls{z_i}-axis, the direction of positive rotation around joint $(i+1)$ is also given by the right hand rule (see \cite{RightHandRule} and \cite{Angela_U1S2P1} at 10:35 for a visual representation). This means, the direction of positive rotation is counter-clockwise around the $z_i$-axis.
+With the direction of the \gls{z_i}-axis, the direction of positive rotation around joint $(\gls{n})$ is also given by the right hand rule (see \cite{RightHandRule} and \cite{Angela_U1S2P1}). This means, the direction of positive rotation is counter-clockwise around the $z_i$-axis.
 With predictive choice of the direction of positive rotation, the direction of the z-axis can be chosen in order to minimize the DH-parameters. % (insert source here)
 
 
@@ -59,13 +59,13 @@ With predictive choice of the direction of positive rotation, the direction of t
 
 The base frame $(i=0)$ can be chosen nearly arbitrarily. The origin of the base frame can be any point on $z_0$. For simplicity, the origin of frame $(0)$ can be put into joint $(n=1)$.  Usually, the $x_0$-axis of the base frame is chosen, so that it points in the direction of the \gls{EOAT_long} in default position \cite{DenavitHartenbergKonventionen}, but can be chosen in any convenient manner \cite{SpongDynContr}.
 
-\paragraph{Assignation of frames $(i)$}
+\paragraph{Assignation of frames }
 
 Starting from frame $(\gls{i}=1)$ in an iterative process, frame $(\gls{i})$ can be set up using frame $(\gls{i}-1)$.
 
 Three cases regarding the relationship of axes $z_{i-1}$ and $z_i$  need to be considered when setting up frames:
 \begin{itemize}[wide=\parindent] %option solves alignment problem for item label %https://tex.stackexchange.com/questions/246394/alignment-of-labels-in-itemize-with-text-of-document 
-	\item[\textbf{Non coplanar:}] Axes don't intersect and are not parallel. Line containing the common normal $z_{i-1}$ to $\gls{z_i}$ defines $\gls{x_i}$-axis and the point of intersection with $\gls{z_i}$ is the origin of frame $(\gls{i})$, see \ref{fig:NonCoplanar}.
+	\item[\textbf{Non coplanar:}] Axes don't intersect and are not parallel. Line containing the common normal $z_{i-1}$ to $\gls{z_i}$ defines $\gls{x_i}$-axis and the point of intersection with $\gls{z_i}$ is the origin of frame $(\gls{i})$, see \Autoref{fig:NonCoplanar}.
 	\begin{enumerate}[label=\emph{\alph*)}]
 		\item find common normal of the joint axes
 		\item put origin in intersection of normal with joint axis
@@ -73,7 +73,7 @@ Three cases regarding the relationship of axes $z_{i-1}$ and $z_i$  need to be c
 		\item $\gls{x_i}$ points in direction of the common normal, facing away from frame $(i-1)$
 		\item add $\gls{y_i}$ according to right hand rule
 	\end{enumerate}
-	\item[\textbf{Parallel:}] Axes are parallel. Line containing the normal through origin of frame $(i+1)$ and the $\gls{z_i}$-axis defines the $\gls{x_i}$-axis which is directed from origin of frame $(\gls{i})$ toward the distal joint. The point of intersection of common normal with $\gls{z_i}$-axis gives the origin of frame $(\gls{i})$, see \ref{fig:Parallel}. % found a mistake here with common normal in \cite{ConstantinForwardKA} witht he help of \cite{SpongDynContr}. The x-axis should point towards next joint, but he says, should point towards last joint, but does it actually the other way around.
+	\item[\textbf{Parallel:}] Axes are parallel. Line containing the normal through origin of frame $(i+1)$ and the $\gls{z_i}$-axis defines the $\gls{x_i}$-axis which is directed from origin of frame $(\gls{i})$ toward the distal joint. The point of intersection of common normal with $\gls{z_i}$-axis gives the origin of frame $(\gls{i})$, see \Autoref{fig:Parallel}. % found a mistake here with common normal in \cite{ConstantinForwardKA} witht he help of \cite{SpongDynContr}. The x-axis should point towards next joint, but he says, should point towards last joint, but does it actually the other way around.
 	\begin{enumerate}[label=\emph{\alph*)}]
 		\item look for normal originating from distal joint
 		\item put origin in the intersection of the normal with the joint axis
@@ -81,7 +81,7 @@ Three cases regarding the relationship of axes $z_{i-1}$ and $z_i$  need to be c
 		\item $\gls{x_i}$ points follows the common normal with the distal joint, pointing towards the distal joint
 		\item add $\gls{y_i}$ according to right hand rule
 	\end{enumerate}
-	\item[\textbf{Intersecting:}] Axes are intersecting. Line containing the normal to the plane formed by axes $z_{i-1}$ and  $\gls{z_i}$ gives the $\gls{x_i}$-axis with positive direction chosen arbitrarily. Point of intersection of  axes $z_{i-1}$  and  $\gls{z_i}$ is the origin of frame $(\gls{i})$, see \ref{fig:Intersecting}.
+	\item[\textbf{Intersecting:}] Axes are intersecting. Line containing the normal to the plane formed by axes $z_{i-1}$ and  $\gls{z_i}$ gives the $\gls{x_i}$-axis with positive direction chosen arbitrarily. Point of intersection of  axes $z_{i-1}$  and  $\gls{z_i}$ is the origin of frame $(\gls{i})$, see \Autoref{fig:Intersecting}.
 	\begin{enumerate}[label=\emph{\alph*)}]
 		\item put origin in intersection point of the axes
 		\item put the $\gls{z_i}$ axis in the joint axis of the link $(i+1)$
@@ -107,28 +107,30 @@ As there is no distal joint for the \ac{EOAT} frame, the steps for this frame ar
 
 \subsubsection{Establishing \ac{DH} Parameters for Each Link} \label{sec:DHparPerLink}
 
-After assigning the local coordinate frames, the \ac{DH}-Transformations to connect the coordinate frames have to be determined according to \ac{DH}-convention.
-Further notes on the \ac{DH}-convention can be found in appendix \fullref{sec:DH-convention}.
+After assigning the local coordinate frames, the \ac{DH}-Transformations that connect the coordinate frames have to be determined according to \ac{DH}-convention.
+Further notes on the \ac{DH}-convention can be found in  \Autoref{sec:DH-convention}.
 
 
 
 
-The \ac{DH}-parameters form the transformation matrices that connect serial link coordinate frames. They can be distinguished into parameters and variables. While constructive parameters are dependent on the construction of the robot and are constant, variables depend on the joint movement \cite{FwdInvAnalysRobManip} \cite{ConstantinForwardKA} \cite{DenavitHartenbergKonventionen}.
+The \ac{DH}-parameters form the transformation matrices that connect serial link coordinate frames. They can be distinguished into parameters and variables. While constructive parameters are dependent on the construction of the robot and are constant, variables depend on the joint movement. \cite{FwdInvAnalysRobManip} \cite{ConstantinForwardKA} \cite{DenavitHartenbergKonventionen}
 
 \begin{enumerate}[label=\emph{\arabic*)}]
-	\item[\gls{alpha_i}] angle between $z_{i-1}$ and $z_i$, measured in plane normal to $x_i$ (constructive parameter)
-	\item[\gls{a_i}] distance between $z_{i-1}$ and $z_i$, measured along $x_i$; parallel to $z_{i-1} \times z_i$ for intersecting axes (constructive parameter)
-	\item[\gls{d_i}] distance from the origin $O_{i-1}$ of frame $i-1$ to the intersection of the $x_i$ axis with $z_{i-1}$, measured along $z_{i-1}$ (constructive parameter in revolute joints, variable in prismatic joints)
-	\item[\gls{theta_i}] angle between $x_{i-1}$ and $x_i$, measured in plane normal to $z_{i-1}$ (constructive parameter in prismatic joints, variable in revolute joints)
+	\item[\gls{alpha_i}:] angle between $z_{i-1}$ and $z_i$, measured in plane normal to $x_i$ (constructive parameter)
+	\item[\gls{a_i}] distance between $z_{i-1}$ and $z_i$, measured along $x_i$; parallel to $z_{i-1}$ %$ \times z_i$ 
+	for intersecting axes (constructive parameter)
+	\item[\gls{d_i}:] distance from the origin $O_{i-1}$ of frame $i-1$ to the intersection of the $x_i$ axis with $z_{i-1}$, measured along $z_{i-1}$ (constructive parameter in revolute joints, variable in prismatic joints)
+	\item[\gls{theta_i}:] angle between $x_{i-1}$ and $x_i$, measured in plane normal to $z_{i-1}$ (constructive parameter in prismatic joints, variable in revolute joints)
 \end{enumerate}
 
 These parameters describe the relatively complex transformation of the coordinate system $i-1$ into the coordinate system $i$ by four subsequent elementary transformations \cite{allgInvKin}:
 
 \begin{equation} \label{eq:DH-Transform}
-T_{i-1,i}=ROT(z_{i-1}, \theta_i) \cdot TRANS(0,0,d_i)^T \cdot TRANS(a_i,0,0)^T \cdot ROT(x_i,\alpha_i)
+%T_{i-1,i}
+^{i-1}T_i(\theta_i,d_i,a_i,\alpha_i)=ROT(z_{i-1}, \theta_i) \phantom{.} TRANS(0,0,d_i)^T \phantom{.} TRANS(a_i,0,0)^T \phantom{.} ROT(x_i,\alpha_i).
 \end{equation}
 
-$ROT(\gls{v},\alpha)$ is a simple rotation around vector $\gls{v}$ with the angle $\alpha$ and $TRANS(x,y,z)^T$ is a translational movement along the vector $[x,y,z]^T$. For a visual representation of these parameters see figure \ref{fig:DH_Parameters_visual} 
+$ROT(\gls{v},\alpha)$ is a simple rotation around vector $\gls{v}$ with the angle $\alpha$ and $TRANS(x,y,z)^T$ is a translational movement along the vector $[x,y,z]^T$. For a visual representation of these parameters see \Autoref{fig:DH_Parameters_visual}. This visual representation gives a guide to attach the \ac{DH}-parameters on serial-link mechanisms.
 
 \begin{figure}[H]
 	\includegraphics[
@@ -140,43 +142,43 @@ $ROT(\gls{v},\alpha)$ is a simple rotation around vector $\gls{v}$ with the angl
 	\label{fig:DH_Parameters_visual}
 \end{figure}
 
-This visual representation gives a guide to attach the \ac{DH}-parameters on serial-link mechanisms.
+
 
 
 \subsubsection{Calculate Homogeneous Transformation Matrices}
 
-Locating reference frame $(i-1)$ relative to $(i)$ can be done by executing a series of transformations as given by equation \ref{eq:DH-Transform}. 
+Locating reference frame $(i-1)$ relative to $(i)$ can be done by executing a series of transformations as given by  \Autoref{eq:DH-Transform}. 
 For simplification, they can be done with a 4 × 4 homogenous transformation matrix:
-\begin{equation} \label{eq:fourTransformations}
-^{i-1}T_i(\theta_i,d_i,a_i,\alpha_i)=R_z(\theta_i) \cdot T_z(d_i) \cdot T_x(a_i) \cdot R_x(\alpha_i)
-\end{equation}
-Equation \ref{eq:fourTransformations} can be expanded into:
+%\begin{equation} \label{eq:fourTransformations}
+%^{i-1}T_i(\theta_i,d_i,a_i,\alpha_i)=R_z(\theta_i) \cdot T_z(d_i) \cdot T_x(a_i) \cdot R_x(\alpha_i)
+%\end{equation}
+%Equation \ref{eq:fourTransformations} can be expanded into:
 \begin{equation}\label{eq:TransformationMarix}
-^{i-1}T_i=
+\gls{T_hat_i}= %^{i-1}\hat{T}_i=
 \begin{bmatrix}
-\cos\theta_i & -\sin\theta_i \cdot \cos\alpha_i & \sin\theta_i \cdot \sin\alpha_i & a_i \cdot \cos\theta_i \\
-\sin\theta_i & \cos\theta_i \cdot \cos\alpha_i & -\cos\theta_i \cdot \sin\alpha_i & a_i \cdot \sin\theta_i \\ %Typo in source column 3 - source used cos instead of sin alpha_i
+\cos\theta_i & -\sin\theta_i  \cos\alpha_i & \sin\theta_i  \sin\alpha_i & a_i  \cos\theta_i \\
+\sin\theta_i & \cos\theta_i  \cos\alpha_i & -\cos\theta_i  \sin\alpha_i & a_i  \sin\theta_i \\ %Typo in source column 3 - source used cos instead of sin alpha_i
 0 & \sin\alpha_i & \cos\alpha_i & d_i \\
 0 & 0 & 0 & 1 \\
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 
 
 
 \subsubsection{Compute Forward Kinematic Equations} \label{ForKinEq}
-In Forward kinematics, the kinematic equations of a robot are used to compute the position of the \ac{EOAT} from the given joint parameters.
+In \gls{forwKin}, the kinematic equations of a robot are used to compute the position of the \ac{EOAT} from the given joint parameters.
 
 \paragraph{Sum of transformations matrices}
-With the transformation matrices from frame $(i)$ to $(i-1$), a $4\times4$ matrix for all \gls{N} joints on \gls{I} links can be established as in equation \ref{eq:SummofTranfMatr}.
+With all transformation matrices sequentially for frame $(i)$ to $(i-1$) between frame $0$ to $\gls{I}$, a $4\times4$ matrix for all \gls{N} joints on \gls{I} links can be established as in \Autoref{eq:SummofTranfMatr}\cite{ConstantinForwardKA}.
 
 \begin{equation} \label{eq:SummofTranfMatr}
-^0T_n=\prod_{n}^{i=1} \phantom{.}^{i-1}T_i
+^0\hat{T}_N=\prod_{i=1}^{N} \phantom{.}^{i-1}\hat{T}_i
 \end{equation}
 
 
 The resulting matrix has the form (see \cite{invKinSolYanWu}):
 \begin{equation}\label{eq:matrixForm}
-^0T_n=
+^0\hat{T}_n=
 \begin{bmatrix}
 n_{xyz} & o_{xyz} & a_{xyz} & p_{xyz} \\
 0 & 0 & 0 & 1 \\
@@ -187,7 +189,7 @@ n_x & o_x & a_x & p_x \\
 n_y & o_y & a_y & p_y \\ %mistake here in source?\cite{invKinSolYanWu} xyz broken? - error confirmed!
 n_z & o_z & a_z & p_z \\
 0 & 0 & 0 & 1 \\
-\end{bmatrix}
+\end{bmatrix}.
 \end{equation}
 
 \paragraph{Short notation}
@@ -201,36 +203,56 @@ The short notations for rotation and position are defined as:
 \end{itemize}
 
 
-\paragraph{Transformation to Cartesian coordinates with Euler angles }
-These vectors can be transformed into the $[\gls{x},\gls{y},\gls{z},\gls{alpha},\gls{beta},\gls{gamma}]$ notation.
+\paragraph{Transformation to Cartesian coordinates with roll pitch and yaw angles }
+These vectors can be transformed into the $[\gls{x},\gls{y},\gls{z},\gls{roll},\gls{pitch},\gls{yaw}]$ notation.
 Vector $p = [p_x, p_y, p_z] $ gives $[x,y,z]$.
-The rotational approach $[\alpha, \beta, \gamma]$ can be calculated with the rotation matrix \gls{R} as seen in \ref{eq:rotMatrix_composition}.
+The rotational approach $[\gls{roll},\gls{pitch},\gls{yaw}]$ can be calculated with the rotation matrix \gls{R} as seen in \Autoref{eq:rotMatrix_composition}\cite{ConstantinForwardKA}.
 \begin{equation}\label{eq:rotMatrix_composition}
-\gls{T} = 
+\gls{T_hat} = 
 \begin{bmatrix}
 R & p \\
 0 & 1 \\
 \end{bmatrix}
 \end{equation}
 
-The rotation matrix describes the relative orientation of two frames towards each other. As the columns $[\gls{n_xyz},\gls{o_xyz},\gls{a_xyz}]$ are the unit vectors along the axes of one frame relative to the other reference frame, the relative orientation of frame ${b}$ with respect to frame ${a}$ is given by the rotation matrix as seen in  \ref{eq:rotMatrix_a-b} \cite{ConstantinForwardKA}
-\begin{equation}\label{eq:rotMatrix_a-b}.
-\phantom{}^b_aR =
+The rotation matrix describes the orientation of two frames towards each other. As the columns $[\gls{n_xyz},\gls{o_xyz},\gls{a_xyz}]$ are the unit vectors along the axes of one frame relative to the other reference frame, % the relative orientation of frame ${b}$ with respect to frame ${a}$ is given by the rotation matrix 
+the rotation matrix can be constructed 
+as seen in  \Autoref{eq:rotMatrix_a-b}. Alternatively, it can be calculated with the roll, pitch and yaw angles. \cite{CorkeRoboticVisionControl}\cite{craig1986introduction}
+\begin{equation}\label{eq:rotMatrix_a-b}
+\gls{R} =
+R_x(\theta_y)R_y(\theta_p)R_z(\theta_r)
+=
 \begin{bmatrix}
-\phantom{}_ax^b & \phantom{}_ay^b & \phantom{}_az^b \\
+n_x & o_x & a_x \\
+n_y & o_y & a_y \\
+n_z & o_z & a_z \\
 \end{bmatrix}
 =
 \begin{bmatrix}
-x^b \cdot x^a & y^b \cdot x^a & z^b \cdot x^a \\
-x^b \cdot y^a & y^b \cdot y^a & z^b \cdot y^a \\
-x^b \cdot z^a & y^b \cdot z^a & z^b \cdot z^a \\
+c\theta_p c\theta_r & -c\theta_p s\theta_r & s\theta_p \\
+c\theta_y s\theta_r + c\theta_r s\theta_p s\theta_y & -s\theta_p s\theta_y s\theta_r + c\theta_y c\theta_r & -c\theta_p s\theta_y \\
+s\theta_y s\theta_r - c\theta_y c\theta_r s\theta_p & c\theta_y s\theta_p s\theta_r + c\theta_r s\theta_y & c\theta_p c\theta_y \\
 \end{bmatrix}
 \end{equation}
 
-\paragraph{Transformation between frames}
-The coordinates relative to the reference frame ${a}$, of a point $p$, of which the coordinates are known with respect to frame ${b}$ with the same origin can then be calculated as in equation \ref{eq:rotMatrixToAbsFrame}  ( see \cite{RobotKinemDyn}, "Description of Position and Orientation) .
-\begin{equation}\label{eq:rotMatrixToAbsFrame}
-\phantom{}_a p = \phantom{}^b_aR \phantom{.}_b p  
-\end{equation}
+In \ref{eq:rotMatrix_a-b}, following notation is used:
+$c \theta_i = cos(\theta_i)$, $s \theta_i = sin(\theta_i)$.
+
+%\phantom{}^b_a\gls{R} =
+%\begin{bmatrix}
+%	\phantom{}_ax^b & \phantom{}_ay^b & \phantom{}_az^b \\
+%\end{bmatrix}
+%=
+%\begin{bmatrix}
+%	x^b  x^a & y^b  x^a & z^b  x^a \\
+%	x^b  y^a & y^b  y^a & z^b  y^a \\
+%	x^b  z^a & y^b  z^a & z^b  z^a \\
+%\end{bmatrix}
+
+%\paragraph{Transformation between frames}
+%The coordinates relative to the reference frame ${a}$, of a point $p$, of which the coordinates are known with respect to frame ${b}$ with the same origin can then be calculated as in equation \ref{eq:rotMatrixToAbsFrame}  ( see \cite{RobotKinemDyn}). %, "Description of Position and Orientation) .
+%\begin{equation}\label{eq:rotMatrixToAbsFrame}
+%\phantom{}_a p = \phantom{}^b_aR \phantom{.}_b p  
+%\end{equation}
 
 

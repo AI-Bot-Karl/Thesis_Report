@@ -1,0 +1,36 @@
+%\begin{dmath}
+%	\label{eq:ForwardKinEquations_6DOF_shortIntext}
+%	\phantom{	n_x =  }\\
+%	{n_x=c_1(c_{23}(c_4c_5c_6-s_4s_6)-s_{23}s_5c_6)+s_1(s_4c_5c_6-c_4s_6)}\\
+%	{n_y=s_1(c_{23}(c_4c_5c_6-s_4s_6)-s_{23}s_5c_6)-c_1(s_4c_5c_6-c_4s_6)} \\
+%	{n_z=s_{23}(c_4c_5c_6-s_4s_6)-c_{23}s_5c_6} \\
+%	{o_x=c_1(-c_{23}(c_4c_5s_6+s_4c_6)-s_{23}s_5s_6)-s_1(s_4c_5s_6-c_4s_6)} \\
+%	{o_y=s_1(-c_{23}(c_4c_5s_6+s_4c_6)-s_{23}s_5s_6)+c_1(s_4c_5s_6-c_4s_6)} \\
+%	{o_z=-s_{23}(c_4c_5s_6+s_4s_6)-c_{23}s_5s_6} \\
+%	{a_x=c_1(c_{23}c_4s_5+s_{23}c_5)+s_1s_4s_5} \\
+%	{a_y=s_1(c_{23}c_4s_5+s_{23}c_5)+c_1s_4s_5} \\
+%	{a_z=s_{23}c_4s_5-c_{23}c_5} \\
+%	{p_x=c_1(a_1+a_2c_2+a_3c_{23}+d_4s_{23}+d_6(c_{23}c_4s_5+s_{23}c_5))+d_6s_1s_4s_5} \\
+%	{p_y=s_1(a_1+a_2c_2+a_3c_{23}+d_4s_{23}+d_6(c_{23}c_4s_5+s_{23}c_5))+d_6s_1s_4s_5} \\
+%	{p_z=a_2s_2+a_3s_{23}-d_4c_{23}+d_6(s_{23}c_4s_5-c_{23}c_5)} \\
+%\end{dmath}
+
+\begin{subequations}\label{eq:ForwardKinEquations_6DOF_shortIntext}
+	\begin{align}
+		n_x&=c_1(c_{23}(c_4c_5c_6-s_4s_6)-s_{23}s_5c_6)+s_1(s_4c_5c_6-c_4s_6)\\
+		n_y&=s_1(c_{23}(c_4c_5c_6-s_4s_6)-s_{23}s_5c_6)-c_1(s_4c_5c_6-c_4s_6) \\
+		n_z&=s_{23}(c_4c_5c_6-s_4s_6)-c_{23}s_5c_6 \\
+		o_x&=c_1(-c_{23}(c_4c_5s_6+s_4c_6)-s_{23}s_5s_6)-s_1(s_4c_5s_6-c_4s_6) \\
+		o_y&=s_1(-c_{23}(c_4c_5s_6+s_4c_6)-s_{23}s_5s_6)+c_1(s_4c_5s_6-c_4s_6) \\
+		o_z&=-s_{23}(c_4c_5s_6+s_4s_6)-c_{23}s_5s_6 \\
+		a_x&=c_1(c_{23}c_4s_5+s_{23}c_5)+s_1s_4s_5 \\
+		a_y&=s_1(c_{23}c_4s_5+s_{23}c_5)+c_1s_4s_5 \\
+		a_z&=s_{23}c_4s_5-c_{23}c_5 \\
+		p_x&=c_1(a_1+a_2c_2+a_3c_{23}+d_4s_{23}+d_6(c_{23}c_4s_5+s_{23}c_5))+d_6s_1s_4s_5 \\
+		p_y&=s_1(a_1+a_2c_2+a_3c_{23}+d_4s_{23}+d_6(c_{23}c_4s_5+s_{23}c_5))+d_6s_1s_4s_5 \\
+		p_z&=a_2s_2+a_3s_{23}-d_4c_{23}+d_6(s_{23}c_4s_5-c_{23}c_5)
+	\end{align}
+\end{subequations}
+
+In \ref{eq:ForwardKinEquations_6DOF_shortIntext}, following notations are used:
+$c_i = cos(\theta_i)$, $s_{ij}=sin(\theta_1+\theta_j)$.
